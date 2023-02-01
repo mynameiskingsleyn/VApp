@@ -1,0 +1,132 @@
+/*Generic Theme CSS*/
+
+/*----- #6283c2 Color themes*/
+.drivefca_generic .mat-tab-label-active .mat-tab-label-content {
+    color: #6283c2;
+}
+
+.drivefca_generic .dropDownPanel::-webkit-scrollbar-thumb,
+.drivefca_generic #add-bulk-discount-model .saved-discounts,
+.drivefca_generic #add-discount-model .saved-discounts {
+    background: #6283c2;
+}
+.drivefca_generic .dropDownPanel,
+.drivefca_generic .dropDownPanelVin {
+    scrollbar-color: #6283c2 #709599;
+}
+.drivefca_generic .goFilterBtn button:not(.disabled),
+.drivefca_generic .pagination .page-item.active .page-link {
+    background: #6283c2 !important;
+}
+
+.drivefca_generic div#slider-range,
+.drivefca_generic div#slider-range span.ui-slider-handle.ui-state-default {
+    border-color: #6283c2;
+}
+
+/*----- #c9dcff Color themes*/
+.drivefca_generic div#slider-range {
+    background-color: #c9dcff;
+}
+
+.drivefca_generic h4.dOpener.labelDrop:after {
+    border-color: #c9dcff;
+}
+
+/*----- #3e6fcc Color themes*/
+.drivefca_generic .search-result-field .add-discount-field,
+.drivefca_generic .dashboardInstuct .meBlue {
+    color: #3e6fcc;
+}
+
+.drivefca_generic span.automated_discount_label_field_child,
+.drivefca_generic .discountAutomatedWrapper .discounts-button button,
+.drivefca_generic .customCheckBox input[type=checkbox]:checked+span:after,
+.drivefca_generic .customCheckBox input[type=checkbox]:checked+span:before,
+.drivefca_generic .switch label input[type="checkbox"]:checked+.lever:after {
+    background: #3e6fcc;
+}
+
+.drivefca_generic .discountAutomatedWrapper .discounts-button button,
+.drivefca_generic .customCheckBox input[type=checkbox]:checked+span:after {
+    border-color: #3e6fcc !important;
+}
+
+.drivefca_generic .switch label input[type="checkbox"]:checked+.lever {
+    background-color: #cad7f1;
+}
+
+.drivefca_generic .discountAutomatedWrapper .discount-details,
+.drivefca_generic .table-striped tbody tr:nth-of-type(odd),
+.drivefca_generic .table-striped tbody tr:nth-of-type(even):hover {
+    background-color: rgba(62, 111, 204, 0.1);
+}
+
+.drivefca_generic .table-striped tbody tr:nth-of-type(even),
+.drivefca_generic .table-striped tbody tr:nth-of-type(odd):hover {
+    background-color: rgba(62, 111, 204, 0.05);
+}
+
+/*----- #456e76 Color themes*/
+.drivefca_generic .search-result-field thead th {
+    background-color: #456e76;
+}
+
+/*----- #285593 Color themes*/
+.drivefca_generic .tutorial-field h3,
+.drivefca_generic .faq-accordions .panel-heading a.open,
+.drivefca_generic .faq-accordions .panel h4:hover {
+    background-color: #285593;
+}
+
+.drivefca_generic .faq-accordions .panel,
+.drivefca_generic .sub-form-field form {
+    border-color: #285593;
+}
+
+/*----- #dee5f2 Color themes*/
+.drivefca_generic #add-bulk-discount-model .discount-details .discount-space,
+.drivefca_generic #add-discount-model .discount-details .discount-space {
+    background-color: #dee5f2;
+}
+
+/*----- Gradiant Color themes*/
+.drivefca_generic .dropDownPanel {
+    background: linear-gradient(90deg, #414141 0, #669096 100%) no-repeat padding-box;
+}
+
+.drivefca_generic .gcss-colors-element-primary,
+.drivefca_generic .create-view-saved-btn-field .theme:first-child,
+.drivefca_generic .gcss-button,
+.drivefca_generic .discountAutomatedContainer .discounts-button button,
+.drivefca_generic .login-card .login-forgot-row .btn,
+.drivefca_generic .sub-form-field form .feedback-btn {
+    background: linear-gradient(180deg, #5d8dd0, #285593) !important;
+}
+
+.drivefca_generic #unsaved_auto_discount_warning_modal .modal-footer .btn-secondary,
+.drivefca_generic .add-bulk-discount-alert .cancel-btn {
+    background: linear-gradient(180deg, #b41919, #870d0d) !important;
+}
+
+/*----- Styling -------*/
+.drivefca_generic .search-result-field .add-discount-field {
+    color: #3e6fcc !important;
+    text-decoration: underline;
+}
+
+.drivefca_generic .discountAutomatedContainer .discounts-button button {
+    border: none;
+}
+
+.drivefca_generic #add-bulk-discount-model .discount-details,
+.drivefca_generic #add-discount-model .discount-details {
+    overflow: hidden;
+}
+
+.drivefca_generic #add-bulk-discount-model .discount-details .discount-space,
+.drivefca_generic #add-discount-model .discount-details .discount-space {
+    border: 1px solid #ccc;
+    color: #333;
+    width: 100%;
+}

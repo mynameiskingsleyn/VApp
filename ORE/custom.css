@@ -1,0 +1,5936 @@
+@font-face {
+    font-family: 'rift-soft';
+    src: url('../fonts/rift-soft.woff2') format('woff2'),
+        url('../fonts/rift-soft.woff') format('woff'),
+        url('../fonts/rift-soft.otf') format('otf'),
+        url('../fonts/rift-soft.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Maintenance popup*/
+.count_checked {
+    cursor: pointer;
+    color: #fff;
+    background-color: #8F0C2C;
+    padding: 5px 7px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+    margin-top: -4px;
+}
+
+.maintenance_model_wrapper {
+    top: 12%;
+}
+
+body .gcss-button-secondary {
+    font-weight: normal;
+}
+
+body #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs>li.active>a {
+    border-bottom: solid 2px #8f0c2c;
+}
+
+.image_maintenance {
+    width: 100%;
+    background: #000;
+    margin-top: 6%;
+}
+
+.modelbody_maintenance {
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 3%, rgba(139, 36, 35, 1) 60%, rgba(139, 36, 35, 1) 60%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 3%, rgba(139, 36, 35, 1) 60%, rgba(139, 36, 35, 1) 60%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 3%, rgba(139, 36, 35, 1) 60%, rgba(139, 36, 35, 1) 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#8b2423', GradientType=0);
+    color: #fff;
+    padding: 15px;
+    border: 1px solid #770707;
+    text-align: center;
+}
+
+.fontsize_apologize {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: rift-soft;
+}
+
+.maintanance_logo {
+    margin: 20px 0px 30px 0px;
+}
+
+.fontsize_apologize_margin {
+    margin-bottom: 15px;
+    font-family: rift-soft;
+}
+
+.onlineshortly {
+    margin-bottom: 50px;
+    margin-top: 25px;
+    font-family: rift-soft;
+}
+
+/*popup*/
+/*.review-popup-submit{
+margin-top:20px;
+}*/
+.ore_leadsubmit_wrapper {
+    margin-bottom: 0;
+}
+
+.packageandoption_ul ul {
+    padding-left: 15px;
+}
+
+body #popImageCont .modal-lg {
+    width: 85%;
+    margin: 20px auto;
+}
+
+.footer_margin_list {
+    margin-top: 5px;
+}
+
+.vehicle_available {
+    color: #4d4d4d !important;
+}
+
+body .additionalCareBlocks .contentBlock {
+    color: #000;
+    height: 181px !important;
+    overflow: hidden;
+}
+
+.submittodealer_wrapper {
+    float: left;
+    width: 100%;
+    margin: 35px 0px 20px 0px;
+}
+
+.link_contactus {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.link_contactus:hover {
+    color: #fff;
+}
+
+.link_contactus:visited {
+    color: #fff;
+}
+
+.link_contactus {
+    color: #fff;
+}
+
+.header-scroll {
+    position: fixed;
+    height: 75px;
+    background: #000;
+    left: 0;
+    top: 0;
+    float: left;
+    width: 100%;
+    -ms-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    z-index: 20;
+}
+
+.header-scroll.small h1 {
+    height: 70px;
+    line-height: 35px;
+    font-size: 25px;
+}
+
+.d-flex {
+    display: flex
+}
+
+body #landingPage .vCardsBlock .vCard {
+    background: #f5f5f5;
+    border: solid 1px #ccc;
+    width: 90%;
+    margin: 0 auto 20px;
+    padding: 15px;
+    height: 420px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+#landingPage .loader,
+#resultsPage .loader {
+    display: none !important;
+}
+
+.header-scroll.small .sni-vehicle-logo a.imageFrame {
+    height: 50px !important;
+    width: 100px !important;
+    margin: 10px 5px 6px !important;
+}
+
+.header-scroll .dealerAddress h3,
+.header-scroll .dealerAddress p {
+    transition: all .61s !important;
+    margin: 0 !important;
+    line-height: 1.01;
+}
+
+.header-scroll .dealerAddress h3 {
+    margin-top: 15px !important;
+    margin-bottom: 6px !important;
+}
+
+.header-scroll .dealerAddress p {
+    font-size: 14px !important;
+}
+
+.SideBar-left {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+    overflow: auto;
+    height: 80vh;
+    padding-right: 0;
+    margin-right: -1px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner-grow {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.spinner-grow {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+    background-color: #AAA;
+    border-radius: 50%;
+    opacity: 0;
+    animation: spinner-grow .95s linear infinite;
+}
+
+#landingPage .productInfo h5 {
+    font-size: 22px;
+    margin-top: 0px;
+    height: 40px;
+}
+
+.spinner-grow-sm {
+    width: 8px;
+    height: 8px;
+}
+
+.ore_landing_models {
+    padding: 0 15px;
+    margin-top: -50px;
+}
+
+.small .center-icon.text-center {
+    padding-top: 6px;
+}
+
+.ore_landing_models.tempo,
+.listCont.tempo {
+    height: 950px;
+    position: relative;
+}
+
+.listCont.tempo {
+    height: auto !important;
+}
+
+.ore_landing_models.tempo:after,
+.listCont.tempo:after {
+    content: "";
+    display: block;
+    background: url(https://d11p9i1nddg3dz.cloudfront.net/images/loader.gif ) no-repeat;
+    width: 120px;
+    height: 75px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 200px;
+    z-index: 3;
+}
+
+.ore_landing_models.tempo:before,
+.listCont.tempo:before {
+    background: rgba(0, 0, 0, 0.38);
+    z-index: 1;
+    position: absolute;
+    content: "";
+    height: 963px;
+    width: 100%;
+    left: 0px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.listCont.tempo:before {
+    background: rgba(0, 0, 0, 0.38);
+    height: auto !important;
+}
+
+body #landingPage .vCardsBlock .vCard .cardBody .productInfo h5 {
+    cursor: pointer;
+}
+
+body #landingPage .brandList .col-md-2:hover,
+body #landingPage .brandList .col-sm-4:hover {
+    box-shadow: 0px 0px 8px 0px #26526e;
+    transition: all .2s;
+}
+
+body #landingPage .brandList>div.active:hover {
+    box-shadow: 0px 0px 25px #27AAE1 !important;
+}
+
+body #landingPage .brandList .avoid:hover {
+    box-shadow: none !important;
+}
+
+body #zipCodePopUp .modal-body input[type="number"],
+body #zipCodePopUp .modal-body button:not(.custom-close) {
+    height: 34px;
+}
+
+/*below arrow hide temp purpose*/
+.stylePicker {
+    display: block !important;
+}
+
+/*below arrow hide temp purpose*/
+/*Alfa new style*/
+.how-itworks-nav a,
+body>header .navigation a,
+.ore_homelocator_block {
+    font-family: rift-soft;
+    font-size: 18px;
+}
+
+.switch {
+    font-weight: 100;
+    font-family: rift-soft;
+    position: relative;
+    margin: auto;
+    width: 365px;
+    left: 0;
+    right: 0;
+    top: -110px;
+    text-align: center;
+    margin-top: -75px;
+}
+
+.switch:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 30px;
+    top: 11px;
+}
+
+.switch__label {
+    display: inline-block;
+    width: 112px;
+    padding-top: 45px;
+    text-align: center;
+    cursor: pointer;
+    transition: color 200ms ease-out;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.switch__label:hover {
+    color: white;
+}
+
+.switch__indicator {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -0.5px;
+    left: 0;
+    border-radius: 50%;
+    transition: transform 600ms cubic-bezier(0.02, 0.94, 0.09, 0.97), background 300ms cubic-bezier(0.17, 0.67, 0.14, 1.03);
+    transform: translate3d(1rem, 0, 0);
+}
+
+.switch__indicator {
+    transform: translate3d(-5px, 0, 0);
+    border: 2px solid #fff;
+}
+
+.switch input#v_type_new:checked~.switch__indicator {
+    transform: translate3d(-8px, 0, 0);
+}
+
+.switch input#v_type_cpo:checked~.switch__indicator {
+    transform: translate3d(173px, 0, 0);
+}
+
+.switch input#v_type_used:checked~.switch__indicator {
+    transform: translate3d(353px, 0, 0);
+}
+
+label.switch__label[for~='v_type_used']:after {
+    content: "";
+    background: #fff;
+    height: 28px;
+    width: 3px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 13px;
+    left: 0;
+    margin: auto;
+}
+
+label.switch__label[for~='v_type_cpo']:after {
+    content: "";
+    background: #fff;
+    height: 28px;
+    width: 3px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 13px;
+    left: 0;
+    margin: auto;
+}
+
+label.switch__label[for~='v_type_new']:after {
+    content: "";
+    background: #fff;
+    height: 28px;
+    width: 3px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    right: 0;
+    margin: auto;
+}
+
+.select-condition {
+    position: absolute;
+    color: #fff;
+    right: 0;
+    left: 0;
+    top: -30px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+label.switch__label[for~='v_type_new'] {
+    position: relative;
+    left: -67px;
+}
+
+label.switch__label[for~='v_type_used'] {
+    position: relative;
+    right: -67px;
+}
+
+span.condition-button-left,
+span.condition-button-right {
+    position: absolute;
+    color: #fff;
+    font-size: 55px;
+    cursor: pointer;
+    bottom: 0;
+}
+
+span.condition-button-left {
+    left: -75px;
+}
+
+span.condition-button-right {
+    right: -75px;
+}
+
+.center-icon.text-center {
+    padding-top: 6px;
+}
+
+.zipcode_edit_field {
+    background: #111;
+    border: 1px solid #8f192c;
+    height: 35px;
+    width: 75px;
+    text-align: center;
+    margin-left: 7px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.banner-img-field:after {
+    content: "";
+    background: linear-gradient(rgba(71, 71, 69, 0.6509803921568628), black);
+    display: block;
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+button.change_icon_btn {
+    background: transparent;
+    border: none;
+    margin-left: 2px;
+}
+
+span.condition-button-left img,
+span.condition-button-right img {
+    max-width: 22px;
+}
+
+.ore_homelocator_block {
+    margin-top: -30vh;
+    color: #fff;
+    padding-left: 22px;
+}
+
+.ore_landing_models .vCardsBlock>.col-xs-12 {
+    margin-top: -50px;
+}
+
+.switch input[type="radio"]:not(:checked),
+.switch input[type="radio"]:checked {
+    display: none;
+}
+
+a.how-itworks-link:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    max-height: 52px;
+    background: rgba(184, 184, 184, 0.8784313725490196);
+    position: absolute;
+    top: 12px;
+    right: -10px;
+    transition: all .3s;
+}
+
+.how-itworks-link span {
+    float: left;
+}
+
+.how-itworks-link img {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.how-itworks-link img {
+    width: 15px;
+    margin-top: 5px;
+}
+
+.list-inline.how-itworks-field li {
+    position: relative;
+}
+
+.center-icon img {
+    transition: all .31s;
+    max-height: 63px;
+}
+
+.small .center-icon img {
+    max-height: 63px;
+}
+
+body>header .navigation a,
+body>header .how-itworks-nav a {
+    padding: 5px 5px !important;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+body>header.vehiclepage .navigation a {
+    padding: 0px 0px;
+}
+
+.vehiclepage .small.header-scroll .navigation a {
+    padding: 1px 0;
+}
+
+.right-menu-field ul li {
+    position: relative;
+}
+
+body #landingPage .vCardsBlock {
+    background: linear-gradient(to bottom, black 0%, black 93px, #000 98px, white 98px, white 67%);
+}
+
+body>header .brandLogos ul li a.imageFrame {
+    width: 150px;
+    margin: 0px 5px;
+}
+
+body>header .small .brandLogos ul li a.imageFrame {
+    width: 130px;
+}
+
+body>header .small .brandLogos ul li a.imageFrame img {
+    padding: 0px !important;
+}
+
+label.switch__label[for~='v_type_cpo'] {
+    width: 209px;
+    padding: 45px 30px 0;
+    line-height: 1.17;
+}
+
+label.switch__label[for~='v_type_new'] {
+    width: 51px;
+    left: -52px;
+}
+
+label.switch__label[for~='v_type_used'] {
+    width: 45px;
+    right: -49px;
+}
+
+/*Alfa new style end*/
+/*Back to top Style*/
+#toTop {
+    padding: 5px 3px;
+    color: #fff;
+    position: fixed;
+    bottom: 47%;
+    right: 15px;
+    display: none;
+}
+
+#toTop img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+/*Back to top Style*/
+/*Dropdown list*/
+section.main .leftMenu form .cDropDown.ore_dealers li:nth-child(1n+6) {
+    visibility: hidden;
+    transition: all .4s;
+}
+
+section.main .leftMenu form .cDropDown.ore_dealers ul.active li:nth-child(1n+6) {
+    transition: all .4s;
+    visibility: visible;
+}
+
+section.main .leftMenu form .cDropDown.ore_dealers ul {
+    transition: all .7s;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+section.main .leftMenu form .cDropDown.ore_dealers ul.active {
+    max-height: 1000px;
+}
+
+.see-all-block {
+    background: #e3e3e3;
+    margin: 0 -15px;
+    padding: 0 10px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.see-all-block:hover {
+    text-decoration: underline;
+}
+
+.img-loader {
+    background: url(https://d11p9i1nddg3dz.cloudfront.net/images/loader.gif) center no-repeat;
+    background-size: auto;
+}
+
+.img-loader.loader-v2 {
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+}
+
+body .iframe-field iframe {
+    width: 100%;
+    border: none;
+    overflow: scroll;
+    height: 1050px;
+}
+
+.info-img {
+    position: absolute;
+    width: 20px !important;
+    margin-left: 10px;
+}
+
+.iframe-field {
+    margin-bottom: 40px;
+}
+
+.iframe-field>.col-sm-12 {
+    padding: 0;
+}
+
+.brandLogos.sni-active ul li:nth-child(1) a,
+.brandLogos.sni-active ul li:nth-child(2) a,
+.brandLogos.sni-active ul li:nth-child(5) a {
+    width: 150px;
+}
+
+.brandLogos.sni-active ul li:nth-child(5) a {
+    width: 150px;
+}
+
+.brandLogos.sni-active ul li:nth-child(4) a {
+    width: 135px;
+}
+
+.brandLogos.sni-active ul li:nth-child(3) a {
+    height: 65px;
+    margin: 15px 5px;
+}
+
+.brandLogos.sni-active ul li:nth-child(1) a,
+.brandLogos.sni-active ul li:nth-child(2) a {
+    width: 175px;
+}
+
+.brandLogos ul li a {
+    transition: all .5s;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.no-data-img {
+    width: 100%;
+    background: #e3e3e3;
+    padding: 40px 40px 400px 40px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    filter: grayscale(100%);
+    text-align: center;
+}
+
+.no-data-img img {
+    height: 275px;
+}
+
+@media(max-width: 768px) {
+    body section.main .listBlock .listCont>li .imageFrame i {
+        left: 0px;
+        max-width: 30px;
+        right: auto !important;
+    }
+}
+
+@-webkit-keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0
+    }
+
+    100% {
+        background-position: 468px 0
+    }
+}
+
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0
+    }
+
+    100% {
+        background-position: 468px 0
+    }
+}
+
+.timeline-wrapper {
+    background-color: #e9eaed;
+    color: #141823;
+    border: 1px solid #ccc;
+}
+
+.timeline-item {
+    background: #fff;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: 3px;
+    padding: 12px;
+    margin: 0 auto;
+    max-width: 472px;
+    min-height: 300px;
+}
+
+.animated-background {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: placeHolderShimmer;
+    animation-name: placeHolderShimmer;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: #eeeeee;
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
+    background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    -webkit-background-size: 800px 104px;
+    background-size: 800px 104px;
+    height: 96px;
+    position: relative;
+}
+
+.background-masker {
+    background: #fff;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.outlined .background-masker {
+    border: 1px solid #ddd;
+}
+
+.outlined:hover .background-masker {
+    border: none;
+}
+
+.outlined:hover .background-masker:hover {
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.background-masker.header-top {
+    top: 20px;
+    left: 0px;
+    right: 0;
+    height: 10px;
+}
+
+.background-masker.header-bottom,
+.background-masker.subheader-bottom {
+    top: 0;
+    left: 0px;
+    right: 0;
+    height: 10px;
+}
+
+.background-masker.header-left,
+.background-masker.subheader-left,
+.background-masker.header-right,
+.background-masker.subheader-right {
+    top: 10px;
+    left: 40px;
+    height: 8px;
+    width: 10px;
+}
+
+.background-masker.header-bottom {
+    top: 18px;
+    height: 6px;
+}
+
+.background-masker.subheader-left,
+.background-masker.subheader-right {
+    top: 24px;
+    height: 6px;
+}
+
+.background-masker.header-right,
+.background-masker.subheader-right {
+    width: auto;
+    left: 300px;
+    right: 0;
+}
+
+.background-masker.subheader-right {
+    left: 230px;
+}
+
+.background-masker.subheader-bottom {
+    top: 30px;
+    height: 10px;
+}
+
+.background-masker.content-top,
+.background-masker.content-second-line,
+.background-masker.content-third-line,
+.background-masker.content-second-end,
+.background-masker.content-third-end,
+.background-masker.content-first-end {
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 6px;
+}
+
+.background-masker.content-top {
+    height: 20px;
+}
+
+.background-masker.content-first-end,
+.background-masker.content-second-end,
+.background-masker.content-third-end {
+    width: auto;
+    left: 380px;
+    right: 0;
+    top: 60px;
+    height: 8px;
+}
+
+.background-masker.content-second-line {
+    top: 68px;
+}
+
+.background-masker.content-second-end {
+    left: 420px;
+    top: 74px;
+}
+
+.background-masker.content-third-line {
+    top: 82px;
+}
+
+.background-masker.content-third-end {
+    left: 300px;
+    top: 88px;
+}
+
+#leaseTabModal button.close,
+#FinanceTabModal button.close {
+    border: 1px solid #6283c2;
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+    color: #6283c2;
+}
+
+#leaseTabModal .modal-header,
+#FinanceTabModal .modal-header {
+    background: #d0e0fe;
+    padding: 10px 10px 7px 10px;
+}
+
+.popup-button {
+    position: relative;
+}
+
+.popup-button:before {
+    content: "";
+    width: 31px;
+    position: absolute;
+    height: 30px;
+    left: -85px;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+.mopar-logo {
+    width: 210px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+body .detailBody .fwd-bck-btns button,
+body .detailBody .fwd-bck-btns1 button {
+    width: 360px;
+    height: 45px;
+}
+
+body #serviceProtection .header p {
+    margin-top: 5px;
+}
+
+/* top header address color start */
+body .themeClr2 a {
+    color: white !important;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0
+    }
+
+    100% {
+        background-position: 468px 0
+    }
+}
+
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0
+    }
+
+    100% {
+        background-position: 468px 0
+    }
+}
+
+.timeline-wrapper {
+    background-color: #e9eaed;
+    color: #141823;
+    border: 1px solid #ccc;
+}
+
+.timeline-item {
+    background: #fff;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: 3px;
+    padding: 12px;
+    margin: 0 auto;
+    max-width: 472px;
+    min-height: 300px;
+}
+
+.animated-background {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: placeHolderShimmer;
+    animation-name: placeHolderShimmer;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: #eeeeee;
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
+    background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    -webkit-background-size: 800px 104px;
+    background-size: 800px 104px;
+    height: 96px;
+    position: relative;
+}
+
+.background-masker {
+    background: #fff;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.outlined .background-masker {
+    border: 1px solid #ddd;
+}
+
+.outlined:hover .background-masker {
+    border: none;
+}
+
+.outlined:hover .background-masker:hover {
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.background-masker.header-top {
+    top: 20px;
+    left: 0px;
+    right: 0;
+    height: 10px;
+}
+
+.background-masker.header-bottom,
+.background-masker.subheader-bottom {
+    top: 0;
+    left: 0px;
+    right: 0;
+    height: 10px;
+}
+
+.background-masker.header-left,
+.background-masker.subheader-left,
+.background-masker.header-right,
+.background-masker.subheader-right {
+    top: 10px;
+    left: 40px;
+    height: 8px;
+    width: 10px;
+}
+
+.background-masker.header-bottom {
+    top: 18px;
+    height: 6px;
+}
+
+.background-masker.subheader-left,
+.background-masker.subheader-right {
+    top: 24px;
+    height: 6px;
+}
+
+.background-masker.header-right,
+.background-masker.subheader-right {
+    width: auto;
+    left: 300px;
+    right: 0;
+}
+
+.background-masker.subheader-right {
+    left: 230px;
+}
+
+.background-masker.subheader-bottom {
+    top: 30px;
+    height: 10px;
+}
+
+.background-masker.content-top,
+.background-masker.content-second-line,
+.background-masker.content-third-line,
+.background-masker.content-second-end,
+.background-masker.content-third-end,
+.background-masker.content-first-end {
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 6px;
+}
+
+.background-masker.content-top {
+    height: 20px;
+}
+
+.background-masker.content-first-end,
+.background-masker.content-second-end,
+.background-masker.content-third-end {
+    width: auto;
+    left: 380px;
+    right: 0;
+    top: 60px;
+    height: 8px;
+}
+
+.background-masker.content-second-line {
+    top: 68px;
+}
+
+.background-masker.content-second-end {
+    left: 420px;
+    top: 74px;
+}
+
+.background-masker.content-third-line {
+    top: 82px;
+}
+
+.background-masker.content-third-end {
+    left: 300px;
+    top: 88px;
+}
+
+/*700 credit form styles start*/
+.form-inf {
+    display: inline-block;
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 1px;
+    border-radius: 10px;
+    padding-top: 15px;
+    border-color: #ccc;
+}
+
+#form-inf {
+    display: inline-block;
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 10px;
+    padding-top: 15px;
+    border-color: #ccc;
+}
+
+.foot {
+    display: inline-block;
+    width: 100%;
+}
+
+#container {
+    padding: 5px;
+    margin: 10px;
+    width: 100%;
+    height: 80%;
+}
+
+/*.footer-content {
+text-align: justify;
+}*/
+select option[disabled]:first-child {
+    display: none;
+}
+
+select option:first-child {
+    color: gray;
+}
+
+select option {
+    color: #555;
+}
+
+select.empty {
+    color: gray;
+}
+
+#sbtn {
+    padding: 10px 30px;
+    background-color: #ccc;
+    margin-top: 1px;
+    border-color: #ccc;
+}
+
+#inputSubmit {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.error {
+    color: red;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10.5px;
+}
+
+#modal-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.modal-hr {
+    margin: 0;
+    margin-top: -50px;
+}
+
+#thankYou-container-out {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    background-color: white;
+    height: auto;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.thankYou-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 19px;
+    color: #777;
+}
+
+@media (min-width: 768px) {
+    .thankYou-container {
+        max-width: 730px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .thankYou-container {
+        width: 1170px;
+    }
+}
+
+@media (min-width: 992px) {
+    .thankYou-container {
+        width: 970px;
+    }
+
+    #reviewSubmitPopUp select {
+        z-index: 5;
+        max-width: 269px;
+        position: absolute;
+    }
+}
+
+@media (min-width: 768px) {
+    .thankYou-container {
+        width: 750px;
+    }
+}
+
+@media (max-width: 420px) {
+    .thankYou-container {
+        width: 350px;
+    }
+}
+
+.marginBottom {
+    margin-bottom: 0;
+}
+
+#name,
+#Lname,
+#Mname {
+    margin-bottom: 15px;
+}
+
+#name.error,
+#Lname.error {
+    margin-bottom: 0px;
+}
+
+/*700 credit form styles end*/
+@media (min-width: 992px) {
+    #landingPage .brandList>div {
+        width: 15%;
+    }
+}
+
+body .detailBody .imageFrame img.centerHV {
+    max-height: 107%;
+    max-width: 107%;
+}
+
+.brandLogos.sni-active ul li:nth-child(4) a {
+    width: 135px;
+}
+
+.detailBody .fwd-bck-btns button:focus,
+.detailBody .fwd-bck-btns1 button:focus {
+    color: #fff !important;
+}
+
+span.captch_loader img {
+    width: 125px;
+    height: 33px;
+    margin-right: 7px;
+    border-radius: 5px;
+}
+
+span.captch_loader button {
+    margin: 0px 0px 0px 7px;
+    padding: 0px 8px 2px;
+}
+
+span.captch_loader button i {
+    font-size: 10px;
+}
+
+#review .vehicle-info-loops {
+    padding: 0;
+}
+
+body #review .pkgOptns {
+    font-size: 15px;
+    padding-top: 27px;
+    float: left;
+    width: 100%;
+}
+
+div#review .vehicle-info-loops .col-md-4 .contentBlock {
+    border-bottom: 1px solid #ccc;
+    padding: 12px 0px 10px;
+}
+
+.form-group.text-center.lead_bottom {
+    font-size: 11px;
+}
+
+.lead_bottom {
+    font-size: 10px;
+    color: #AAA;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.filterAttrs .cDropDown ul {
+    max-height: 150px;
+    overflow: auto;
+}
+
+.filterAttrs .cDropDown ul::-webkit-scrollbar,
+.SideBar-left::-webkit-scrollbar {
+    width: 5px;
+    float: left;
+}
+
+.filterAttrs .cDropDown ul::-webkit-scrollbar-track,
+.SideBar-left::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey;
+    border-radius: 15px;
+}
+
+.filterAttrs .cDropDown ul::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #BBB;
+}
+
+.SideBar-left::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #BBB;
+}
+
+#popImageCont .modal-content {
+    align-items: center;
+    min-height: 85vh;
+    display: block;
+    justify-content: center;
+}
+
+#popImageCont .modal-lg img {
+    background: url(../images/loading_spinner.gif) center no-repeat;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.theme.btn.focus,
+.theme.btn:focus,
+.theme.btn:hover {
+    color: #fff !important;
+}
+
+#cn_chat_div {
+    z-index: -1;
+}
+
+label#cpo:before {
+    right: 2px !important;
+    left: auto;
+}
+
+label#cpo {
+    padding-left: 8px;
+    width: 75px;
+    text-align: left;
+}
+
+p.zipcode_errorInfo {
+    padding-top: 10px;
+}
+
+.tooltip-inner {
+    white-space: nowrap;
+    max-width: none;
+}
+
+.submitBlock.text-center.greyBg {
+    clear: both;
+    padding: 10px 0;
+}
+
+.onOffSlider {
+    position: relative;
+}
+
+.info-img {
+    right: -110px;
+    top: 15px;
+    left: 0;
+    margin: auto;
+}
+
+body .customCheckBox {
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+body .customCheckBox input[type=checkbox]+span:after {
+    top: 4px !important;
+}
+
+body .customCheckBox input[type=checkbox]:checked+span:before {
+    top: 6px !important;
+}
+
+body .additionalCareBlocks .contentBlock h4 span {
+    line-height: 1.2 !important;
+}
+
+.popUpScroll .cDropDown.transition-height {
+    transition: all .931s;
+    opacity: 1;
+    overflow: hidden;
+    max-height: 700px;
+}
+
+.popUpScroll .cDropDown.hideMe {
+    max-height: 0px;
+    transition: all .93s;
+}
+
+.ore_leadsubmit.review-popup-submit {
+    width: 95px;
+    padding-right: 20px;
+}
+
+#reviewSubmit .ore_leadsubmit_parent i {
+    margin-left: -23px;
+    color: #fff;
+}
+
+.ore_leadsubmit.review-popup-submit {
+    width: auto;
+    padding-right: 20px;
+}
+
+span.mDestCharge,
+span.fDestCharge,
+span.cDestCharge {
+    position: absolute;
+    right: 60px;
+}
+
+/*landing page theme integration start*/
+/*alfa romeo*/
+.alfa_romeo .vCardsBlock .vCard .cardBody .productInfo .countBlock i,
+.alfa_romeo .vCardsBlock .vCard .cardHeader .nav-tabs>li>a,
+.alfa_romeo .productInfo .sGrey:hover,
+.alfa_romeo .vCard .cardFooter.med.sGrey:hover,
+.alfa_romeo .themeClr {
+    color: #8f0c2c !important;
+}
+
+.alfa_romeo .zipCodeCont .btn-primary,
+.alfa_romeo .onOffSlider>label,
+.switch__indicator {
+    background: #8f0c2c !important;
+}
+
+.alfa_romeo .vCardsBlock .vCard .cardHeader .nav-tabs>li.active>a {
+    border-bottom: solid 2px #8f0c2c !important;
+}
+
+/*landing page theme integration end*/
+body {
+    -ms-overflow-style: scrollbar;
+    overflow-x: hidden;
+}
+
+.no-data-img {
+    background: #672c2c;
+}
+
+.no-data-img img {
+    display: none;
+}
+
+.no-data-img p {
+    color: #fff;
+    max-width: 350px;
+    background: red;
+    margin: 60px auto auto;
+    padding: 25px 3px;
+    border-radius: 4px;
+}
+
+.header-scroll .brandLogos li img {
+    max-height: 75px;
+    object-fit: contain;
+    object-position: left;
+    transition: all .41s;
+    padding-top: 0px !important;
+    margin-left: -10px;
+}
+
+.small.header-scroll .navigation a,
+.small.header-scroll .how-itworks-nav a {
+    padding: 5px 5px !important;
+    font-size: 18px;
+}
+
+.header-scroll.small .brandLogos li img {
+    max-height: 60px;
+    max-width: 100%;
+}
+
+.error_img {
+    /*max-height: 72vh;*/
+    width: 100%;
+    object-fit: contain;
+    background: #f5d738;
+    padding-top: 40px;
+    cursor: pointer;
+}
+
+.error_btn {
+    background: #5b5b5b;
+    border: none;
+    width: 142px;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    right: 0;
+    margin: auto;
+}
+
+.error_btn:hover,
+.error_btn:focus,
+.error_btn:active {
+    background: #494949 !important;
+    outline: none !important;
+}
+
+.position-relative {
+    position: relative;
+}
+
+#find_location img {
+    width: 25px !important;
+    margin-top: -10px;
+}
+
+section.vehiclesDisplaySection {
+    min-height: 580px;
+}
+
+#searchInfo {
+    margin-top: 25px;
+}
+
+#Redirect_Modal {
+    margin-top: 20vh;
+}
+
+.footer-powered-by-field {
+    padding: 20px 0;
+    float: right;
+}
+
+.container.oreFooter {
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.how-itworks-nav {
+    padding-left: 13px;
+}
+
+span.zipcode_errorInfo {
+    position: absolute;
+    padding-left: 10px;
+    color: #de3c3c;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.footer-powered-by-field img {
+    width: 100px;
+    margin-right: 5px;
+}
+
+.cardBody .imageFrame a:before {
+    content: "";
+    width: 100%;
+    height: 370px;
+    display: block;
+    z-index: 3;
+    position: absolute;
+    left: -15px;
+    bottom: 0px;
+    top: 0;
+}
+
+.cardBody .imageFrame a:after {
+    content: "";
+    width: 100%;
+    height: 370px;
+    display: block;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    bottom: 0px;
+}
+
+/*ADA ISSUES*/
+.switch-fluid,
+.modelsHeader {
+    background: #000;
+}
+
+/*saicharan css starts here*/
+.header-scroll.small {
+    height: 75px;
+}
+
+.small,
+small {
+    font-size: 14px;
+}
+
+.dealerAddress h3 {
+    margin-top: 12px;
+}
+
+.month_color {
+    color: #525252 !important;
+}
+
+.taxesandfees_color {
+    color: #525252 !important;
+}
+
+.msrp_color {
+    color: #525252 !important;
+}
+
+.models_avl {
+    color: #554e4e !important;
+}
+
+.msrp_color_model {
+    color: #554e4e !important;
+}
+
+.mpg_color_model {
+    color: #554e4e !important;
+}
+
+.upto_color {
+    color: #554e4e !important;
+}
+
+.upto_value_color {
+    color: #000 !important;
+}
+
+body #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs>li>a {
+    color: #11314d !important;
+}
+
+/*saicharan ends here*/
+body .detrailHeader {
+    margin: 100px 0 30px 0;
+}
+
+/*13-08-19 Yasin's Changes start*/
+body>header .navigation a:focus {
+    /*background: #585757;*/
+    text-decoration: none;
+}
+
+.footerLinks ul li a {
+    padding: 5px 8px;
+}
+
+button:focus,
+a:focus,
+label:focus {
+    outline: none !important;
+}
+
+/*a:focus{
+outline: 1px solid #8f0c2c !important;
+}*/
+.window-sticker:focus,
+.ore_vehicle_vin:focus {
+    color: #fff !important;
+}
+
+a.focus_by_tab:focus,
+label.focus_by_tab:focus,
+button.focus_by_tab:focus {
+    outline: 1px solid #8f0c2c !important;
+}
+
+/* body #landingPage .vCardsBlock .vCard .cardBody .imageFrame a:focus, .active:focus { */
+.active:focus {
+    height: 100%;
+    width: 100%;
+    float: left;
+    border: 1px solid #8f192b;
+    outline: none;
+}
+
+body #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs>li.active>a:focus {
+    border: 1px solid #8f192b;
+}
+
+/*13-08-19 Yasin's Changes End*/
+body #paymentCalc .modal-body ul.popUpScroll>li .form-control:not(select),
+body #leaseCalc .modal-body ul.popUpScroll>li .form-control:not(select),
+body #cashCalc .modal-body ul.popUpScroll>li .form-control:not(select) {
+    color: #121212;
+}
+
+span.checkbox-counter {
+    background: red;
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 14px;
+    position: absolute;
+    right: 40px;
+    border-radius: 4px;
+}
+
+span.zoomIcon-clone {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.zoomIcon:after {
+    background: red;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+}
+
+span.captch_loader button:focus {
+    background-color: #ba233a;
+    outline: 1px solid blue;
+}
+
+.ore_leadsubmit:focus {
+    background-color: #ba233a;
+}
+
+.ore_leadsubmit.disabled {
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/images/loader-transparent.jpg) no-repeat;
+    background-color: #8f192b;
+    background-size: 15px;
+    background-position: 65% center;
+    width: 100% !important;
+}
+
+body.vehiclepage-body>header .how-itworks-nav a,
+.vehiclepage-body .list-inline.how-itworks-field li,
+.vehiclepage-body .how-itworks-nav {
+    padding-left: 0;
+}
+
+.vehiclepage-body .container.oreFooter {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 80px;
+}
+
+body #review {
+    color: #000;
+    margin: 0 0px;
+}
+
+/*scroll function*/
+.scroll-buttons.d-fixed img {
+    width: 45px;
+}
+
+.scroll-buttons.d-fixed {
+    position: fixed;
+    top: calc(50vh - 30px);
+    z-index: 3;
+    right: 15px;
+}
+
+/*video popup start*/
+
+#closer_videopopup {
+    position: absolute;
+    display: table-cell;
+    right: 15%;
+    top: 1px;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+    padding: auto;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #ffffff;
+    z-index: 100004;
+}
+
+@media (max-width: 768px) {
+    form#reviewSubmitInitialPopUp {
+        padding: 0 0px !important;
+    }
+
+    .popup-wh {
+        padding: 20px 10px 0px 10px !important;
+    }
+
+    div#initialPopUp .modal-dialog {
+        width: 100% !important;
+        margin: 20px auto !important;
+    }
+
+    .steps-field-parent .field_img img {
+        margin: 7px auto auto auto;
+        height: 30px !important;
+        max-width: 47px !important;
+    }
+
+    .steps-field-parent .field_img {
+        height: 40px !important;
+    }
+
+    .initial_popup_video_field {
+        margin: 15px 0 0px 0 !important;
+    }
+
+    .steps-field-parent .field_car:after {
+        width: 15px !important;
+        height: 24px !important;
+        right: -8px !important;
+        top: 40px !important;
+    }
+
+    .steps-field-parent .field_steps_no {
+        font-size: 18px !important;
+    }
+
+    .popup_steps h4 {
+        padding: 0 25px;
+    }
+
+    .steps-field .field_car:first-child:after {
+        right: -13px !important;
+    }
+}
+
+#opct {
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.90;
+    opacity: 0.9;
+}
+
+#videCont,
+#videCont_initial {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    margin: auto;
+    max-width: 70%;
+    height: 0;
+    height: auto !important;
+}
+
+video {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    opacity: 1 !important;
+}
+
+#video1 {
+    cursor: pointer;
+    cursor: hand;
+}
+
+/*video popup end*/
+
+body .errorInfo {
+    font-size: 11px;
+}
+
+.form-group label,
+.phone-number-field {
+    color: initial !important;
+}
+
+.phone-number-field,
+.phone-number-field a,
+.form-control {
+    color: #666;
+}
+
+#reviewSubmitPopUp .modal-content {
+    padding: 20px 0px 0px 0px !important;
+}
+
+.ore_leadsubmit_wrapper {
+    padding: 0 15px;
+}
+
+.ore_leadsubmit.review-popup-submit {
+    width: 100%;
+    padding-right: 20px;
+    border-radius: 4px;
+    padding: 7px 0;
+}
+
+.img-blade-field {
+    position: absolute;
+    z-index: 1;
+    bottom: -55px;
+    right: 0px;
+}
+
+body #serviceProtection .header,
+body #review .header {
+    background: transparent;
+    color: #000;
+    padding: 10px 20px 10px 0;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+body .detailBody .imageFrame {
+    height: 440px;
+}
+
+/*need to specify class*/
+.row.marginY-2 {
+    display: none;
+}
+
+/*need to specify class*/
+body .itemInfo .tabsContainer .tab-content:after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#666666));
+  background: linear-gradient(90deg, #ffffff00, #666666);
+  position: absolute;
+  right: 60px;
+  top: 0;
+}
+
+/*custom checkbox*/
+.toggle-tab-switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 25px;
+    z-index: 2;
+    top: 6px;
+}
+
+.toggle-tab-switch input[type="checkbox"] {
+    position: relative;
+    top: 5px;
+    right: -3px;
+}
+
+.toggle-tab-switch .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-tab-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #8f192b;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+.toggle-tab-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: -1px;
+    bottom: -1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.toggle-tab-switch input:checked+.slider {
+    background-color: #8f192b;
+}
+
+.toggle-tab-switch input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.toggle-tab-switch input:checked+.slider:before {
+    -webkit-transform: translateX(66px);
+    -ms-transform: translateX(66px); transform: translateX(66px)
+}
+
+/* Rounded sliders */
+.toggle-tab-switch .slider.round {
+    border-radius: 34px;
+}
+
+.toggle-tab-switch .slider.round:before {
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px 0px #555;
+}
+
+.toggle-tab-switch .slider.round:before {
+    border-radius: 50%;
+}
+
+span.slide-ex {
+    z-index: 33;
+    position: relative;
+    color: #fff;
+    left: 40px;
+    top: 2px;
+    transition: all .51s;
+}
+
+.toggle-tab-switch input:checked+.slider .slide-ex {
+    left: 10px;
+}
+
+/*custom checkbox*/
+body #review .header h5,
+#serviceProtection .header h5 {
+    display: inline-block;
+}
+
+span.current-toggle-tab {
+    float: right;
+    margin-top: 50px;
+    margin-right: -19px;
+}
+
+#serviceProtection span.current-toggle-tab {
+    margin-top: 40px;
+}
+
+body .detailBody .imageFrame img.centerHV {
+    max-height: 118%;
+    max-width: 118%;
+    top: 66.5%;
+    /*left: 43.5%;*/
+}
+
+body #serviceProtection .header.no-gutters {
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+span.current_tab_title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 25px;
+    padding-right: 12px;
+    font-family: "robotoregular" !important;
+}
+
+span.toggle-tab-label {
+    width: 250px;
+    float: left;
+    font-family: 'robotoregular';
+    font-size: 15px;
+}
+
+span.current_tab_title:after {
+    content: "";
+    display: inline-block;
+    border-right: 2px solid #ccc;
+    height: 66px;
+    position: relative;
+    top: 17px;
+    right: -14px;
+}
+
+body #review .header,
+body #serviceProtection .header {
+    padding: 10px 20px 10px 0;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 45px;
+}
+
+body #serviceProtection .header {
+    margin-bottom: 10px;
+}
+
+body #serviceProtection .header h5 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.submittodealer_wrapper .submitBlock,
+.service-bottom-nav,
+.forward-buttons-field {
+    margin-bottom: 0px !important;
+    position: fixed;
+    bottom: 0px;
+    z-index: 3;
+    left: 0;
+    right: 0;
+}
+
+body .detailBody .service-bottom-nav .fwd-bck-btns,
+.forward-buttons-field .fwd-bck-btns1 {
+    padding: 10px 15px;
+}
+
+.merkle_bottom_explorefinance {
+    background-color: #377706 !important;
+}
+
+body #review .submitBlock {
+    padding: 12px 10px;
+}
+
+.forward-buttons-field .btm_submitdealer,
+.detailBody .fwd-bck-btns .btm_submitdealer {
+    display: inline-block !important;
+    margin-right: 15px;
+}
+
+body #review .submitBlock .btn {
+    margin-right: 15px !important;
+    width: 360px;
+    height: 45px;
+}
+
+.onOffSlider {
+    position: relative;
+    z-index: 3;
+}
+
+body #review .sub-header {
+    font-size: 24px;
+}
+
+.nav-back-btn:after,
+.nav-next-btn:after,
+.btm_submitdealer:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/images/left_arrow_1.svg);
+    top: 10px;
+    background-repeat: no-repeat;
+}
+
+.nav-next-btn:after {
+    transform: rotate(180deg);
+    right: 15px;
+    top: 6px;
+}
+
+.nav-back-btn:after {
+    top: 7px;
+}
+
+.backto-service.nav-back-btn:after {
+    left: 7px;
+}
+
+.btm_submitdealer:after {
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/images/check.svg);
+    right: 15px;
+    top: 7px;
+}
+
+body #review .submitBlock .btn.btm_submitdealer {
+    width: 360px;
+}
+
+.merkle_bottom_explorefinance:after {
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/images/finance.svg);
+    background-size: contain;
+}
+
+.vehiclepage-body ul.nav.nav-tabs.med.legendStyle .col-xs-3 {
+    width: 24.45%;
+}
+
+.pos-relative .img-blade-field~.col-xs-12 .reg .itemInfo {
+    width: 97%;
+}
+
+h4.dealer-discount {
+    padding: 20px 0 0 20px !important;
+    font-weight: bold;
+}
+
+h4.dealer-discount input {
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin-top: -10px;
+    cursor: default !important;
+}
+
+h4.dealer-discount {
+    padding: 10px 10px 10px 20px !important;
+    font-weight: bold;
+    /* background: whitesmoke;
+    box-shadow: 1px 1px 3px 2px #9e9e9e; */
+    margin-top: 10px !important;
+}
+
+span.calc_offers_desc {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.header-scroll {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.modal-open .fixMenu,
+.modal-open .header-scroll {
+    left: -8px;
+}
+
+.modal-open .forward-buttons-field {
+    left: -16px;
+}
+
+.vehiclepage-body {
+    padding-right: 0px !important;
+}
+
+.vehiclepage-body.modal-open {
+    padding-right: 17px !important;
+}
+
+.riftsoft,
+.rift-soft {
+    font-family: rift-soft !important;
+}
+
+.popup_steps h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: -11px;
+    margin-bottom: 5px;
+}
+
+.steps-field-parent .field_steps_no {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'robotobold';
+    margin-bottom: -4px;
+}
+
+.steps-field-parent .field_desc {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0px 0px 0px 0;
+}
+
+.steps-field-parent .field_status {
+    margin-top: 5px;
+}
+
+.steps-field-parent .field_status img {
+    margin: -8px 0 0 0;
+    max-width: 20px;
+}
+
+.steps-field .field_car:first-child:after {
+    right: -20px;
+}
+
+.steps-field-parent .field_img img {
+    margin: auto;
+}
+
+.steps-field-parent .field_status {
+    color: #00a900;
+}
+
+.steps-field-parent {
+    background: #fcfcfc;
+    border: 1px solid #aeaeae;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.steps-field-parent .field_car {
+    position: relative;
+}
+
+.steps-field-parent .field_car:after {
+    content: "";
+    width: 26px;
+    height: 23px;
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/images/initial_popup/plus_icon.svg) no-repeat;
+    position: absolute;
+    right: -10px;
+    z-index: 2;
+    top: 40px;
+    background-size: contain !important;
+}
+
+.steps-field-parent .field_doc:after {
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/images/initial_popup/equal_icon.svg) no-repeat;
+    background-size: 80% !important;
+    top: 44px;
+}
+
+.steps-field-parent .field_hand:after {
+    display: none;
+}
+
+div#initialPopUp .modal-dialog {
+    width: 640px;
+    margin: 20px auto;
+}
+
+.steps-field-parent .field_desc {
+    padding: 0 5px;
+    max-width: 137px;
+}
+
+.steps-field-parent .field_calc .field_desc {
+    padding: 0 10px;
+}
+
+.steps-field-parent .field_img {
+    height: 60px;
+}
+
+.initial_popup_video_field .play_btn {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.initial_popup_video_field {
+    margin: 2px 0 0px 0;
+}
+
+button.btn.theme.rift-soft.initial_popup_video_btn {
+    padding: 3px 7px;
+    font-size: 16px;
+}
+
+span.play_btn img {
+    width: 11px;
+    margin: -7px 2px 0px 2px;
+}
+
+#initialPopUp .submit-header {
+    font-size: 22px;
+    margin-top: 6px;
+}
+
+#initialPopUp .sub-txt {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    border-bottom: 1px solid #aeaeae;
+    padding-bottom: 10px;
+}
+
+form#reviewSubmitInitialPopUp {
+    padding: 0 80px;
+}
+
+#initialPopUp .input-placeholder {
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.ore_initialpopup_wrapper {
+    padding: 0 10px;
+    margin-bottom: -10px;
+}
+
+/*alfa responsive*/
+@media (max-width: 1200px) {
+
+    body #review .submitBlock .btn.btm_submitdealer,
+    body #review .submitBlock .btn,
+    body .detailBody .fwd-bck-btns button,
+    body .detailBody .fwd-bck-btns1 button {
+        width: 260px;
+    }
+
+    body .detailBody .fwd-bck-btns button,
+    body .detailBody .fwd-bck-btns1 button {
+        margin-bottom: 10px;
+    }
+
+    body section.main {
+        margin-top: 0;
+    }
+
+    .brandList .col-md-2.avoid {
+        width: 100%;
+    }
+
+    .brandList .col-md-2.avoid .brandFrame {
+        height: 50px !important;
+    }
+
+    #review {
+        margin: 0 0px !important;
+    }
+}
+
+/*max-width: 1200px close here*/
+@media (max-width: 992px) {
+    body .itemInfo .tabsContainer .tab-content:after {
+        right: 35px;
+    }
+
+    body .detailBody .fwd-bck-btns button,
+    body .detailBody .fwd-bck-btns1 button {
+        width: 225px;
+        height: 53px;
+    }
+
+    body .detailBody .imageFrame {
+        height: 250px;
+    }
+
+    body .detailBody .imageFrame img.centerHV {
+        max-height: 115%;
+        max-width: 105%;
+        left: 75%;
+        top: 50%;
+    }
+
+    .img-blade-field {
+        bottom: -60px;
+        right: 0px;
+    }
+
+    .switch-fluid.text-center {
+        background: #030302;
+    }
+
+    select#regioncode {
+        margin-top: 15px;
+    }
+
+    .ore_landing_models .vCardsBlock>.col-xs-12 {
+        margin-top: 0px;
+    }
+
+    header .brandLogos ul {
+        display: inline-block;
+    }
+
+    .brandList .col-md-2.avoid {
+        margin-bottom: 25px;
+    }
+
+    .no-data-img img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .legendStyle.nav-tabs li {
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #closer_videopopup {
+        right: 4px;
+        top: 0px;
+        font-size: 20px;
+        z-index: 333333;
+    }
+
+    #videCont,
+    #videCont_initial {
+        padding-bottom: 0;
+        padding-top: 0px;
+        height: 0;
+        margin: auto;
+        max-width: 100%;
+    }
+
+    span.current_tab_title:after {
+        height: 35px;
+        top: 10px;
+        right: -13px;
+    }
+
+    body #serviceProtection .header h5 {
+        margin-bottom: 0;
+    }
+
+    #serviceProtection span.current-toggle-tab {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    span.toggle-tab-label {
+        width: calc(100% - 90px);
+        float: left;
+        line-height: normal;
+        padding-right: 10px;
+    }
+
+    .toggle-tab-switch {
+        top: 7px;
+    }
+
+    body #serviceProtection .header h5 {
+        font-size: 20px;
+    }
+
+    input#contact_phone,
+    input#postalcode {
+        z-index: 1;
+        position: relative;
+    }
+
+    .vehiclepage-body ul.nav.nav-tabs.med.legendStyle .col-xs-3 {
+        width: 23.45%;
+    }
+
+    body .detailBody .fwd-bck-btns1 button {
+        height: 45px;
+    }
+
+    .nav-back-btn:after,
+    .nav-next-btn:after,
+    .btm_submitdealer:after {
+        width: 15px;
+        height: 15px;
+        top: 6px;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+    }
+
+    body .detailBody .fwd-bck-btns button,
+    body .detailBody .fwd-bck-btns1 button {
+        width: 225px;
+        height: 27px;
+        padding: 0 0;
+        font-size: 12px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .nav-back-btn:after {
+        left: 8px;
+    }
+
+    .btm_submitdealer:after {
+        top: 3px;
+    }
+
+    body #review .submitBlock .btn {
+        width: 270px !important;
+    }
+
+    .forward-buttons-field .fwd-bck-btns1 {
+        padding: 5px 0;
+    }
+
+    .forward-buttons-field .fwd-bck-btns1 .btn {
+        margin: 3px 0 !important;
+    }
+
+    body .additionalCareBlocks .contentBlock {
+        height: auto !important;
+    }
+
+    .img-blade-field {
+        display: none;
+    }
+
+    .xs-visible,
+    .xs-visible .img-blade-field {
+        display: block !important;
+    }
+
+    body .detailBody .imageFrame img.centerHV {
+        max-height: 100%;
+        max-width: 105%;
+        left: 50%;
+    }
+
+    body .detailBody .imageFrame {
+        height: 250px;
+        width: 250px;
+        float: right;
+    }
+
+    body .itemInfo .tabsContainer .tab-content {
+        padding: 10px 3px 10px 5px !important;
+    }
+
+    .price-tag {
+        padding: 5px 5px 6px 3px !important;
+    }
+
+    .how-itworks-link img {
+        width: 12px;
+        margin-top: 4px;
+    }
+
+    body #availableProgramPopup .modal-dialog {
+        min-width: auto !important;
+    }
+
+    #availableProgramPopup h4 {
+        margin-bottom: 15px;
+    }
+
+    #availableProgramPopup .can-toggle.can-toggle--size-small label {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .legendStyle.nav-tabs li a {
+        font-size: 10px !important;
+        padding-right: 0px !important;
+        padding-left: 3px !important;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .legendStyle.nav-tabs li {
+        margin: 0px;
+    }
+
+    .legendStyle.nav-tabs li a i {
+        display: block;
+        margin: -6px auto auto auto;
+    }
+
+    body .legendStyle.nav-tabs li.active a::after {
+        border-width: 20px;
+        margin-top: -20px;
+    }
+
+    body .legendStyle.nav-tabs li>a {
+        padding: 15px 30px;
+        font-size: 13px;
+        height: 40px;
+    }
+
+    .cn-b13-btn {
+        margin: 0 5px 5px 0px !important;
+    }
+
+    .cn-b13-btn .cn-b13-ico,
+    .cn-b13-submit .cn-b13-ico {
+        background-size: 136px 120px !important;
+        width: 27px !important;
+        height: 25px !important;
+        background-position: top left !important;
+    }
+
+    .cn-b13-btn.cn-b13-chat {
+        border-radius: 50% !important;
+        min-width: 39px !important;
+        height: 37px !important;
+        padding: 6px !important;
+    }
+
+    .header-scroll .navigation a {
+        margin-top: 6px;
+    }
+
+    .vehiclepage .right-menu-field {
+        margin-bottom: -9px;
+        width: 100% !important;
+    }
+
+    .header-scroll .dealerAddress h3,
+    .header-scroll.small .dealerAddress h3 {
+        margin-top: 5px !important;
+        margin-bottom: 2px !important;
+        font-size: 14px !important;
+    }
+
+    .header-scroll .dealerAddress p {
+        font-size: 11px !important;
+    }
+
+    .header-scroll {
+        padding-bottom: 10px;
+    }
+
+    .jconfirm-box-container {
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+        width: 100% !important;
+    }
+
+    .jc-bs3-container.container {
+        width: 100% !important;
+    }
+
+    .right-menu-field {
+        text-align: center !important;
+        margin-top: 0;
+    }
+
+    #find_location img {
+        width: 20px !important;
+        margin-top: -5px;
+    }
+
+    .modal-video-close-btn {
+        right: 5px !important;
+    }
+
+    .dealer_rightmenu_address {
+        text-align: center;
+    }
+
+    .center-icon {
+        width: 80px;
+    }
+
+    .modal-video-close-btn {
+        top: -35px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+
+    }
+
+    .switch {
+        top: 11vh;
+        margin-top: -35px !important;
+        z-index: 3;
+    }
+
+    .select-condition {
+        top: -5vh;
+        font-size: 20px;
+    }
+
+    .footer-powered-by-field {
+        padding: 10px 0;
+        float: left;
+    }
+
+    .ore_homelocator_block {
+        margin-top: -40px;
+        padding-left: 22px;
+        z-index: 1;
+        position: relative;
+        top: 17vh;
+    }
+
+    .header-scroll.small {
+        height: 75px;
+    }
+
+    .switch-fluid:after {
+        content: "";
+        background: #030302;
+        width: 100%;
+        height: 55px;
+        margin-bottom: -55px;
+    }
+
+    .ore_landing_models {
+        margin-top: 90px;
+    }
+
+    body>header .brandLogos ul li a.imageFrame {
+        width: 115px;
+    }
+
+    .center-icon {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .col-sm-2.center-icon.text-center.logowrapper {
+        z-index: 9999;
+        padding-top: 2px;
+        right: 0;
+    }
+
+    .center-icon.text-center {
+        padding-top: 2px;
+    }
+
+    .small .center-icon.text-center {
+        padding-top: 2px;
+    }
+
+    .center-icon img {
+        max-width: 60px;
+        padding-top: 5px;
+    }
+
+    .small .center-icon img {
+        max-height: 80px;
+    }
+
+    .header-scroll .row.no-gutters>.col-sm-7.text-sm-center {
+        text-align: left !important;
+    }
+
+    .header-scroll .row.no-gutters>.col-xs-12 {
+        width: 50%;
+    }
+
+    .vehiclepage .left-menu-field {
+        width: 100% !important;
+    }
+
+    .vehiclepage .brandLogos .list-inline li {
+        width: auto;
+        float: left;
+    }
+
+    body .brandLogos .list-inline li {
+        width: 70%;
+    }
+
+    .left-menu-field {
+        padding-top: 7px;
+    }
+
+    .col-xs-12.col-sm-5.text-right.text-sm-center.right-menu-field.address_right {
+        text-align: right !important;
+        margin-top: 4px;
+        z-index: 9;
+        left: 0vh;
+    }
+
+    .header-scroll .navigation a {
+        padding: 6px 6px !important;
+    }
+
+    .header-scroll.small .navigation a {
+        padding: 6px 6px !important;
+    }
+
+    .small.header-scroll .brandLogos img {
+        object-position: center;
+    }
+
+    .header-scroll .brandLogos li img {
+        width: 100%;
+        max-height: 70px;
+        object-fit: contain;
+    }
+
+    body>header .small .brandLogos ul li a.imageFrame {
+        width: 100px;
+    }
+
+    .legendStyle.nav-tabs li a {
+        width: 100% !important;
+    }
+
+    .legendStyle.nav-tabs li {
+        padding-right: 0px;
+    }
+
+    .legendStyle.nav-tabs li.active:after {
+        content: "";
+        display: block;
+        top: 25px;
+        border-width: 20px;
+        margin-top: -25px;
+        border-color: rgba(136, 183, 213, 0);
+        border-left-color: #8f0c2c;
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-width: 25px;
+        margin-top: -25px;
+    }
+
+    #searchInfo .header {
+        margin: -10px 0 8px !important;
+        font-size: 18px !important;
+    }
+
+    .vehiclesDisplaySection .listBlock .listCont>li>.row:first-child {
+        padding-top: 0px !important;
+    }
+
+    .change-vehicle-sort {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .change-vehicle-sort .sortByBlock,
+    .change-vehicle-sort a.themeClr {
+        font-size: 12px !important;
+    }
+
+    .change-vehicle-sort .sortByBlock {
+        margin: 8px 0 !important;
+    }
+
+    .change-vehicle-sort a.themeClr {
+        margin-top: 15px;
+        display: block;
+    }
+
+    #landingPage .brandList {
+        z-index: 3;
+        position: relative;
+    }
+
+    #popImageCont .modal-lg img {
+        background-size: 50px;
+    }
+
+    .SideBar-left {
+        z-index: 33;
+        right: 0;
+        width: 0px;
+        overflow: hidden;
+        opacity: 0;
+        background: #ffffff;
+        padding: 0;
+    }
+
+    span.filter-button {
+        position: fixed;
+        right: 10px;
+        top: 49vh;
+        background: #8f0c2c;
+        color: #fff;
+        padding: 5px 8px;
+        border-radius: 4px;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    .SideBar-left.open {
+        width: 80%;
+        opacity: 1;
+        box-shadow: 1px 2px 6px 2px grey;
+        transition: all .6s;
+        overflow: auto;
+        height: 85vh;
+        position: fixed;
+        top: 10vh;
+    }
+
+    .cllc-modal-button-parent {
+        position: fixed;
+        left: 2px;
+        top: 10vh;
+        width: calc(100% - 3px);
+        background: #fff;
+        padding: 7px;
+        border-bottom: 1px solid #ccc;
+        z-index: 3;
+    }
+
+    .cllc-modal-button {
+        padding: 3px 10px;
+        border-radius: 12px;
+        font-size: 14px;
+        outline: none !important;
+    }
+
+    body #landingPage .brandList .brandFrame {
+        height: 60px;
+        position: relative;
+    }
+
+    body #landingPage .brandList .brandFrame img {
+        max-width: 80px;
+        max-height: 40px;
+    }
+
+    .row.brandList>.col-md-2,
+    .row.brandList>.col-md-1 {
+        max-height: 0;
+        overflow: hidden;
+        transition: all .6s;
+    }
+
+    .row.brandList>.col-md-2:first-child {
+        max-height: 128px !important;
+        height: 128px !important;
+        margin-bottom: 10px;
+    }
+
+    .row.open.brandList>.col-md-2,
+    .row.open.brandList>.col-md-1 {
+        max-height: 100px;
+    }
+
+    .select-brand {
+        margin: 41px 0 0 0;
+        background: #6283c2 !important;
+    }
+
+    body .additionalCareBlocks>div>.row {
+        margin: 0px -15px !important;
+    }
+
+    body #landingPage .brandList.open>div {
+        cursor: pointer;
+        padding: 5px 15px;
+    }
+
+    body #serviceProtection .packageDetails ul li i {
+        right: 0;
+    }
+
+    body #landingPage .brandList>div.active .oreBrands {
+        box-shadow: 0px 0px 5px #6283c2;
+    }
+
+    body #landingPage .brandList>div.active,
+    body #landingPage .brandList>div.active:hover {
+        box-shadow: none !important;
+    }
+
+    a.how-itworks-link:after {
+        max-height: 40px;
+        top: 6px;
+        left: auto;
+        right: -5px;
+    }
+
+    body>header,
+    .header-scroll {
+        height: auto;
+    }
+
+    body>header.vehiclepage {
+        height: auto !important;
+    }
+
+    body #landingPage .vCardsBlock {
+        margin-top: -65px !important;
+    }
+
+    body section.main {
+        margin: 0px auto;
+    }
+
+    .ore_landing_models .vCardsBlock>.col-xs-12 {
+        margin-top: 17vh;
+    }
+
+    body #landingPage .vCardsBlock .vCard {
+        margin: 0 auto 20px;
+    }
+
+    .footerLinks {
+        float: left;
+        margin-top: 25px;
+    }
+
+    span.zipcode_errorInfo {
+        padding-left: 8px;
+        font-size: 13px;
+        padding-top: 10px;
+    }
+
+    #searchInfo,
+    #landingPage {
+        padding-top: 55px;
+    }
+
+    span.filter-button {
+        top: 38vh;
+        padding: 2px 2px;
+        font-size: 10px;
+        right: 15px;
+    }
+
+    .scroll-buttons.d-fixed {
+        top: calc(60vh - 30px);
+    }
+
+    .scroll-buttons.d-fixed img {
+        width: 30px;
+    }
+
+    body #initialPopUp .modal-header .close,
+    body #initialPopUpThanks .modal-header .close {
+        height: 20px;
+        width: 20px;
+        font-size: 0px !important;
+        padding-left: 0px;
+    }
+
+    #initialPopUp .submit-header {
+        font-size: 19px !important;
+    }
+
+    #initialPopUp .sub-txt {
+        font-size: 17px;
+    }
+}
+
+/* max-width: 768px close here */
+@media (max-width: 575px) {
+
+    body .detailBody .service-bottom-nav .fwd-bck-btns,
+    .forward-buttons-field .fwd-bck-btns1 {
+        padding: 0px 15px;
+    }
+
+    span.current_tab_title {
+        font-size: 28px;
+        display: block;
+    }
+
+    span.current-toggle-tab {
+        margin-top: -30px;
+        margin-right: -20px;
+    }
+
+    body #review .header h5 {
+        margin-top: 25px;
+    }
+
+    .scroll-buttons.d-fixed img {
+        width: 30px;
+    }
+
+    .how-itworks-nav a {
+        font-size: 14px !important;
+    }
+
+    body #landingPage .banner-img-field>img {
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .switch__label {
+        width: 62px;
+        padding-top: 45px;
+    }
+
+    label.switch__label[for~='v_type_new']:after,
+    label.switch__label[for~='v_type_cpo']:after,
+    label.switch__label[for~='v_type_used']:after {
+        height: 12px;
+    }
+
+    .switch__label {
+        padding-top: 25px;
+        font-size: 16px;
+    }
+
+    .switch__indicator {
+        width: 15px;
+        height: 15px;
+        top: 3.5px;
+        left: 2.4px;
+    }
+
+    .switch {
+        width: 200px;
+    }
+
+    label.switch__label[for~='v_type_new'] {
+        left: -24px;
+        position: absolute;
+    }
+
+    label.switch__label[for~='v_type_used'] {
+        position: absolute;
+        right: -21px !important;
+    }
+
+    label.switch__label[for~='v_type_cpo'] {
+        width: 120px !important;
+        padding: 27px 0 0 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    span.condition-button-left,
+    span.condition-button-right {
+        bottom: -50px;
+    }
+
+    .ore_homelocator_block {
+        margin-top: -55px;
+        z-index: 1;
+    }
+
+    .switch input#v_type_cpo:checked~.switch__indicator {
+        transform: translate3d(90px, 0, 0);
+    }
+
+    span.condition-button-right {
+        right: -50px;
+    }
+
+    span.condition-button-left {
+        left: -50px;
+    }
+
+    span.condition-button-left img,
+    span.condition-button-right img {
+        max-width: 12px;
+    }
+
+    .switch {
+        margin-top: -70px !important;
+        top: 0vh;
+    }
+
+    body #landingPage .vCardsBlock {
+        margin-top: -80px !important;
+    }
+
+    .switch input#v_type_used:checked~.switch__indicator {
+        transform: translate3d(189px, 0, 0);
+    }
+
+    .vehiclepage .brandLogos .list-inline li {
+        max-width: 250px;
+        padding-left: 0px;
+    }
+
+    .header-scroll.small .dealerAddress h3 {
+        margin-top: 15px !important;
+    }
+
+    .header-scroll .dealerAddress p {
+        font-size: 12px !important;
+        line-height: 1.4;
+    }
+
+    .header-scroll.small .sni-vehicle-logo a.imageFrame {
+        height: 50px !important;
+        width: 72px !important;
+        margin: 10px 0px 6px !important;
+    }
+
+    li.sni-vehicle-logo.sni3 {
+        padding-right: 0px;
+    }
+
+    body .legendStyle.nav-tabs li.active a::after {
+        display: none;
+    }
+
+    body .legendStyle.nav-tabs li.active a {
+        width: 100%;
+    }
+
+    .fixMenu li a::before {
+        border-width: 20px !important;
+        margin-top: -20px !important;
+    }
+
+    .fixMenu li {
+        width: 23%;
+    }
+
+
+
+    .legendStyle.nav-tabs li a {
+        font-size: 10px !important;
+        padding-right: 0px !important;
+        padding-left: 15px !important;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .dealerAddress h3 {
+        margin-top: 5px;
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+
+    .detrailHeader {
+        margin: 10px 0 !important;
+    }
+
+    .detailBody .imageFrame {
+        height: 252px !important;
+    }
+
+    .vehiclesDisplaySection .listBlock .listCont>li .imageFrame {
+        height: 180px;
+        display: flex;
+    }
+
+    body .legendStyle.nav-tabs li.active a::after {
+        top: 25px;
+        border-width: 20px;
+        margin-top: -25px;
+    }
+
+    body .legendStyle.nav-tabs li>a {
+        height: 40px;
+    }
+
+    body #review .sub-header,
+    body #review .header h5 {
+        font-size: 25px;
+    }
+
+    .legendStyle.nav-tabs li {
+        margin: 3px 0;
+    }
+
+    body .legendStyle.nav-tabs li a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    header .navigation a {
+        padding: 10px !important;
+    }
+
+    #landingPage .brandList .brandFrame {
+        height: 110px;
+    }
+
+    #landingPage .banner .col-xs-12 {
+        padding: 0;
+    }
+
+    #landingPage .vCardsBlock .vCard {
+        width: 100% !important;
+    }
+
+    .ore_landing_models {
+        padding: 0 0px;
+    }
+
+    #landingPage .vCardsBlock .container.reg {
+        padding: 0px;
+    }
+
+    #landingPage .vCardsBlock .modelsHeader {
+        padding: 15px 15px;
+    }
+
+    #landingPage .vCardsBlock .modelsHeader .text-right {
+        text-align: center;
+    }
+
+    #landingPage .vCardsBlock .vCard {
+        margin: 0 auto 15px !important;
+    }
+
+    body>footer {
+        padding: 25px 0px;
+    }
+
+    section.main .listBlock .listCont>li .imageFrame img {
+        margin: auto;
+    }
+
+    body .detrailHeader {
+        margin-bottom: 0px;
+        margin-top: -3px !important;
+    }
+
+    .explore-review {
+        margin-bottom: 20px;
+    }
+
+    body #review .submitBlock .btn {
+        padding: 5px 14px;
+        width: 250px;
+        margin: auto auto 5px auto;
+        font-size: 12px !important;
+    }
+
+    body #review .submitBlock {
+        padding: 5px 10px;
+    }
+
+    select#regioncode {
+        margin-top: 15px;
+    }
+
+    .legendStyle.nav-tabs li {
+        margin: 0px;
+    }
+
+    .legendStyle.nav-tabs li a i {
+        display: block;
+        margin: -6px auto auto auto;
+    }
+
+    .detrailHeader .container {
+        padding: 0px 5px;
+    }
+
+    .header-scroll {
+        height: 65px !important;
+        padding-bottom: 10px;
+    }
+
+    .vehiclepage .header-scroll {
+        height: auto !important;
+    }
+
+    .right-menu-field {
+        text-align: center !important;
+        margin-top: 13px;
+        width: 100% !important;
+    }
+
+    .header-scroll .dealerAddress h3,
+    .header-scroll.small .dealerAddress h3 {
+        margin-top: 5px !important;
+    }
+
+    .small .center-icon.text-center {
+        padding-top: 2px;
+    }
+
+    header.vehiclepage {
+        margin-bottom: 0px;
+    }
+
+    .brandLogos {
+        height: 0;
+    }
+
+    .header-scroll .dealerAddress h3,
+    .header-scroll.small .dealerAddress h3 {
+        margin-top: 0px !important;
+    }
+}
+
+/* media (max-width: 575px) close here */
+@media (min-width: 386px) and (max-width: 574px) {
+    select#yearlyMilage {
+        padding-right: 20px;
+        font-size: 10px;
+    }
+
+    select#lease_terms {
+        padding-right: 20px;
+        font-size: 10px;
+    }
+
+    span#l_q_thirdparty {
+        position: absolute;
+        top: 2vh;
+        right: 2vh;
+    }
+
+    .footer-logos-field a {
+        margin-right: 10px !important;
+    }
+
+    .container.oreFooter {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #popImageCont .modal-content {
+        min-height: 100%;
+    }
+
+    .fontsize_apologize {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .SideBar-left.open {
+        width: 100%;
+    }
+
+    .filterbutton_wrapper {
+        text-align: right;
+    }
+
+    body .vehicleTable .contentBlock>div {
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    body #landingPage .vCardsBlock {
+        margin-top: 0px !important;
+    }
+
+    .col-sm-2.center-icon.text-center.logoimagewrapper {
+        right: 0;
+    }
+
+    .ore_landing_models {
+        margin-top: 20px;
+    }
+
+    /*search page*/
+    #searchInfo {
+        margin-top: 0px;
+    }
+
+    body button.custom-close {
+        right: 12px;
+        top: 12px;
+    }
+
+    body #popImageCont .modal-lg {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .quickinfo_wrapper td {
+        font-size: 12px;
+    }
+
+    .quickinfo_wrapper {
+        margin-top: 10px;
+    }
+
+    /*search page*/
+    .ore_homelocator_block {
+        margin-top: -18vh;
+        z-index: 1;
+        background: #000;
+    }
+
+    .switch {
+        margin-top: -70px !important;
+        top: -2vh;
+    }
+
+    .moreaboutthis_vehicle {
+        padding-top: 0px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .header-scroll .dealerAddress p {
+        font-size: 11px !important;
+    }
+
+    .how-itworks-nav {
+        padding-left: 0;
+    }
+
+    .dealerAddress h3 {
+        margin-top: 5px;
+        font-size: 14px !important;
+        margin-bottom: 3px;
+    }
+
+    body .reg .itemInfo,
+    body .itemInfo .tabsContainer .tab-content {
+        float: left;
+        width: 100%;
+    }
+
+    .xs-visible .img-blade-field {
+        position: static;
+    }
+
+    body .itemInfo .tabsContainer .tab-content:after {
+        display: none;
+    }
+
+    body .detailBody .imageFrame img.centerHV {
+        max-height: 100%;
+        max-width: 100%;
+        left: 50%;
+        position: static;
+        -ms-transform: translate(-0%, -0%);
+        -webkit-transform: translate(-0%, -0%);
+        transform: translate(-0%, -0%);
+    }
+
+    body .detailBody .imageFrame {
+        width: 100%;
+        float: none;
+        max-width: 100%;
+    }
+
+    .detailBody .imageFrame {
+        height: auto !important;
+    }
+}
+
+@media (max-width: 385px) {
+
+    body .reg .itemInfo,
+    body .itemInfo .tabsContainer .tab-content {
+        float: left;
+        width: 100%;
+    }
+
+    .xs-visible .img-blade-field {
+        position: static;
+    }
+
+    body .itemInfo .tabsContainer .tab-content:after {
+        display: none;
+    }
+
+    body .detailBody .imageFrame img.centerHV {
+        max-height: 100%;
+        max-width: 100%;
+        left: 50%;
+        position: static;
+        -ms-transform: translate(-0%, -0%);
+        -webkit-transform: translate(-0%, -0%);
+        transform: translate(-0%, -0%);
+    }
+
+    body .detailBody .imageFrame {
+        width: 100%;
+        float: none;
+        max-width: 100%;
+    }
+
+    .detailBody .imageFrame {
+        height: auto !important;
+    }
+
+    a.how-itworks-link:after {
+        top: 2px;
+    }
+
+    select#yearlyMilage {
+        padding-right: 20px;
+        font-size: 10px;
+    }
+
+    select#lease_terms {
+        padding-right: 20px;
+        font-size: 10px;
+    }
+
+    span#l_q_thirdparty {
+        position: absolute;
+        top: 2vh;
+        right: 2vh;
+    }
+
+    .footer-logos-field a {
+        margin-right: 10px !important;
+    }
+
+    .container.oreFooter {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /*saicharan max-width: 385px*/
+    #popImageCont .modal-content {
+        min-height: 100%;
+    }
+
+    .filterbutton_wrapper {
+        text-align: right;
+    }
+
+    .fontsize_apologize {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .SideBar-left.open {
+        width: 100%;
+    }
+
+    body .vehicleTable .contentBlock>div {
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    .title_lease_popup {
+        font-size: 18px !important;
+    }
+
+    .vin_lease_popup {
+        font-size: 14px;
+    }
+
+    .col-sm-2.center-icon.text-center.logoimagewrapper {
+        z-index: 9999;
+    }
+
+    body #landingPage .vCardsBlock {
+        margin-top: 0px !important;
+    }
+
+    .ore_landing_models {
+        margin-top: 20px;
+    }
+
+    /*search page*/
+    #searchInfo {
+        margin-top: 0px;
+    }
+
+    body #popImageCont .modal-lg {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    body button.custom-close {
+        right: 12px;
+        top: 12px;
+    }
+
+    .quickinfo_wrapper td {
+        font-size: 11px;
+    }
+
+    /*search page*/
+    .ore_landing_models .vCardsBlock>.col-xs-12 {
+        margin-top: 112px;
+    }
+
+    .moreaboutthis_vehicle {
+        padding-top: 70px !important;
+        padding-bottom: 20px !important;
+    }
+
+    a.how-itworks-link.js-video-button {
+        position: relative;
+        left: 0;
+    }
+
+    .modal-video-close-btn {
+        top: -35px !important;
+        right: 5px !important;
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    header.vehiclepage {
+        margin-bottom: 0px;
+    }
+
+    .header-scroll .row.no-gutters>.col-sm-5.text-sm-center {
+        /*text-align: left!important;
+margin-left: 0px;
+margin-top: 8px!important;
+left: 0;
+float: left;*/
+    }
+
+    .header-scroll .dealerAddress p {
+        font-size: 10px !important;
+    }
+
+    .col-xs-12.col-sm-5.text-right.text-sm-center.right-menu-field.address_right {
+        text-align: right !important;
+        z-index: 9;
+    }
+
+    .header-scroll .dealerAddress h3 {
+        margin-top: 0px !important;
+        font-size: 12px;
+    }
+
+    .logowrapper {
+        right: 38vh;
+        z-index: 9999;
+    }
+
+    .header-scroll.small .dealerAddress h3 {
+        margin-top: 0px !important;
+        font-size: 12px;
+    }
+
+    .ore_homelocator_block {
+        margin-top: -50px;
+        top: 48px;
+        background: #000;
+    }
+
+    body #landingPage .banner-img-field>img {
+        margin-top: 0px;
+    }
+
+    .switch {
+        margin-top: -70px !important;
+        top: -16px;
+        z-index: 1;
+    }
+
+    .footerLinks {
+        margin-top: 15px;
+    }
+
+    body section.main {
+        margin: 0px auto;
+    }
+
+    #landingPage .productInfo h5 {
+        height: 30px;
+    }
+
+    .header-scroll .navigation a {
+        margin-top: 6px;
+        padding: 7px 7px !important;
+    }
+
+    .header-scroll.small .navigation a {
+        padding: 7px 7px !important;
+        font-size: 18px;
+        margin-top: 6px;
+    }
+
+    body>header .navigation a:hover {
+        border-radius: 2px;
+        background: #525252;
+    }
+
+    .how-itworks-nav {
+        padding-left: 0px;
+    }
+
+    .center-icon.text-center {
+        padding-top: 2px;
+        right: 0 !important;
+    }
+
+    .small .center-icon.text-center {
+        padding-top: 2px;
+    }
+
+    span.zipcode_errorInfo {
+        font-size: 11px;
+        left: 17vh;
+        top: 7vh;
+    }
+
+    /*saicharan max-width: 385px*/
+}
+
+/*footer section*/
+.text-left-xs {
+    text-align: left;
+}
+
+.oreFooter h3 {
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.oreFooter ul {
+    padding-left: 15px;
+    list-style-type: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.footerLinks {
+    text-align: right
+}
+
+.footerLinks ul,
+.footerLinks ul li {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.footerLinks ul li a {
+    color: #ffffff;
+    line-height: 25px;
+}
+
+.footer-logos-field {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-logos-field a {
+    float: left;
+    margin-right: 20px;
+}
+
+.footer-logos-field img {
+    width: auto;
+    height: 25px;
+}
+
+.footerLinks ul {
+    float: right;
+}
+
+.footerLinks ul li {
+    float: left;
+}
+
+.footerLinks ul li a {
+    color: #bfbfbf;
+}
+
+.footerLinks {
+    text-align: right;
+}
+
+.oreFooter {
+    font-family: 'robotoregular';
+    color: #bfbfbf;
+    font-size: 11px;
+    line-height: 16px;
+    padding: 0;
+}
+
+/*footer section */
+.switch-toggle.switch-candy,
+.switch-light.switch-candy>span {
+    background-color: #8f0c2c !important;
+    border-radius: 23px;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.disclaimerMessage {
+    position: absolute;
+    bottom: 0px;
+    background: #000000;
+    padding: 15px;
+    left: 0px;
+    width: 100%;
+    opacity: 0.8;
+    z-index: 9999;
+    color: #ffffff;
+}
+
+.disclaimer {
+    background: #cccccc;
+    border-radius: 50%;
+    padding: 1px 5px;
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.disclaimerMessage p {
+    width: 96%;
+    font-size: 12px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.closeDisclaimer {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.btm-container h4 span.disclaimer {
+    padding: -11px;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+}
+
+@media (max-width: 992px) {
+    .brandLogos {
+        height: 0;
+    }
+
+    .disclaimerMessage {
+        position: fixed;
+    }
+
+    .switch {
+        margin-top: -15px;
+    }
+
+    body #landingPage .vCardsBlock {
+        margin-top: -25px;
+    }
+}
+
+/*max-width: 992px close here*/
+/********** Routeone Thanks *****************/
+.thanks-first-fluid {
+    background: #f7f7f7;
+    padding-top: 40px;
+}
+
+.thanks_tick {
+    width: 110px;
+}
+
+.thanks-first-fluid h2 {
+    font-size: 44px;
+    font-weight: bold;
+    color: #444444;
+    margin-bottom: 25px;
+}
+
+.thanks-paragraph-1 {
+    font-size: 16px;
+    color: #909090;
+}
+
+.thanks-paragraph-2 {
+    max-width: 800px;
+    margin-top: 50px;
+    font-size: 16px;
+    color: #909090;
+    margin: 50px auto 50px auto;
+    text-align: justify;
+}
+
+/************ Payment Calculator **********************/
+.incentiveMatches {
+    font-weight: normal;
+    padding: 8px;
+}
+
+li .incentiveMatches::after {
+    content: "This incentive cannot be combined with other incentives.";
+    font-size: 13px;
+    font-weight: normal;
+    color: #ff0000;
+    float: left;
+}
+
+/* Landing page Zip Code Div */
+
+.ZipCodeDivCls {
+    padding: 0px;
+
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .ZipCodeDivCls {
+        margin-left: 12.5%;
+        width: 150px !important;
+    }
+}
+
+.ZipCodeLabelCls {
+    padding-left: 12px;
+    margin-bottom: 10px;
+}
+body #landingPage .brandList {
+    padding-bottom: 80px;
+}
+
+body .ore_vehicle_vin {
+    min-width: 200px;
+    padding: 1rem 3rem 1rem 1.64rem;
+}
+
+body .submitToDealer {
+    width: 240px !important;
+    height: 52px !important;
+    margin-right: 10px;
+}
+
+
+
+
+/*CSS BY ROHIT START*/
+#initialPopUp .modal-body {
+    position: relative;
+    padding: 12px 0px 0 0px !important;
+}
+
+#initialPopUp,
+#initialPopUp .modal-header,
+#availableProgramPopup .modal-header {
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+#availableProgramPopup .modal-header {
+    padding-top: 15px;
+}
+
+#availableProgramPopup .modal-body {
+    padding: 15px 0;
+}
+
+#availableProgramPopup .modal-title {
+    color: #8f192b;
+    font-family: rift-soft;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#availableProgramPopup h4 {
+    font-family: rift-soft;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+#reviewSubmit {
+    font-family: Segoe UI;
+}
+
+.popup-wh,
+#availableProgramPopup .modal-content,
+#leaseCalc .modal-content,
+#paymentCalc .modal-content,
+#reviewSubmitPopUp .modal-content,
+.modal-content #cashCalc {
+    padding: 20px 30px 0px 30px;
+    border-radius: 18px;
+    border: 1px solid #707070;
+    background: rgba(255, 255, 255, 0.8705882352941177);
+}
+
+#cashCalc .modal-content,
+#leaseCalc .modal-content,
+#paymentCalc .modal-content {
+    padding: 20px 0px 0px 0px;
+    background: rgba(255, 255, 255, 0.928705882352941177);
+}
+
+#leaseCalc .modal-content .greyBg,
+#paymentCalc .modal-content .greyBg,
+#cashCalc .greyBg {
+    background: #c3c3c3 !important;
+}
+
+#initialPopUp .submit-header,
+#initialPopUpThanks .submit-header,
+#reviewSubmitPopUp .modal-title,
+body #leaseCalc .modal-header .modal-title,
+body #cashCalc .modal-header .modal-title,
+body #paymentCalc .modal-header .modal-title {
+    color: #414141;
+    font-family: rift-soft !important;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#reviewSubmitPopUp .modal-title {
+    text-align: center;
+}
+
+.year-clr {
+    color: #8F0C2C;
+}
+
+
+.sub-txt {
+    color: #414141;
+    margin: 0;
+    font-family: rift-soft;
+    font-size: 24px;
+    text-align: center;
+}
+
+#initialPopUp .modal-header .close,
+#initialPopUpThanks .modal-header .close,
+#availableProgramPopup .close,
+#reviewSubmitPopUp .close,
+#leaseCalc .modal-content .close,
+#paymentCalc .modal-content .close,
+#cashCalc .modal-content .close {
+    color: #8F0C2C;
+    height: 19px;
+    width: 19px;
+    font-size: 0px !important;
+    padding-left: 33px;
+    right: 10px;
+    top: 10px;
+    display: block;
+    line-height: 3px;
+    text-align: center;
+    position: absolute;
+    padding: 4px 0 8px 2px;
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/images/close-theme.svg) no-repeat;
+    background-size: contain;
+}
+
+.steps-field-parent .field_img img {
+    margin: 7px auto auto auto;
+    height: 45px;
+    max-width: 90px;
+}
+
+#availableProgramPopup .modal-dialog {
+    min-width: 600px !important;
+    margin-top: 70px;
+}
+
+#availableProgramPopup .close {
+    padding-bottom: 0px;
+    padding-left: 1px;
+    font-family: initial;
+    padding-top: 2px;
+}
+
+#initialPopUp .rBold {
+    width: 100%;
+    font-family: Segoe UI !important;
+}
+
+#initialPopUp .footer-txt {
+    font-size: 8.5px;
+    color: #8e8e8e;
+    font-family: Segoe UI;
+}
+
+#initialPopUp .input-placeholder {
+    position: relative;
+}
+
+.input-placeholder input:valid+.placeholder {
+    display: none;
+}
+
+#initialPopUp .placeholder {
+    position: absolute;
+    pointer-events: none;
+    top: 7px;
+    left: 27px;
+    margin: auto;
+    color: #414141;
+}
+
+#initialPopUp .placeholder span {
+    color: #8F0C2C;
+}
+
+#reviewSubmit ::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: #414141;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #414141;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #414141;
+}
+
+.fixMenu {
+    position: fixed;
+    top: 100px;
+    margin: 0px !important;
+    z-index: 99;
+    width: 100%;
+}
+
+.fixMenu li {
+    position: relative;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    text-align: center;
+}
+
+.fixMenu li.active a::after {
+    display: none !important;
+}
+
+.fixMenu li.selected {
+    background: #8f0c2c !important;
+}
+
+.fixMenu li.selected a::before {
+    border-left-color: #8f0c2c;
+}
+
+
+.fixMenu li:hover,
+.fixMenu li a:hover {
+    background: none;
+}
+
+.fixMenu li a::before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-width: 25px;
+    margin-top: -25px;
+    z-index: 1;
+    border-left-color: #e9e9e9;
+}
+
+.fixMenu li:nth-child(even) {
+    background: rgb(217, 216, 216);
+}
+
+.fixMenu li:nth-child(even) a::before {
+    border-left-color: rgb(217, 216, 216);
+}
+
+.fixMenu li.active:nth-child(even) a::before {
+    border-left-color: #8f0c2c;
+}
+
+.fixMenu li.active a::before {
+    border-left-color: #8f192b;
+}
+
+.detailBody {
+    margin-top: 170px !important;
+}
+
+.popup-tks {
+    background: #FFFFFFDE;
+    padding: 30px;
+}
+
+#initialPopUpThanks .close {
+    opacity: inherit;
+    text-shadow: unset;
+}
+
+.para-text {
+    padding: 0 60px;
+    font-family: Segoe UI;
+}
+
+#initialPopUpThanks .gcss-button {
+    border-radius: 8px;
+    margin-top: -4px;
+    float: left;
+    width: 100%;
+}
+
+#initialPopUpThanks hr {
+    border-top: 1px solid #707070;
+}
+
+#initialPopUpThanks .red-c {
+    color: #8F0C2C;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    margin: 100px 0 30px 0;
+}
+
+#Stickyhead {
+    z-index: 999;
+    overflow: hidden;
+
+    width: 100%;
+}
+
+.price-tag {
+    background: #8F0C2C;
+    padding: 5px 10px 6px 10px;
+    color: #ffffff;
+    position: relative
+}
+
+.price-tag a {
+    color: #ffffff;
+}
+
+.price-tag a::after {
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #8f0c2c;
+}
+
+.price-tag::after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-left-color: #8f0c2c;
+    border-width: 15px;
+    margin-top: -15px;
+}
+
+/*CSS BY ROHIT END*/
+
+/*CSS BY YASIN START*/
+
+#initialPopUpThanks .modal-content.popup-tks {
+    padding: 0 5px;
+}
+
+#initialPopUpThanks .submit-header {
+    padding-top: 7px;
+    text-align: center;
+}
+
+#initialPopUpThanks .modal-header {
+    padding-bottom: 0px;
+    margin-bottom: -7px;
+}
+
+#initialPopUpThanks .modal-body .para-text {
+    text-align: center;
+}
+
+#initialPopUpThanks .gcss-button:active,
+#initialPopUpThanks .gcss-button:focus {
+    color: #fff;
+}
+
+body .legendStyle.nav-tabs li.active a {
+    width: calc(100% - 0px) !important;
+}
+
+.fixMenu li.active:nth-child(even) a:before {
+    border-left-color: #8f192b;
+}
+
+
+/*https://d1jougtdqdwy1v.cloudfront.net/images/loader-transparent.jpg*/
+
+.pointer-event-none i.glyphicon-menu-down {
+    display: none;
+}
+
+.pointer-event-none {
+    pointer-events: none;
+}
+
+video#howitswork_initial {
+    z-index: 111111;
+}
+
+.alert-button,.btn.alert-button:hover{
+    background-color: #8f0c2c;
+    color: #fff;
+}
+
+.steps-field-parent .field_car:after {
+    content: "\f067";
+    background: none;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 26px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.steps-field-parent .field_doc:after {
+    content: "";
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/images/initial_popup/equal_icon.svg) no-repeat;
+}
+/*CSS BY YASIN END*/
+
+.alert-button,
+.btn.alert-button:hover,
+.count_checked,
+.switch-toggle.switch-candy,
+.switch-light.switch-candy > span{
+  background-color: #8f0c2c !important;
+}
+.alfa_romeo .zipCodeCont .btn-primary,
+.alfa_romeo .onOffSlider > label,
+.switch__indicator,
+span.filter-button,
+.fixMenu li.selected,
+.price-tag{
+  background: #8f0c2c !important;
+}
+
+.alfa_romeo .vCardsBlock .vCard .cardBody .productInfo .countBlock i,
+.alfa_romeo .vCardsBlock .vCard .cardHeader .nav-tabs > li > a,
+.alfa_romeo .productInfo .sGrey:hover,
+.alfa_romeo .vCard .cardFooter.med.sGrey:hover,
+.alfa_romeo .themeClr,
+.year-clr,
+#initialPopUp .modal-header .close,
+#initialPopUpThanks .modal-header .close,
+#availableProgramPopup .close,
+#reviewSubmitPopUp .close,
+#leaseCalc .modal-content .close,
+#paymentCalc .modal-content .close,
+#cashCalc .modal-content .close,
+#initialPopUp .placeholder span,
+#initialPopUpThanks .red-c {
+  color: #8f0c2c !important;
+}
+.zipcode_edit_field{
+  border: 1px solid #8f0c2c;
+}
+body #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a,
+.alfa_romeo .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a{
+  border-bottom: solid 2px #8f0c2c
+}
+a.focus_by_tab:focus,
+label.focus_by_tab:focus,
+button.focus_by_tab:focus {
+  outline: 1px solid #8f0c2c !important;
+}
+.legendStyle.nav-tabs li.active:after,
+.fixMenu li.selected a::before,
+.fixMenu li.active:nth-child(even) a::before,
+.price-tag a::after, .price-tag::after{
+  border-left-color: #8f0c2c;
+}
+
+
+
+/*chrysler*/
+
+body.make_chrysler .alert-button,
+body.make_chrysler .btn.alert-button:hover,
+body.make_chrysler .count_checked,
+body.make_chrysler .switch-toggle.switch-candy,
+body.make_chrysler .switch-light.switch-candy > span,
+/*body.make_chrysler .gcss-button,*/
+body.make_chrysler .toggle-tab-switch .slider,
+body.make_chrysler .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch,
+body.make_chrysler .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch,
+body.make_chrysler .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch{
+  background-color: #063E77 !important;
+}
+body.make_chrysler .zipCodeCont .btn-primary,
+body.make_chrysler  .onOffSlider > label,
+body.make_chrysler .switch__indicator,
+body.make_chrysler span.filter-button,
+body.make_chrysler .fixMenu li.selected,
+body.make_chrysler .price-tag,
+body.make_chrysler .legendStyle.nav-tabs li.active a,
+body.make_chrysler .customCheckBox input[type=checkbox]:checked+span:before,
+body.make_chrysler span.checkbox-counter{
+  background: #063E77 !important;
+}
+
+body.make_chrysler .vCardsBlock .vCard .cardBody .productInfo .countBlock i,
+body.make_chrysler .vCardsBlock .vCard .cardHeader .nav-tabs > li > a,
+body.make_chrysler .productInfo .sGrey:hover,
+body.make_chrysler .vCard .cardFooter.med.sGrey:hover,
+body.make_chrysler .themeClr,
+body.make_chrysler .year-clr,
+body.make_chrysler #initialPopUp .modal-header .close,
+body.make_chrysler #initialPopUpThanks .modal-header .close,
+body.make_chrysler #availableProgramPopup .close,
+body.make_chrysler #reviewSubmitPopUp .close,
+body.make_chrysler #leaseCalc .modal-content .close,
+body.make_chrysler #paymentCalc .modal-content .close,
+body.make_chrysler #cashCalc .modal-content .close,
+body.make_chrysler #initialPopUp .placeholder span,
+body.make_chrysler #initialPopUpThanks .red-c,
+body.make_chrysler .legendStyle.nav-tabs li>a i,
+body.make_chrysler .sGrey:hover,
+body.make_chrysler #availableProgramPopup .modal-title,
+body.make_chrysler .can-toggle input[type="checkbox"]:checked ~ label:hover,
+body.make_chrysler #paymentCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_chrysler #leaseCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_chrysler #cashCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_chrysler .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after,
+body.make_chrysler .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after,
+body.make_chrysler .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after,
+body.make_chrysler .can-toggle input[type="checkbox"]:hover ~ label,
+body.make_chrysler .steps-field-parent .field_car:after {
+  color: #063E77 !important;
+}
+body.make_chrysler .zipcode_edit_field,
+body.make_chrysler #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a:focus{
+  border: 1px solid #063E77;
+}
+body.make_chrysler #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a,
+body.make_chrysler .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a{
+  border-bottom: solid 2px #063E77
+}
+body.make_chrysler a.focus_by_tab:focus,
+body.make_chrysler label.focus_by_tab:focus,
+body.make_chrysler button.focus_by_tab:focus {
+  outline: 1px solid #063E77 !important;
+}
+body.make_chrysler .legendStyle.nav-tabs li.active:after,
+body.make_chrysler .fixMenu li.selected a::before,
+body.make_chrysler .fixMenu li.active:nth-child(even) a::before,
+body.make_chrysler .price-tag a::after,
+body.make_chrysler .price-tag::after{
+  border-left-color: #063E77;
+}
+body.make_chrysler .theme,
+body.make_chrysler .customCheckBox input[type=checkbox]:checked+span:after {
+    background: #063E77 !important;
+    border-color: #063E77 !important;
+}
+body.make_chrysler section.main .listBlock .listCont > li .footerBtns .btn,
+body.make_chrysler .select-wrapper::before{
+  color: #fff;
+}
+body.make_chrysler .steps-field-parent .field_doc:after {
+    content: "";
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/cdjr/equal_icon-chrysler.svg) no-repeat;
+}
+body.make_chrysler #initialPopUp .modal-header .close,
+body.make_chrysler #initialPopUpThanks .modal-header .close,
+body.make_chrysler #availableProgramPopup .close,
+body.make_chrysler #reviewSubmitPopUp .close,
+body.make_chrysler #leaseCalc .modal-content .close,
+body.make_chrysler #paymentCalc .modal-content .close,
+body.make_chrysler #cashCalc .modal-content .close{
+  background: url(https://d1jougtdqdwy1v.cloudfront.net/cdjr/close-theme-chrysler.svg) no-repeat;
+  background-size: contain;
+}
+
+
+
+/*Dodge*/
+
+body.make_dodge .alert-button,
+body.make_dodge .btn.alert-button:hover,
+body.make_dodge .count_checked,
+body.make_dodge .switch-toggle.switch-candy,
+body.make_dodge .switch-light.switch-candy > span,
+/*body.make_dodge .gcss-button,*/
+body.make_dodge .toggle-tab-switch .slider,
+body.make_dodge .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch,
+body.make_dodge .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch,
+body.make_dodge .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch{
+  background-color: #D50000 !important;
+}
+body.make_dodge .zipCodeCont .btn-primary,
+body.make_dodge  .onOffSlider > label,
+body.make_dodge .switch__indicator,
+body.make_dodge span.filter-button,
+body.make_dodge .fixMenu li.selected,
+body.make_dodge .price-tag,
+body.make_dodge .legendStyle.nav-tabs li.active a,
+body.make_dodge .customCheckBox input[type=checkbox]:checked+span:before,
+body.make_dodge span.checkbox-counter{
+  background: #D50000 !important;
+}
+
+body.make_dodge .vCardsBlock .vCard .cardBody .productInfo .countBlock i,
+body.make_dodge .vCardsBlock .vCard .cardHeader .nav-tabs > li > a,
+body.make_dodge .productInfo .sGrey:hover,
+body.make_dodge .vCard .cardFooter.med.sGrey:hover,
+body.make_dodge .themeClr,
+body.make_dodge .year-clr,
+body.make_dodge #initialPopUp .modal-header .close,
+body.make_dodge #initialPopUpThanks .modal-header .close,
+body.make_dodge #availableProgramPopup .close,
+body.make_dodge #reviewSubmitPopUp .close,
+body.make_dodge #leaseCalc .modal-content .close,
+body.make_dodge #paymentCalc .modal-content .close,
+body.make_dodge #cashCalc .modal-content .close,
+body.make_dodge #initialPopUp .placeholder span,
+body.make_dodge #initialPopUpThanks .red-c,
+body.make_dodge .legendStyle.nav-tabs li>a i,
+body.make_dodge .sGrey:hover,
+body.make_dodge #availableProgramPopup .modal-title,
+body.make_dodge .can-toggle input[type="checkbox"]:checked ~ label:hover,
+body.make_dodge #paymentCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_dodge #leaseCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_dodge #cashCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_dodge .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after,
+body.make_dodge .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after,
+body.make_dodge .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after,
+body.make_dodge .can-toggle input[type="checkbox"]:hover ~ label,
+body.make_dodge .steps-field-parent .field_car:after {
+  color: #D50000 !important;
+}
+body.make_dodge .zipcode_edit_field,
+body.make_dodge #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a:focus{
+  border: 1px solid #D50000;
+}
+body.make_dodge #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a,
+body.make_dodge .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a{
+  border-bottom: solid 2px #D50000
+}
+body.make_dodge a.focus_by_tab:focus,
+body.make_dodge label.focus_by_tab:focus,
+body.make_dodge button.focus_by_tab:focus {
+  outline: 1px solid #D50000 !important;
+}
+body.make_dodge .legendStyle.nav-tabs li.active:after,
+body.make_dodge .fixMenu li.selected a::before,
+body.make_dodge .fixMenu li.active:nth-child(even) a::before,
+body.make_dodge .price-tag a::after,
+body.make_dodge .price-tag::after{
+  border-left-color: #D50000;
+}
+body.make_dodge .theme,
+body.make_dodge .customCheckBox input[type=checkbox]:checked+span:after {
+    background: #D50000 !important;
+    border-color: #D50000 !important;
+}
+body.make_dodge section.main .listBlock .listCont > li .footerBtns .btn,
+body.make_dodge .select-wrapper::before{
+  color: #fff;
+}
+body.make_dodge .steps-field-parent .field_doc:after {
+    content: "";
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/cdjr/initial_popup/equal_icon-dodge.svg) no-repeat;
+}
+body.make_dodge #initialPopUp .modal-header .close,
+body.make_dodge #initialPopUpThanks .modal-header .close,
+body.make_dodge #availableProgramPopup .close,
+body.make_dodge #reviewSubmitPopUp .close,
+body.make_dodge #leaseCalc .modal-content .close,
+body.make_dodge #paymentCalc .modal-content .close,
+body.make_dodge #cashCalc .modal-content .close{
+  background: url(https://d1jougtdqdwy1v.cloudfront.net/cdjr/close-theme-dodge.svg) no-repeat;
+  background-size: contain;
+}
+
+
+
+
+/*Fiat*/
+
+body.make_fiat .alert-button,
+body.make_fiat .btn.alert-button:hover,
+body.make_fiat .count_checked,
+body.make_fiat .switch-toggle.switch-candy,
+body.make_fiat .switch-light.switch-candy > span,
+body.make_fiat .gcss-button,
+body.make_fiat .toggle-tab-switch .slider,
+body.make_fiat .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch,
+body.make_fiat .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch,
+body.make_fiat .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch{
+  background-color: #E70000 !important;
+}
+body.make_fiat .zipCodeCont .btn-primary,
+body.make_fiat  .onOffSlider > label,
+body.make_fiat .switch__indicator,
+body.make_fiat span.filter-button,
+body.make_fiat .fixMenu li.selected,
+body.make_fiat .price-tag,
+body.make_fiat .legendStyle.nav-tabs li.active a,
+body.make_fiat .customCheckBox input[type=checkbox]:checked+span:before,
+body.make_fiat span.checkbox-counter{
+  background: #E70000 !important;
+}
+
+body.make_fiat .vCardsBlock .vCard .cardBody .productInfo .countBlock i,
+body.make_fiat .vCardsBlock .vCard .cardHeader .nav-tabs > li > a,
+body.make_fiat .productInfo .sGrey:hover,
+body.make_fiat .vCard .cardFooter.med.sGrey:hover,
+body.make_fiat .themeClr,
+body.make_fiat .year-clr,
+body.make_fiat #initialPopUp .modal-header .close,
+body.make_fiat #initialPopUpThanks .modal-header .close,
+body.make_fiat #availableProgramPopup .close,
+body.make_fiat #reviewSubmitPopUp .close,
+body.make_fiat #leaseCalc .modal-content .close,
+body.make_fiat #paymentCalc .modal-content .close,
+body.make_fiat #cashCalc .modal-content .close,
+body.make_fiat #initialPopUp .placeholder span,
+body.make_fiat #initialPopUpThanks .red-c,
+body.make_fiat .legendStyle.nav-tabs li>a i,
+body.make_fiat .sGrey:hover,
+body.make_fiat #availableProgramPopup .modal-title,
+body.make_fiat .can-toggle input[type="checkbox"]:checked ~ label:hover,
+body.make_fiat #paymentCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_fiat #leaseCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_fiat #cashCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_fiat .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after,
+body.make_fiat .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after,
+body.make_fiat .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after,
+body.make_fiat .can-toggle input[type="checkbox"]:hover ~ label,
+body.make_fiat .steps-field-parent .field_car:after {
+  color: #E70000 !important;
+}
+body.make_fiat .zipcode_edit_field,
+body.make_fiat #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a:focus{
+  border: 1px solid #E70000;
+}
+body.make_fiat #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a,
+body.make_fiat .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a{
+  border-bottom: solid 2px #E70000
+}
+body.make_fiat a.focus_by_tab:focus,
+body.make_fiat label.focus_by_tab:focus,
+body.make_fiat button.focus_by_tab:focus {
+  outline: 1px solid #E70000 !important;
+}
+body.make_fiat .legendStyle.nav-tabs li.active:after,
+body.make_fiat .fixMenu li.selected a::before,
+body.make_fiat .fixMenu li.active:nth-child(even) a::before,
+body.make_fiat .price-tag a::after,
+body.make_fiat .price-tag::after{
+  border-left-color: #E70000;
+}
+body.make_fiat .theme,
+body.make_fiat .customCheckBox input[type=checkbox]:checked+span:after {
+    background: #E70000 !important;
+    border-color: #E70000 !important;
+}
+body.make_fiat section.main .listBlock .listCont > li .footerBtns .btn,
+body.make_fiat .select-wrapper::before{
+  color: #fff;
+}
+body.make_fiat .steps-field-parent .field_doc:after {
+    content: "";
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/cdjr/initial_popup/equal_icon-fiat.svg) no-repeat;
+}
+body.make_fiat #initialPopUp .modal-header .close,
+body.make_fiat #initialPopUpThanks .modal-header .close,
+body.make_fiat #availableProgramPopup .close,
+body.make_fiat #reviewSubmitPopUp .close,
+body.make_fiat #leaseCalc .modal-content .close,
+body.make_fiat #paymentCalc .modal-content .close,
+body.make_fiat #cashCalc .modal-content .close{
+  background: url(https://d1jougtdqdwy1v.cloudfront.net/cdjr/close-theme-fiat.svg) no-repeat;
+  background-size: contain;
+}
+
+
+
+
+
+/*jeep*/
+
+body.make_jeep .alert-button,
+body.make_jeep .btn.alert-button:hover,
+body.make_jeep .count_checked,
+body.make_jeep .switch-toggle.switch-candy,
+body.make_jeep .switch-light.switch-candy > span,
+/*body.make_jeep .gcss-button,*/
+body.make_jeep .toggle-tab-switch .slider,
+body.make_jeep .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch,
+body.make_jeep .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch,
+body.make_jeep .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch{
+  background-color: #FFBA00 !important;
+}
+body.make_jeep .zipCodeCont .btn-primary,
+body.make_jeep  .onOffSlider > label,
+body.make_jeep .switch__indicator,
+body.make_jeep span.filter-button,
+body.make_jeep .fixMenu li.selected,
+body.make_jeep .price-tag,
+body.make_jeep .legendStyle.nav-tabs li.active a,
+body.make_jeep .customCheckBox input[type=checkbox]:checked+span:before,
+body.make_jeep span.checkbox-counter{
+  background: #FFBA00 !important;
+}
+
+body.make_jeep .vCardsBlock .vCard .cardBody .productInfo .countBlock i,
+body.make_jeep .vCardsBlock .vCard .cardHeader .nav-tabs > li > a,
+body.make_jeep .productInfo .sGrey:hover,
+body.make_jeep .vCard .cardFooter.med.sGrey:hover,
+body.make_jeep .themeClr,
+body.make_jeep .year-clr,
+body.make_jeep #initialPopUp .modal-header .close,
+body.make_jeep #initialPopUpThanks .modal-header .close,
+body.make_jeep #availableProgramPopup .close,
+body.make_jeep #reviewSubmitPopUp .close,
+body.make_jeep #leaseCalc .modal-content .close,
+body.make_jeep #paymentCalc .modal-content .close,
+body.make_jeep #cashCalc .modal-content .close,
+body.make_jeep #initialPopUp .placeholder span,
+body.make_jeep #initialPopUpThanks .red-c,
+body.make_jeep .legendStyle.nav-tabs li>a i,
+body.make_jeep .sGrey:hover,
+body.make_jeep #availableProgramPopup .modal-title,
+body.make_jeep .can-toggle input[type="checkbox"]:checked ~ label:hover,
+body.make_jeep #paymentCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_jeep #leaseCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_jeep #cashCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_jeep .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after,
+body.make_jeep .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after,
+body.make_jeep .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after,
+body.make_jeep .can-toggle input[type="checkbox"]:hover ~ label,
+body.make_jeep .steps-field-parent .field_car:after {
+  color: #FFBA00 !important;
+}
+body.make_jeep .zipcode_edit_field,
+body.make_jeep #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a:focus{
+  border: 1px solid #FFBA00;
+}
+body.make_jeep #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a,
+body.make_jeep .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a{
+  border-bottom: solid 2px #FFBA00
+}
+body.make_jeep a.focus_by_tab:focus,
+body.make_jeep label.focus_by_tab:focus,
+body.make_jeep button.focus_by_tab:focus {
+  outline: 1px solid #FFBA00 !important;
+}
+body.make_jeep .legendStyle.nav-tabs li.active:after,
+body.make_jeep .fixMenu li.selected a::before,
+body.make_jeep .fixMenu li.active:nth-child(even) a::before,
+body.make_jeep .price-tag a::after,
+body.make_jeep .price-tag::after{
+  border-left-color: #FFBA00;
+}
+body.make_jeep .theme,
+body.make_jeep .customCheckBox input[type=checkbox]:checked+span:after {
+    background: #FFBA00 !important;
+    border-color: #FFBA00 !important;
+}
+body.make_jeep section.main .listBlock .listCont > li .footerBtns .btn,
+body.make_jeep .select-wrapper::before,
+body.make_jeep span.checkbox-counter,
+body.make_jeep .zipCodeCont .btn-primary{
+  color: #000;
+}
+body.make_jeep .steps-field-parent .field_doc:after {
+    content: "";
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/cdjr/equal_icon-jeep.svg) no-repeat;
+}
+body.make_jeep #initialPopUp .modal-header .close,
+body.make_jeep #initialPopUpThanks .modal-header .close,
+body.make_jeep #availableProgramPopup .close,
+body.make_jeep #reviewSubmitPopUp .close,
+body.make_jeep #leaseCalc .modal-content .close,
+body.make_jeep #paymentCalc .modal-content .close,
+body.make_jeep #cashCalc .modal-content .close{
+  background: url(https://d1jougtdqdwy1v.cloudfront.net/cdjr/close-theme-jeep.svg) no-repeat;
+  background-size: contain;
+}
+body.make_jeep .steps-field .field_desc {
+    color: #636363 !important;
+}
+
+
+/*Ram*/
+
+
+body.make_ram .alert-button,
+body.make_ram .btn.alert-button:hover,
+body.make_ram .count_checked,
+body.make_ram .switch-toggle.switch-candy,
+body.make_ram .switch-light.switch-candy > span,
+/*body.make_ram .gcss-button,*/
+body.make_ram .toggle-tab-switch .slider,
+body.make_ram .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch,
+body.make_ram .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch,
+body.make_ram .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch{
+  background-color: #880D00 !important;
+}
+body.make_ram .zipCodeCont .btn-primary,
+body.make_ram  .onOffSlider > label,
+body.make_ram .switch__indicator,
+body.make_ram span.filter-button,
+body.make_ram .fixMenu li.selected,
+body.make_ram .price-tag,
+body.make_ram .legendStyle.nav-tabs li.active a,
+body.make_ram .customCheckBox input[type=checkbox]:checked+span:before,
+body.make_ram span.checkbox-counter{
+  background: #880D00 !important;
+}
+
+body.make_ram .vCardsBlock .vCard .cardBody .productInfo .countBlock i,
+body.make_ram .vCardsBlock .vCard .cardHeader .nav-tabs > li > a,
+body.make_ram .productInfo .sGrey:hover,
+body.make_ram .vCard .cardFooter.med.sGrey:hover,
+body.make_ram .themeClr,
+body.make_ram .year-clr,
+body.make_ram #initialPopUp .modal-header .close,
+body.make_ram #initialPopUpThanks .modal-header .close,
+body.make_ram #availableProgramPopup .close,
+body.make_ram #reviewSubmitPopUp .close,
+body.make_ram #leaseCalc .modal-content .close,
+body.make_ram #paymentCalc .modal-content .close,
+body.make_ram #cashCalc .modal-content .close,
+body.make_ram #initialPopUp .placeholder span,
+body.make_ram #initialPopUpThanks .red-c,
+body.make_ram .legendStyle.nav-tabs li>a i,
+body.make_ram .sGrey:hover,
+body.make_ram #availableProgramPopup .modal-title,
+body.make_ram .can-toggle input[type="checkbox"]:checked ~ label:hover,
+body.make_ram #paymentCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_ram #leaseCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_ram #cashCalc .modal-body ul.popUpScroll>li h4 i.glyphicon,
+body.make_ram .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after,
+body.make_ram .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after,
+body.make_ram .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after,
+body.make_ram .can-toggle input[type="checkbox"]:hover ~ label,
+body.make_ram .steps-field-parent .field_car:after {
+  color: #880D00 !important;
+}
+body.make_ram .zipcode_edit_field,
+body.make_ram #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a:focus{
+  border: 1px solid #880D00;
+}
+body.make_ram #landingPage .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a,
+body.make_ram .vCardsBlock .vCard .cardHeader .nav-tabs > li.active > a{
+  border-bottom: solid 2px #880D00
+}
+body.make_ram a.focus_by_tab:focus,
+body.make_ram label.focus_by_tab:focus,
+body.make_ram button.focus_by_tab:focus {
+  outline: 1px solid #880D00 !important;
+}
+body.make_ram .legendStyle.nav-tabs li.active:after,
+body.make_ram .fixMenu li.selected a::before,
+body.make_ram .fixMenu li.active:nth-child(even) a::before,
+body.make_ram .price-tag a::after,
+body.make_ram .price-tag::after{
+  border-left-color: #880D00;
+}
+body.make_ram .theme,
+body.make_ram .customCheckBox input[type=checkbox]:checked+span:after {
+    background: #880D00 !important;
+    border-color: #880D00 !important;
+}
+body.make_ram section.main .listBlock .listCont > li .footerBtns .btn,
+body.make_ram .select-wrapper::before{
+  color: #fff;
+}
+body.make_ram .steps-field-parent .field_doc:after {
+    content: "";
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/cdjr/equal_icon-ram.svg) no-repeat;
+}
+body.make_ram #initialPopUp .modal-header .close,
+body.make_ram #initialPopUpThanks .modal-header .close,
+body.make_ram #availableProgramPopup .close,
+body.make_ram #reviewSubmitPopUp .close,
+body.make_ram #leaseCalc .modal-content .close,
+body.make_ram #paymentCalc .modal-content .close,
+body.make_ram #cashCalc .modal-content .close{
+  background: url(https://d1jougtdqdwy1v.cloudfront.net/cdjr/close-theme-ram.svg) no-repeat;
+  background-size: contain;
+}
+
+
+
+/*sign in popup model*/
+
+
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+    padding: 30px;
+    max-width: 350px;
+    width: 100% !important;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    float: right;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+}
+
+.login-help{
+  font-size: 12px;
+}
+div#login-modal .modal-dialog {
+    position: absolute;
+    right: 0;
+    margin: auto;
+}
+
+
+
+/*toi*/
+#user-sign-in {
+    background: #f7f7f7;
+    width: 408px;
+    height: auto;
+    min-height: 100%;
+    padding: 46px 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 1px 12px 0 rgba(0,0,0,.3);
+    position: absolute;
+    right: 0px;
+    top: 0;
+    cursor: default;
+    color: #000;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+#user-sign-in .close-btn {
+    right: 8px;
+}
+#user-sign-in .close-btn {
+    background: none;
+    border: 0;
+    font-size: 34px;
+    line-height: 20px;
+    color: #7b7b7b;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    z-index: 1;
+    padding: 0;
+    width: 40px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#user-sign-in .forget-password {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-decoration: underline!important;
+}
+#user-sign-in .user-icon img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    vertical-align: bottom;
+}
+#user-sign-in>div {
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+    height: auto;
+    min-height: 100%;
+}
+#user-sign-in .signin-section, #user-sign-in .signup-section {
+    margin-top: -29px;
+    text-align: left;
+}
+#user-sign-in .user-icon {
+    margin: -60px auto 15px;
+    width: 68px;
+    height: 68px;
+    line-height: 60px;
+    background: #f7f7f7;
+    text-align: center;
+}
+.socialConnectImgDiv {
+    margin-bottom: 24px;
+}
+.socialConnectImgDiv .fb {
+    background: #2553b4;
+    color: #fff;
+}
+.socialConnectImgDiv button {
+    border: 0;
+    border-radius: 2px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 50px;
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.24), 0 0 2px 0 rgba(0,0,0,.12);
+    cursor: pointer;
+}
+.socialConnectImgDiv .fb:before {
+    background-position: 0 0;
+    width: 14px;
+    height: 29px;
+    bottom: 0;
+    left: 13px;
+}
+.socialConnectImgDiv .gplus:before {
+    background-position: -19px 0;
+    width: 19px;
+    height: 19px;
+    left: 8px;
+    top: 11px;
+}
+.socialConnectImgDiv button:before {
+    position: absolute;
+    content: "";
+    background: url(https://static.toiimg.com/photo/64971829.cms) no-repeat;
+    background-size: 250px;
+}
+.socialConnectImgDiv .gplus {
+    background: #fff;
+}
+.socialConnectImgDiv button+button {
+    margin-top: 16px;
+}
+.socialConnectImgDiv button {
+    border: 0;
+    border-radius: 2px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 50px;
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.24), 0 0 2px 0 rgba(0,0,0,.12);
+    cursor: pointer;
+}
+#user-sign-in .heading.small {
+    font-size: 14px;
+    color: #a2a2a2;
+    font-weight: 400;
+}
+#user-sign-in .heading {
+    font-size: 16px;
+    line-height: 1;
+    color: #000;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#user-sign-in .heading.small span {
+    font-size: 14px;
+}
+#user-sign-in .heading span {
+    display: inline-block;
+    background: #f7f7f7;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    color: #868686;
+    text-transform: none;
+    font-size: 16px;
+}
+#user-sign-in .heading:after {
+    position: absolute;
+    content: "";
+    background: #d6d6d6;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 50%;
+}
+.signin-section ul {
+    padding: 0;
+}
+#user-sign-in .form ul li {
+    list-style: none;
+    margin-bottom: 22px;
+}
+#user-sign-in .input-field {
+    padding-left: 23px;
+    position: relative;
+}
+#user-sign-in .input-field.email:before {
+    background-position: -40px 0;
+    width: 15px;
+    height: 11px;
+    top: 10px;
+}
+#user-sign-in .input-field:before {
+    position: absolute;
+    content: "";
+    background-image: url(https://static.toiimg.com/photo/64971829.cms);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    left: 0;
+}
+#user-sign-in p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #222;
+}
+#user-sign-in input[type=number], #user-sign-in input[type=password], #user-sign-in input[type=text] {
+    height: 28px;
+    border-bottom: 1px solid #888;
+    background: none;
+}
+#user-sign-in input {
+    display: block;
+    width: 100%;
+    line-height: normal;
+    border: 0;
+    font-size: 14px;
+}
+#user-sign-in .form .submit {
+    margin-bottom: 0;
+}
+#user-sign-in input[type=button], #user-sign-in input[type=submit] {
+    background: #be281a;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.24), 0 0 2px 0 rgba(0,0,0,.12);
+    height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#user-sign-in input:disabled {
+    opacity: .4;
+}
+#user-sign-in input {
+    display: block;
+    width: 100%;
+    line-height: normal;
+    border: 0;
+    font-size: 14px;
+}
+
+/*form.form, h4.heading.small, button.fb {
+    display: none;
+}*/
+.crosstext { text-decoration: line-through; }
+
+
+
+/*New updates*/
+.header-scroll .dealerAddress h3, .header-scroll .dealerAddress .header-gmap {
+    background: #000;
+    font-family: rift-soft;
+}
+.dealerAddress .vehicle_para i {
+    margin-right: -5px;
+}
+.dealerAddress .vehicle_para i:before {
+    background: #000;
+    padding: 0 6px 2px 7px;
+}
+.dealerAddress .vehicle_para .header-gmap {
+    padding: 0 5px;
+}
+.gcss-button.btm_submitdealer {
+    font-family: "robotobold";
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.footerBtns .gcss-button {
+    font-family: 'robotomedium';
+    font-size: 15px !important;
+    height: 38px;
+    line-height: 18px;
+    padding: 10px 30px 10px 10px;
+}
+.footerBtns .gcss-button:after {
+    content: "\e258";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.footerBtns .gcss-button.details-link {
+    padding: 8px 30px 8px 10px;
+}
+.footerBtns .gcss-button.window-sticker {
+    border: none;
+    min-width: 200px;
+}
+.make_jeep .footerBtns .gcss-button.details-link:hover {
+    background: #edad01 !important;
+}
+.make_jeep .footerBtns .gcss-button.window-sticker {
+    background: #636363 !important;
+    color: #fff !important;
+}
+.make_jeep .footerBtns .gcss-button.window-sticker:hover {
+    background: #4f4f4f !important;
+}
+.make_dodge .footerBtns .gcss-button.details-link:hover {
+    background: #b50000 !important;
+}
+.make_dodge .footerBtns .gcss-button.window-sticker {
+    background: none !important;
+    border: 2px solid #b50000;
+    color: #b50000 !important;
+    padding: 8px 30px 8px 10px;
+}
+.make_dodge .footerBtns .gcss-button.window-sticker:hover {
+    background: #e7e7e7 !important;
+}
+.make_chrysler .footerBtns .gcss-button.details-link:hover {
+    background: #032859 !important;
+}
+.make_chrysler .footerBtns .gcss-button.window-sticker {
+    background: none !important;
+    border: 2px solid #3a57a0;
+    color: #3a57a0 !important;
+    padding: 8px 10px;
+}
+.make_chrysler .footerBtns .gcss-button.window-sticker:hover {
+    background: #e7e7e7 !important;
+}
+.make_ram .footerBtns .gcss-button.details-link:hover {
+    background: #b50000 !important;
+}
+.make_ram .footerBtns .gcss-button.window-sticker {
+    background: #141414 !important;
+    color: #fff !important;
+}
+.make_ram .footerBtns .gcss-button.window-sticker:hover {
+    background: #252525 !important;
+}
+.tab-pane .fwd-bck-btns button,
+.tab-pane .fwd-bck-btns1 button,
+.tab-pane .submitBlock button {
+    font-size: 15px;
+    padding: 10px 30px 10px 10px !important;
+}
+.tab-pane .fwd-bck-btns .nav-back-btn,
+.tab-pane .fwd-bck-btns1 .nav-back-btn,
+.tab-pane .submitBlock .nav-back-btn {
+    padding: 10px 10px 10px 30px !important;
+}
+.tab-pane .fwd-bck-btns button:focus,
+.tab-pane .fwd-bck-btns1 button:focus,
+.tab-pane .submitBlock button:focus {
+    box-shadow: none;
+}
+.make_chrysler .tab-pane .fwd-bck-btns .gcss-button-secondary:focus,
+.make_chrysler .tab-pane .fwd-bck-btns1 .gcss-button-secondary:focus,
+.make_chrysler .tab-pane .submitBlock .gcss-button-secondary:focus {
+    background-color: #e7e7e7;
+    color: #3a57a0 !important;
+}
+.make_dodge .tab-pane .fwd-bck-btns .gcss-button-secondary:focus,
+.make_dodge .tab-pane .fwd-bck-btns1 .gcss-button-secondary:focus,
+.make_dodge .tab-pane .submitBlock .gcss-button-secondary:focus {
+    background-color: #e7e7e7;
+    color: #d50000 !important;
+}
+.tab-pane .submitBlock .btm_submitdealer:focus {
+    color: #fff !important;
+}
+.make_jeep .tab-pane .btm_submitdealer.merkle_bottom_submittodealer:focus {
+    color: inherit !important;
+}
+.tab-pane .fwd-bck-btns button:after,
+.tab-pane .fwd-bck-btns1 button:after,
+.tab-pane .submitBlock button:after {
+    background: none;
+    content: "\e258";
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    height: 18px;
+    line-height: 18px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 20px;
+}
+.tab-pane .fwd-bck-btns .nav-back-btn:after, .tab-pane .fwd-bck-btns1 .nav-back-btn:after, .tab-pane .submitBlock .nav-back-btn:after {
+    content: '\e257';
+    left: 10px;
+}
+.tab-pane .gcss-button.btm_submitdealer:after {
+    content: "\e013";
+    font-size: 18px;
+}
+.legendStyle.nav-tabs li.active:after {
+    z-index: 2;
+}
+.legendStyle.nav-tabs li.active i:before {
+    color: #fff;
+}
+.make_jeep .legendStyle.nav-tabs li.active i:before {
+    color: #000;
+}
+#leaseCalc span.badge.disclaimer {
+    font-size: 10px;
+    height: 14px;
+    padding: 2px;
+    width: 14px;
+}
+#leaseCalc .estimatedBlock .select-wrapper::before {
+    color: inherit;
+}
+#initialPopUp .error .errorInfo {
+    margin: 1px 0 0 2px;
+    text-align: left;
+}
+.ore_homelocator .zipcode_errorInfo {
+    display: block;
+    font-size: 14px;
+    padding: 5px 20px 0 7px;
+}
+body #serviceProtection .packageDetails h5 {
+    line-height: 20px;
+}
+#reviewSubmitPopUp .lead_bottom {
+    color: #717171;
+}
+.dOpener.noDropdownHover {
+    cursor: default;
+}
+#availableProgramPopup .model-footer .gcss-button {
+    font-size: 12px;
+}
+.make_ram #availableProgramPopup .model-footer .gcss-button {
+    text-transform: uppercase;
+}
+@media screen and (min-width: 769px) {
+    .dealer_rightmenu_address .sni-vehicle-logo {
+        height: 75px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .dealer_rightmenu_address .dealerAddress h3 {
+        margin-top: 0 !important;
+    }
+    body section.main #resultsPage {
+        margin: 75px auto 30px;
+    }
+    #resultsPage > .row {
+        position: relative;
+    }
+    #resultsPage .SideBar-left {
+        margin-top: 25px;
+        position: static;
+    }
+    #resultsPage .leftMenu:not(.sticky--bottom) {
+        border-bottom: solid #ccc 1px;
+        border-top: solid #ccc 1px;
+        display: none;
+        height: 80vh;
+        overflow-y: auto;
+        position: fixed;
+        top: 100px;
+        width: 280px;
+    }
+    #resultsPage .leftMenu.sticky--bottom {
+        bottom: 0;
+        position: absolute;
+        top: auto !important;
+    }
+    #resultsPage .leftMenu::-webkit-scrollbar {
+        width: 5px;
+        float: left;
+    }
+    #resultsPage .leftMenu::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 3px grey;
+        border-radius: 15px;
+    }
+    #resultsPage .leftMenu::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        background: #BBB;
+    }
+    #resultsPage .leftMenu .customCheckBox {
+        line-height: 20px;
+        padding-bottom: 4px;
+    }
+    #resultsPage .leftMenu .customCheckBox input[type=checkbox]+span:after {
+        top: 2px !important;
+    }
+    #resultsPage .leftMenu .customCheckBox input[type=checkbox]:checked+span:before {
+        top: 4px !important;
+    }
+    section.main .leftMenu form .cDropDown.ore_dealers ul.active {
+        max-height: none;
+    }
+    section.main .leftMenu form .cDropDown.ore_dealers ul li {
+        visibility: visible !important;
+    }
+    section.main .leftMenu form .cDropDown.ore_dealers ul li:nth-child(1n+6) {
+        display: none;
+    }
+    section.main .leftMenu form .cDropDown.ore_dealers ul.active li:nth-child(1n+6) {
+        display: block;
+    }
+    .footerBtns {
+        margin-top: 5px;
+    }
+    .footerBtns .gcss-button {
+        float: left;
+        margin: 0 !important;
+        width: calc(50% - 5px);
+    }
+    .footerBtns .gcss-button.window-sticker {
+        float: right;
+    }
+    .imageFrame.top-logo-vehicle {
+        max-width: 100%;
+    }
+    .sni-vdp-logo.top-logo-vehicle {
+        height: 69px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .sni-vdp-logo.top-logo-vehicle img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    body .detailBody .imageFrame {
+        max-width: 100%;
+    }
+    body .detailBody .imageFrame img.centerHV {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    body header .header-scroll,
+    body header .header-scroll.small,
+    .header-scroll .center-icon,
+    .header-scroll.small .center-icon {
+        height: 65px;
+    }
+    body .vehiclepage .header-scroll, body .vehiclepage .header-scroll .center-icon {
+        height: auto;
+    }
+    body .vehiclepage .header-scroll .center-icon {
+        position: relative;
+        width: 200px;
+    }
+    body .vehiclepage .header-scroll .center-icon .top-logo-vehicle {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 50px;
+    }
+    body .vehiclepage .header-scroll .center-icon img {
+        margin-bottom: 0;
+        margin-top: 0;
+        max-height: 100%;
+    }
+    .header-scroll .center-icon, .header-scroll.small .center-icon {
+        padding-top: 0;
+    }
+    .header-scroll .center-icon .home-logo {
+        height: 100%;
+        padding: 10px 0;
+    }
+    .header-scroll .center-icon .home-logo img, .header-scroll.small .center-icon .home-logo img {
+        max-height: 100%;
+        max-width: none;
+        padding-top: 0;
+    }
+    .sni-vdp-logo.top-logo-vehicle img {
+        margin-top: 20px;
+        max-width: 110px;
+        padding: 0;
+    }
+    .make_jeep .sni-vdp-logo.top-logo-vehicle img {
+        max-width: 80px;
+    }
+    .vehiclepage .header-scroll .right-menu-field {
+        margin-top: 0;
+        padding-bottom: 5px;
+    }
+    .jconfirm.jconfirm-light .jconfirm-box-container .jconfirm-box {
+        max-width: 330px;
+        width: 90% !important;
+    }
+    #landingPage.container-fluid {
+        overflow-x: hidden;
+    }
+    #landingPage .brandList .ZipCodeDivCls {
+        margin-top: 20px;
+        max-height: 112px;
+    }
+    .ore_homelocator .zipcode_errorInfo {
+        display: block;
+        font-size: 12px;
+        position: static;
+    }
+    #landingPage .brandList .col-md-2:hover, #landingPage .brandList .col-sm-4:hover {
+        box-shadow: none;
+    }
+    #resultsPage .SideBar-left.open {
+        bottom: 40px;
+        height: auto;
+        top: 65px;
+    }
+    #resultsPage .SideBar-left .cllc-modal-button-parent {
+        top: 65px;
+    }
+    #resultsPage .SideBar-left .formFilter header {
+        padding-bottom: 0;
+    }
+    #resultsPage .leftMenu {
+        width: 100% !important;
+        padding-top: 43px;
+    }
+    .tab-pane .greyBg {
+        padding: 10px;
+    }
+    .tab-pane .fwd-bck-btns button, .tab-pane .fwd-bck-btns1 button, .tab-pane .submitBlock button {
+        height: 27px !important;
+        padding: 3px 30px 3px 10px !important;
+    }
+    .tab-pane .fwd-bck-btns .nav-back-btn, .tab-pane .fwd-bck-btns1 .nav-back-btn, .tab-pane .submitBlock .nav-back-btn {
+        padding: 3px 10px 3px 30px !important;
+    }
+    .tab-pane .fwd-bck-btns button:after, .tab-pane .fwd-bck-btns1 button:after, .tab-pane .submitBlock button:after {
+        top: 3px;
+        font-size: 16px;
+    }
+    .tab-pane .gcss-button.btm_submitdealer:after {
+        font-size: 14px;
+    }
+    .pos-relative .img-blade-field~.col-xs-12 .reg .itemInfo {
+        width: 100%;
+    }
+    body .itemInfo .tabsContainer .tab-content {
+        padding: 10px !important;
+    }
+    .fixMenu {
+        top: 110px;
+    }
+    body .legendStyle.nav-tabs li a {
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    body .legendStyle.nav-tabs li a i {
+        margin: 0;
+    }
+}

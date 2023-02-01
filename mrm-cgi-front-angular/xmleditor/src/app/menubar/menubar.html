@@ -1,0 +1,27 @@
+<div class="menubarContentContainer" *ngIf="dataLoaded">
+	<div class="menubarItem" routerLinkActive="Active">
+		<a [routerLink]="['HomeSearch']">
+			{{messages.homeSearch}}
+		</a>
+	</div>
+	<div class="menubarItem" routerLinkActive="Active">
+		<a [routerLink]="['EditXml']">
+			{{messages.editXml}}
+		</a>
+	</div>
+	<div class="menubarItem" routerLinkActive="Active">
+		<a [routerLink]="['ViewXml']">
+			{{messages.viewXml}}
+		</a>
+	</div>
+	<div class="menubarItem" routerLinkActive="Active">
+		<a [routerLink]="['CloneXml']">
+			{{messages.cloneXml}}
+		</a>
+	</div>
+	<div class="menubarItem" routerLinkActive="Active">
+		<a [routerLink]="['DeleteXml']">
+			{{messages.deleteXml}}
+		</a>
+	</div>
+</div>

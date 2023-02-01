@@ -1,0 +1,13 @@
+{
+    "NameOfAPI": "getModelYear",
+    "StatusCode": 200,
+    "Message": "Success",
+    "data": {
+        "DealerCode": "69009",
+        "MakeCode": "Y",
+        "ModelYears": [
+            2018,
+            2019
+        ]
+    }
+}

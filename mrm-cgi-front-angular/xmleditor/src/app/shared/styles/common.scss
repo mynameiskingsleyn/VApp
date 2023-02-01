@@ -1,0 +1,126 @@
+$header_background_color: #0667D0;
+$menubar_background_color: #FFF;
+$content_background_color: #FFF;
+$footer_background_color: #FFF;
+
+$button_background_color: #1b5725;
+$button_border_color: #449e53;
+$button_hover_background_color: #247231;
+$button_font_color: #ffffff;
+$button_hover_font_color: #ffffff;
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+
+.hide {
+	display: none !important;
+}
+.show {
+	display: block !important;
+}
+
+.disabled {
+	pointer-events: none;
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.font-white {
+	color: #ffffff !important;
+}
+
+.font-black {
+	color: #000000;
+}
+
+.bld {
+	font-weight: bold;
+}
+
+.error-message {
+	position: relative;
+	font-size: 14px;
+	padding: 10px 20px;
+}
+
+.form-control {
+	font-size: 12px !important;
+}
+
+.btn-xsm {
+	font-size: 12px !important;
+	padding: 1px 5px !important;
+}
+
+.table td {
+	padding: 5px !important;
+}
+
+.search-data label {
+	display: inline-block;
+	font-size: 12px;
+	margin: 0px 5px 0px 10px;
+	font-weight: bold;
+	padding: 0px;
+}
+
+.search-data button {
+	margin-left: 10px;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.row {
+	margin-left:15px !important;
+	margin-right:10px !important;
+	margin-top:3px !important;
+	margin-bottom:3px !important;
+	display: block;
+}
+
+label {
+	font-weight: bold;
+	margin-left:10px;
+	margin-right:5px;
+	display: inline-block;
+}
+
+input {
+	display: inline-block !important;
+	margin-left: 5px !important;
+	margin-right:10px !important;
+}
+
+button {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+label.required:after
+{
+	color: red;
+	content: " *";
+}
+
+.loading{
+	position:fixed;
+	top:200px;
+	left:50%;
+	opacity:0.8;
+	color: red;
+	text-align: center;
+}
+
+.Active{
+	text-decoration: #449e53 underline;
+	background-color:lightgray;
+	color:white;
+}
+
+

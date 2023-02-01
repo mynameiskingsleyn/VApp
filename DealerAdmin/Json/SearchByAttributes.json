@@ -1,0 +1,109 @@
+{
+    "NameOfAPI": "SearchByAttributes",
+    "StatusCode": 200,
+    "Message": "Success",
+    "DealerCode": "69009",
+    "MakeCode": "Y",
+    "ModelYear": "2019",
+    "Model": "Giulia",
+    "Trim": "Giulia Sport",
+    "DriveNames": "AWD, FWD",
+    "ColorNames": null,
+    "TransmissionNames": null,
+    "EngineDescNames": null,
+    "vehicles": {
+        "list": [
+            {
+                "dealer_code": "69009",
+                "vin": "ZARFANAN0K7606963",
+                "make": "ALFA ROMEO",
+                "model": "Giulia",
+                "year": 2019,
+                "discount_name": "Sample1",
+                "flat_rate": "10",
+                "percent_offer": null,
+                "start_date": "2019-10-13 00:00:00",
+                "end_date": "2019-10-31 00:00:00",
+                "status": 1
+            },
+            {
+                "dealer_code": "69009",
+                "vin": "ZARFANAN0K7613248",
+                "make": "ALFA ROMEO",
+                "model": "Giulia",
+                "year": 2019,
+                "discount_name": "Sample2",
+                "flat_rate": null,
+                "percent_offer": "50",
+                "start_date": "2019-10-13 00:00:00",
+                "end_date": "2019-10-31 00:00:00",
+                "status": 1
+            },
+            {
+                "dealer_code": "69009",
+                "vin": "ZARFANAN4K7606013",
+                "make": "ALFA ROMEO",
+                "model": "Giulia",
+                "year": 2019,
+                "discount_name": null,
+                "flat_rate": null,
+                "percent_offer": null,
+                "start_date": null,
+                "end_date": null,
+                "status": null
+            },
+            {
+                "dealer_code": "69009",
+                "vin": "ZARFANAN4K7613687",
+                "make": "ALFA ROMEO",
+                "model": "Giulia",
+                "year": 2019,
+                "discount_name": null,
+                "flat_rate": null,
+                "percent_offer": null,
+                "start_date": null,
+                "end_date": null,
+                "status": null
+            },
+            {
+                "dealer_code": "69009",
+                "vin": "ZARFANAN5K7605596",
+                "make": "ALFA ROMEO",
+                "model": "Giulia",
+                "year": 2019,
+                "discount_name": null,
+                "flat_rate": null,
+                "percent_offer": null,
+                "start_date": null,
+                "end_date": null,
+                "status": null
+            },
+            {
+                "dealer_code": "69009",
+                "vin": "ZARFANAN5K7607008",
+                "make": "ALFA ROMEO",
+                "model": "Giulia",
+                "year": 2019,
+                "discount_name": null,
+                "flat_rate": null,
+                "percent_offer": null,
+                "start_date": null,
+                "end_date": null,
+                "status": null
+            },
+            {
+                "dealer_code": "69009",
+                "vin": "ZARFANAN7K7613294",
+                "make": "ALFA ROMEO",
+                "model": "Giulia",
+                "year": 2019,
+                "discount_name": null,
+                "flat_rate": null,
+                "percent_offer": null,
+                "start_date": null,
+                "end_date": null,
+                "status": null
+            }
+        ]
+    }
+}

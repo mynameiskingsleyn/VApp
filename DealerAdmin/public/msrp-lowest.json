@@ -1,0 +1,20 @@
+{
+    "NameOfAPI": "getVehicleSelection",
+    "StatusCode": 200,
+    "Message": "Success",
+    "data": {
+        "DealerCode": "69009",
+        "MakeCode": "Y",
+        "ModelYear": "2019",
+        "Models": [
+            "Lowest",
+            "25000",
+            "35000",
+            "45000",
+            "55000",
+            "65000",
+            "75000",
+            "85000"
+        ]
+    }
+}

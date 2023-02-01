@@ -1,0 +1,15 @@
+@import '../shared/styles/common.scss';
+.navbar {
+	padding: 0.2rem 1rem !important;
+}
+
+.navbar-brand {
+	font-size: 15px !important;
+    font-weight: bold !important;
+}
+
+.logout {
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+}

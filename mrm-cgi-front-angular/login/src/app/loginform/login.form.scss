@@ -1,0 +1,56 @@
+@import '../shared/styles/common.scss';
+.loginContentContainer {
+	position: relative;
+	margin: 0 auto;
+	top: 100px;
+	width: 25%;
+	vertical-align: middle;
+	//border: none;
+	padding: 10px;
+	color: black;
+	//border: 1px solid #6283c2;
+	background: #f0eff3;
+
+	.login-form {
+		position: relative;
+	}
+
+	.login-padding {
+		padding: 10px;
+	}
+
+	.error-message {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		padding: 0;
+		margin-top: 3px;
+		min-height: 1px;
+		color: red;
+	}
+	
+	.label {
+	 	position: relative;
+	 	font-size: 20px;
+	 	margin: 10px 5px;
+		font-weight: bold;
+		color: black;
+		width: 100px;
+		text-decoration: underline;
+  		text-decoration-color: #999493;
+	}
+
+	input {
+	 	position: relative;
+	 	font-size: 18px;
+	 	margin: 10px 0;
+	 	height: 24px;
+		border:0;
+		width: 97%;
+		border: 1px solid #6283c2;
+	}
+
+	button {
+		width: 25%;
+	}
+}

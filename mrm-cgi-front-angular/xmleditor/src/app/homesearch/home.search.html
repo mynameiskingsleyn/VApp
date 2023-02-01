@@ -1,0 +1,126 @@
+<div *ngIf="searchCriteria.dataLoaded">
+
+	<div class="row">
+		<label class="required" for="country">{{messages.country}}</label>
+		<label style="margin: 0; padding: 0;">:</label>&nbsp;
+		<select [(ngModel)]="searchCriteria.selectedCountry" id="country" (change)="selectCountry()">
+			<option *ngFor="let country of searchCriteria.countries" value={{country.value}}>{{country.name}}</option>
+		</select>
+
+		<label class="required" for="year">{{messages.year}}</label>
+		<label style="margin: 0; padding: 0;">:</label>&nbsp;
+		<select [(ngModel)]="searchCriteria.selectedYear" id="year" (change)="selectYear()">
+			<option *ngFor="let year of searchCriteria.years" value={{year.name}}>{{year.value}}</option>
+		</select>
+
+		<label class="required" for="brand">{{messages.brand}}</label>
+		<label style="margin: 0; padding: 0;">:</label>&nbsp;
+		<select [(ngModel)]="searchCriteria.selectedBrand" id="brand" (change)="selectBrand()">
+			<option *ngFor="let brand of searchCriteria.brands" value={{brand.name}}>{{brand.value}}</option>
+		</select>
+
+		<label for="model">{{messages.model}}:</label>
+		<select [(ngModel)]="searchCriteria.selectedModel" id="model" (change)="selectModel()">
+			<option *ngFor="let model of searchCriteria.models" value={{model.name}}>{{model.value}}</option>
+		</select>
+
+		<label for="model">{{messages.mmc}}:</label>
+		<select [(ngModel)]="searchCriteria.selectedMmc" id="mmc">
+			<option *ngFor="let mmc of searchCriteria.mmc" value={{mmc.name}}>{{mmc.value}}</option>
+		</select>
+
+		<input size="8" type="text" placeholder="MMC" [(ngModel)]="byHandMMC" (keyup)="checkAllDropdowns()"/>
+
+		<button [disabled]="!searchFlag" class="btn btn-info btn-sm search-btn" (click)='searchXml()'>{{messages.search}}</button>
+		&nbsp;&nbsp;
+		<button [disabled]="!searchCriteria.searchResultLoaded" class="btn btn-info btn-sm search-btn" (click)='getXmlFiles()'>{{messages.getFiles}}</button>
+		&nbsp;&nbsp;
+		<button [disabled]="!canReset" class="btn btn-info btn-sm search-btn" (click)='resetSearch()'>{{messages.reset}}</button>
+
+		<button class="btn btn-info btn-sm btn-md search-btn" (click)='commitChanges()'>Commit</button>
+	</div>
+	<br />
+
+	<div class="row">
+		<h4  style="color: green;">{{successMessage}}</h4>
+		<h4 style="color: red;"> {{ errorMessage }} </h4>
+		<span *ngIf="filesMissing" >
+			<div *ngFor="let file of nonExistFiles" style="color:red;">
+				{{file}} <br />
+			</div>
+
+		</span>
+
+	</div>
+	<br />
+	<div class ="row" *ngIf="commitFlaged">
+		<div class="col-12 form-group">
+			<label for="comment" class="label">SVN Comment:</label>
+			<input size="20" type="text" placeholder="Commit comment" [(ngModel)]="svnComment"/>
+		</div>
+		<div class="col-12 form-group">
+			<label for="username" class="label">SVN UserName:</label>
+			<input size="20" type="text" placeholder="SVN username" [(ngModel)]="svnUser"  />
+		</div>
+		<div class="col-12 form-group">
+			<label for="userpassword" class="label">SVN Password:</label>
+			<input size="20" type="password" placeholder="SVN password" [(ngModel)]="svnPassword" />
+		</div>
+		<div class="col-12 form-group">
+			<button class="btn btn-success" (click)="submitCommit()">
+				Confirm
+			</button>
+			<button class="btn btn-outline-warning" (click)="cancelCommit()">Cancel</button>
+		</div>
+
+
+
+
+	</div>
+	<div class="row" *ngIf="searchCriteria.searchResultLoaded && !searchResultFlag && !commitFlaged">
+		<div *ngIf="viewFilesFlag ">
+			<table class="table table-bordered">
+				<tr>
+					<th>{{messages.standardFiles}}</th>
+					<th>{{messages.interior}}&nbsp;&nbsp;/&nbsp;&nbsp;{{messages.Exterior}}</th>
+					<th>{{messages.layerFiles}}&nbsp;&nbsp;/&nbsp;&nbsp;{{messages.LayersAngle}}</th>
+				</tr>
+				<tr *ngFor="let standardFile of xmlSearchResult.data.StandardFiles; let i = index;">
+					<td>
+						<input type="checkbox" [(ngModel)]="xmlSearchResult.data.StandardFiles[i].getFile" (change)="selectAllLayers()"/>
+						&nbsp;<span
+							(mouseover)="standardFile.user = true"
+							(mouseleave)="standardFile.user = false">{{standardFile.name}}
+						<div class="tipDiv">
+									<span *ngIf="standardFile.user" class="tipTool">  {{ ownerHere(standardFile.owner) }}
+									</span>
+							</div>
+						</span>
+					</td>
+					<td *ngIf="standardFile.exterior === 1">{{messages.displayExterior}}</td>
+					<td *ngIf="standardFile.exterior === 0">{{messages.displayInterior}}</td>
+					<td>
+						<div *ngFor="let layerFile of standardFile.layerFiles; let j = index;">
+							<input type="checkbox" disabled [(ngModel)]="xmlSearchResult.data.StandardFiles[i].layerFiles[j].getFile"/>
+							<span (mouseover)="layerFile.user = true"
+								  (mouseleave)="layerFile.user = false">{{layerFile.name}}&nbsp;&nbsp;/&nbsp;&nbsp;{{layerFile.layer_angle}}
+								<div class="tipDiv">
+									<span *ngIf="layerFile.user" class="tipTool">  {{ ownerHere(layerFile.owner) }}
+									</span>
+								</div>
+
+							</span>
+							&nbsp;
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="loading" *ngIf="isLoading">
+		<img class="img-responsive" src="assets/images/mrmSmallLoader.gif" width="100px" height="100px">
+	</div>
+
+</div>
+

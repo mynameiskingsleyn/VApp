@@ -1,0 +1,13 @@
+<div class="loginContentContainer">
+	<div class="login-form">
+		<div class="login-padding">
+			<div class="error-message" id="errorMessage">{{errorMessage}}</div>
+			<div class="label">{{messages.username}}</div>
+			<input type="text" [(ngModel)]='user.userName'/>
+			<div class="label">{{messages.password}}</div>
+			<input type="password" [(ngModel)]='user.password'/>
+			<br /><br />
+			<button class="btn btn-info btn-sm search-btn" (click)='loginUser()'>{{messages.login}}</button>
+		</div>
+	</div>
+</div>

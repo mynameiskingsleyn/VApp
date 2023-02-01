@@ -1,0 +1,193 @@
+<div class="container-fluid" *ngIf="dataLoaded">
+	<div class="top-row search-data col-lg-12">
+		<label for="year">{{messages.year}}: </label> <span id="year">{{searchCriteria.selectedYear}} </span>
+
+		<label for="country">{{messages.country}}: </label> <span id="country">{{searchCriteria.selectedCountry}} </span>
+
+		<label for="brand">{{messages.brand}}: </label> <span id="brand">{{searchCriteria.selectedBrand}} </span>
+
+		<label for="model">{{messages.model}}: </label> <span id="model">{{removePleaseSelect(searchCriteria.selectedModel)}} </span>
+
+		<button [disabled] ="!canSubmit" (click)='submitXml()' class="btn btn-info btn-sm search-btn">{{messages.submit}}</button>
+		<button (click)='resetXml()' class="btn btn-info btn-sm search-btn">{{messages.reset}}</button>
+	</div>
+	<div class="pop-up" *ngIf="submitFlag">
+		<br />
+		<h4 class="row">{{messages.pleaseConfirmClone}}:</h4>
+		<div class="row">
+			<label class="required" for="country">{{messages.country}}</label>
+			<label style="margin: 0; padding: 0;">:</label>&nbsp;
+			<select [(ngModel)]="cloneTargetSearchCriteria.selectedCountry" id="country" (change)="selectCountry()">
+				<option *ngFor="let country of cloneTargetSearchCriteria.countries" value={{country.value}}>{{country.name}}</option>
+			</select>
+
+			<label class="required" for="year">{{messages.year}}</label>
+			<label style="margin: 0; padding: 0;">:</label>&nbsp;
+			<select [(ngModel)]="cloneTargetSearchCriteria.selectedYear" id="year" (change)="selectYear()">
+				<option *ngFor="let year of cloneTargetSearchCriteria.years" value={{year.name}}>{{year.value}}</option>
+			</select>
+
+			<label class="required" for="brand">{{messages.brand}}</label>
+			<label style="margin: 0; padding: 0;">:</label>&nbsp;
+			<select [(ngModel)]="cloneTargetSearchCriteria.selectedBrand" id="brand" (change)="selectBrand()">
+				<option *ngFor="let brand of cloneTargetSearchCriteria.brands" value={{brand.name}}>{{brand.value}}</option>
+			</select>
+
+			<label for="model">{{messages.model}}</label>
+			<select [(ngModel)]="cloneTargetSearchCriteria.selectedModel" id="model" (change)="selectModel()">
+				<option *ngFor="let model of cloneTargetSearchCriteria.models" value={{model.name}}>{{model.value}}</option>
+			</select>
+
+			<input size="25" type="text" placeholder="New Model" [(ngModel)]="newModelTextField" (keyup)="validateAllFiles()"/>
+		</div>
+		<br />
+		<div class="row" *ngIf="searchCriteria.searchResultLoaded">
+			<table class="table table-bordered">
+				<tr>
+					<th>
+						{{messages.standardFiles}}
+					</th>
+					<th>
+						{{messages.interior}}&nbsp;&nbsp;/&nbsp;&nbsp;{{messages.Exterior}}
+					</th>
+					<th>
+						{{messages.layerFiles}}&nbsp;&nbsp;/&nbsp;&nbsp;{{messages.LayersAngle}}
+					</th>
+				</tr>
+				<tr *ngFor="let standardFile of finalDataForClone.StandardFiles; let i = index;">
+					<td>
+						<div *ngIf="finalDataForClone.StandardFiles[i].cloned === true; else notClonedStd" class="row">
+							<input type="checkbox" disabled [(ngModel)]="finalDataForClone.StandardFiles[i].clone"/>
+							&nbsp;
+							<b>{{messages.originalStandardXml}}</b> : {{standardFile.value}}
+							<br />
+							<span style="padding-left: 22px;" class="row">
+								<b>{{messages.targetStandardXml}}</b>&nbsp;:&nbsp;&nbsp;
+								<input size="37" type="text" [(ngModel)]="finalDataForClone.StandardFiles[i].name" (keyup)="validateAllFiles()" />
+							</span>
+						</div>
+						<ng-template #notClonedStd>
+							<div class="row">
+								<input type="checkbox" disabled [(ngModel)]="finalDataForClone.StandardFiles[i].clone"/>
+								&nbsp;
+								<b>{{messages.originalStandardXml}}</b> :
+								<br />
+								<div style="padding-left: 22px;" class="row">
+									<b>{{messages.targetStandardXml}}</b>&nbsp;:&nbsp;&nbsp;
+									<input size="37" type="text" [(ngModel)]="finalDataForClone.StandardFiles[i].name" (keyup)="validateAllFiles()"/>
+								</div>
+							</div>
+						</ng-template>
+					</td>
+					<td *ngIf="standardFile.exterior === 1">{{messages.displayExterior}}</td>
+					<td *ngIf="standardFile.exterior === 0">{{messages.displayInterior}}</td>
+					<td>
+						<div *ngFor="let layerFile of standardFile.layerFiles; let j = index;">
+							<div *ngIf="finalDataForClone.StandardFiles[i].layerFiles[j].cloned === true">
+								<input type="checkbox" disabled [(ngModel)]="finalDataForClone.StandardFiles[i].layerFiles[j].clone"/>
+								&nbsp;
+								<b>{{messages.originalLayerXml}}</b> : {{layerFile.value}}
+								<br />
+								<span style="padding-left: 22px;" class="row">
+									<b>{{messages.targetLayerXml}}</b>&nbsp;:&nbsp;&nbsp;
+									<input size="37" type="text" [(ngModel)]="finalDataForClone.StandardFiles[i].layerFiles[j].name" (keyup)="validateAllFiles()"/>
+								</span>
+								<span style="padding-left: 22px;" class="row">
+									<b>{{messages.targetLayerAngle}}</b>&nbsp;:&nbsp;&nbsp;
+									<input size="8" type="text" [(ngModel)]="finalDataForClone.StandardFiles[i].layerFiles[j].layer_angle"/>
+								</span>
+								<br />
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="row">
+			<button [disabled]="!validateFlag" class="btn btn-danger btn-info search-btn" (click)='confirmClone()'>{{messages.confirmClone}}</button>
+			<button class="btn btn-primary btn-info search-btn" (click)='cancelClone()'>{{messages.cancel}}</button>
+		</div>
+	</div>
+	<div class="clearfix">&nbsp;</div>
+	<div *ngIf="submitFlag === false">
+		<h4 class="status-message" *ngIf="cloneConfirmationStatus.status === 'success'">
+			{{cloneConfirmationStatus.message}}
+		</h4>
+		<h4 class="status-message" style="color: red" *ngIf="cloneConfirmationStatus.status === 'failure'">
+			{{cloneConfirmationStatus.errorMessage}}.<br />{{cloneConfirmationStatus.detailMessage}}
+		</h4>
+		<div class="messages">
+			<h4 class="status-message" style="color: red">
+				{{errorMessage}}
+			</h4>
+		</div>
+		<div class="row" *ngIf="searchCriteria.searchResultLoaded">
+			<h4>{{messages.selectedFilesCloned}}</h4>
+			<table class="table table-bordered">
+				<tr>
+					<th>
+						{{messages.standardFiles}} &nbsp;&nbsp;
+						<button class="btn btn-xsm btn-primary" (click)='cloneStandards()'>
+							{{messages.cloneStandards}}
+						</button>
+						&nbsp;
+						<button class="btn btn-xsm btn-primary" (click)='deleteStandards()'>
+							{{messages.deleteStandards}}
+						</button>
+					</th>
+					<th>
+						{{messages.interior}}&nbsp;&nbsp;/&nbsp;&nbsp;{{messages.Exterior}}
+					</th>
+					<th>
+						{{messages.layerFiles}}&nbsp;&nbsp;/&nbsp;&nbsp;{{messages.LayersAngle}}
+						&nbsp;&nbsp;
+						<button class="btn btn-xsm btn-primary" (click)='cloneLayers()'>
+							{{messages.cloneLayers}}
+						</button>
+						&nbsp;
+						<button class="btn btn-xsm btn-primary" (click)='deleteLayers()'>
+							{{messages.deleteLayers}}
+						</button>
+					</th>
+				</tr>
+				<tr *ngFor="let standardFile of xmlCloneRequest.StandardFiles; let i = index;">
+					<td>
+						<div class="row" *ngIf="xmlCloneRequest.StandardFiles[i].cloned === true; else notClonedStd">
+							<input type="checkbox" [(ngModel)]="xmlCloneRequest.StandardFiles[i].clone"/>
+							&nbsp;
+							<input size="37" type="text" [(ngModel)]="xmlCloneRequest.StandardFiles[i].name"/>
+						</div>
+						<ng-template #notClonedStd>
+							<div class="row">
+								<input type="checkbox" [(ngModel)]="xmlCloneRequest.StandardFiles[i].clone"/>
+								&nbsp;{{standardFile.name}}
+							</div>
+						</ng-template>
+					</td>
+					<td *ngIf="standardFile.exterior === 1">{{messages.displayExterior}}</td>
+					<td *ngIf="standardFile.exterior === 0">{{messages.displayInterior}}</td>
+					<td>
+						<div *ngFor="let layerFile of standardFile.layerFiles; let j = index;">
+							<div class="row" *ngIf="xmlCloneRequest.StandardFiles[i].layerFiles[j].cloned === true; else notCloneLayer">
+								<input type="checkbox" [(ngModel)]="xmlCloneRequest.StandardFiles[i].layerFiles[j].clone"/>
+								&nbsp;
+								<input size="37" type="text" [(ngModel)]="xmlCloneRequest.StandardFiles[i].layerFiles[j].name"/>
+								&nbsp;&nbsp;/&nbsp;&nbsp;
+								<input size="8" type="text" [(ngModel)]="xmlCloneRequest.StandardFiles[i].layerFiles[j].layer_angle"/>
+							</div>
+							<ng-template #notCloneLayer>
+								<div class="row">
+									<input type="checkbox" [(ngModel)]="xmlCloneRequest.StandardFiles[i].layerFiles[j].clone"/>
+									&nbsp;{{layerFile.name}}&nbsp;&nbsp;/&nbsp;&nbsp;{{layerFile.layer_angle}}
+								</div>
+							</ng-template>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="loading" *ngIf="isLoading">
+		<img class="img-responsive" src="assets/images/mrmSmallLoader.gif" width="100px" height="100px">
+	</div>
+</div>

@@ -1,0 +1,23 @@
+{
+    "NameOfAPI": "SearchByVIN",
+    "StatusCode": 200,
+    "Message": "Success",
+    "DealerCode": "69009",
+    "MakeCode": "Y",
+    "VinNumber": "ZARFANAN0K7606963",
+    "vehicle": [
+        {
+            "dealer_code": "69009",
+            "vin": "ZARFANAN0K7606963",
+            "make": "ALFA ROMEO",
+            "model": "Giulia",
+            "year": 2019,
+            "discount_name": "Sample1",
+            "flat_rate": "10",
+            "percent_offer": null,
+            "start_date": "2019-10-13 00:00:00",
+            "end_date": "2019-10-31 00:00:00",
+            "status": 1
+        }
+    ]
+}

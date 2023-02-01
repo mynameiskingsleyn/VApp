@@ -1,0 +1,31 @@
+@import '../shared/styles/common.scss';
+.menubarContentContainer {
+	position: relative;
+    padding: 20px;
+	vertical-align: middle;
+	border-bottom: none;
+	padding: 0;
+	border-bottom: 1px dotted #CCC;
+	margin-bottom: 15px;
+	background-color: $content_background_color;
+	.menubarItem {
+		display: inline-block;
+		margin: 0;
+		font-weight: bold;
+		font-size: 14px !important;
+		padding: 15px 20px;
+		a {
+			text-decoration: none;
+			color: #666;
+		}
+		a:hover {
+			text-decoration: underline;
+			color: #000000;
+		}
+
+		a.disabled {
+			pointer-events: none;
+   			cursor: default;
+		}
+	}
+}

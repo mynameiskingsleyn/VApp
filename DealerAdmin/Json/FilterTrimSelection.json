@@ -1,0 +1,18 @@
+{
+    "NameOfAPI": "getVehicleSelection",
+    "StatusCode": 200,
+    "Message": "Success",
+    "data": {
+        "DealerCode": "69009",
+        "MakeCode": "Y",
+        "ModelYear": "2019",
+        "Model": "Giulia",
+        "Trims": [
+            "Giulia Sport",
+            "Giulia Ti",
+            "Giulia Ti Lusso",
+            "Giulia Ti Sport",
+            "Giulia Ti Sport Carbon"
+        ]
+    }
+}

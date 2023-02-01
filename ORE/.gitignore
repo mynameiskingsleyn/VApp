@@ -1,0 +1,9 @@
+/.env
+/*.sh
+/Ore1.sh
+/Ore.sh
+
+/vendor
+vendor/
+./idea
+.idea

@@ -1,0 +1,285 @@
+/* Responsive Part CSS */
+@media all and (max-width: 1200px) {
+    body{
+        section.main{
+            margin: 30px auto;
+            .leftMenu{
+                h4{
+                    font-size: 15px;
+                }
+            }
+        }
+       .legendStyle.nav-tabs{
+            li{
+                &:first-child{
+                    padding-left: 0;
+                }
+                a{
+                   font-size: 14px;
+                   padding: 15px;
+                }
+                &.active{
+                    a{
+                    font-size: 14px; 
+                    }
+                }
+            }
+       }
+    }
+}
+@media all and (min-width: 992px) {
+    #landingPage{
+        .brandList{
+            >div{
+                width: 18%;
+                &.fiat{
+                    width: 10%;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 991px) {
+    body{
+        >header{
+            .brandLogos{
+                ul{
+                    li{
+                        a{
+                            &.imageFrame{
+                                width: 70px;
+                            }
+                        }
+                    }
+                }
+            }
+            .navigation{
+                a{
+                    padding: 40px 10px; 
+                }
+            }
+            .brandAddressBlock{
+                >div{
+                    &.info{
+                        font-size: 12px;
+                    }
+                    
+                }
+            }
+        }
+        section.main{
+            #searchInfo{
+                .header{
+                    margin: 25px 0 25px;
+                    font-size: 22px;;
+                }
+                .sortByBlock{
+                    position: static;
+                    margin: 20px 0;
+                 }
+            }
+            .leftSideBar{
+                left: -100%;
+                transition: 0.5s;
+                position: fixed;
+                z-index: 1;
+                background: #fff;
+                width: 70%;
+                height: 100%;
+                top: 0;
+                overflow-y: scroll;
+                .leftMenu{
+                    border: none;
+                }
+            }
+        }
+        #serviceProtection{
+            .header{
+                h2{
+                    font-size: 25px;
+                }
+                p{
+                    border-left: none;
+                    padding: 0;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .vehicleTable{
+            .top{
+                .contentBlock{
+                    border-top: 0;
+                }
+            }
+        }
+    }
+    
+    .showInDevice {
+        display: block
+    }
+    .hideForDevices {
+        display: none
+    }
+    .text-md-left {
+        text-align: left!important
+    }
+
+    .text-md-right {
+        text-align: right!important
+    }
+
+    .text-md-center {
+        text-align: center!important
+    }
+
+    .text-md-justify {
+        text-align: justify!important
+    }
+}
+
+@media all and (max-width: 767px) {
+    body{
+        >header{
+            .brandAddressBlock{
+                .imageFrame{
+                    margin: auto;
+                }
+                >div{
+                    float: none;
+                    &.info{
+                        font-size: 12px;
+                        border-left: none;
+                        margin: 15px 0 0;
+                        padding-left: 0;
+                        text-align: center;
+                    }
+                    
+                }
+            }
+        }
+        section.main{
+            #searchInfo{
+                
+            } 
+        }
+        #landingPage{
+            .vCardParent{
+                padding: 0;
+            }
+        }
+        
+    }
+    .text-sm-left {
+        text-align: left!important
+    }
+
+    .text-sm-right {
+        text-align: right!important
+    }
+
+    .text-sm-center {
+        text-align: center!important
+    }
+
+    .text-sm-justify {
+        text-align: justify!important
+    }
+}
+
+@media all and (max-width: 574px) {
+    body{
+        .brandLogos{
+            .list-inline{
+                li{
+                    width: 32%;
+                }
+            }
+        }
+        section.main{
+            .brandLogos{
+                ul{
+                    li{
+                        width: 32%;
+                        a{
+                        }
+                    }
+                }
+            }
+            .listBlock .nav-tabs li a{
+                font-size: 13px;
+            }
+            .footerBtns{
+                .btn{
+                    width: 100%;
+                    margin: 5px 0;
+                }
+            }
+        }
+        .detailBody{
+            .fwd-bck-btns{
+                button{
+                    width: 80%;
+                    margin: 5px auto !important;
+                }
+            }
+        }
+        #zipCodePopUp{
+            .modal-body{
+                h2{
+                    font-size: 22px;
+                }
+                .zipCodeCont{
+                    width: 100%;
+                }
+            }
+        }
+        #serviceProtection{
+            .header{
+                h2{
+                    font-size: 20px;
+                }
+            }
+        }
+    .noResults{
+        .cont{
+            p{
+                font-size: 12px;
+                &.highLight{
+                    font-size: 14px;
+                }
+            }
+            .optionsBlock{
+                .btn{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .text-xs-left {
+        text-align: left!important
+    }
+
+    .text-xs-right {
+        text-align: right!important
+    }
+
+    .text-xs-center {
+        text-align: center!important
+    }
+
+    .text-xs-justify {
+        text-align: justify!important
+    }
+}
+}
+
+@media all and (max-width: 400px) {
+    body{
+        section.main{
+            .leftSideBar{
+                width: 80%;
+            }
+        }
+    }
+    
+}

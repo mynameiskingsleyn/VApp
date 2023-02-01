@@ -1,0 +1,500 @@
+@import 'style';
+body{
+	$themeClr : #ffba00;
+    /* ********Colors******** */
+
+        /*BACKGROUND COLORS*/
+        .gcss-colors-background-primary{
+            background: #fff;
+        }
+        .gcss-colors-background-tertiary{
+            background: #D1D1D1;
+        }
+        .gcss-colors-background-gutter{
+            background: #E3E3E3;
+        }
+        .gcss-colors-background-secondary{
+            background: #E7E7E7;
+        }
+        .gcss-colors-background-quaternary{
+            background: #FFFFFF;
+        }
+        .gcss-colors-background-semi-opaque{
+            background: none;
+        }
+
+        /*Element Background Colors*/
+        .gcss-colors-element-primary{
+            background: $themeClr;
+        }
+        .gcss-colors-element-secondary{
+            background: #636363;
+        }
+        .gcss-colors-element-tertiary{
+            background: #000000;
+        }
+        .gcss-colors-element-accent{
+            background: $themeClr;
+        }
+        .gcss-colors-element-complementary{
+            background: #EAAB00;
+        }
+        .gcss-colors-element-subdued{
+            background: #636363;
+        }
+        .gcss-colors-element-subdued-dark{
+            background: #BFBFBF;
+        }
+        .gcss-colors-element-subdued-light{
+            background: none;
+        }
+        .gcss-colors-element-error{
+            background: #F02222;
+        }
+        .gcss-colors-element-positive{
+            background: $themeClr;
+        }
+        .gcss-colors-element-disclosure-bubble{
+            background: #3E3E3E;
+        }
+        .gcss-colors-element-warning{
+            background: #CA4D01;
+        }
+        .gcss-colors-element-disclosure-panel{
+            background: #FFFFFF;
+        }
+        .gcss-colors-element-bottom-navigation-previous{
+            background: #636363;
+        }
+
+        /* HEADING TEXT COLORS */
+        .gcss-colors-element-heading{
+            color: #000000;
+        }
+
+        /*BODY TEXT COLORS*/
+        .gcss-colors-text-body-primary{
+            color: #000000;
+        }
+        .gcss-colors-text-body-tertiary{
+            color: #636363;
+        }
+        .gcss-colors-text-body-secondary{
+            color: #636363;
+        }
+
+        /* ELEMENT TEXT COLORS */
+        .gcss-colors-text-element-primary{
+            color: #000000;
+        }
+        .gcss-colors-text-element-subdued{
+            color: #E7E7E7;
+        }
+        .gcss-colors-text-disclosure-panel{
+            color: #000000;
+        }
+        .gcss-colors-text-element-secondary{
+            color: #FFFFFF;
+        }
+        .gcss-colors-text-disclosure-bubble{
+            color: #FFFFFF;
+        }
+
+        /* LINE COLORS */
+        .gcss-colors-line-primary{
+            border-color: #BFBFBF;
+        }
+    /* ********Colors******** */
+
+
+    /* ********Typography******** */
+        /* BRAND HEADINGS */
+        .gcss-typography-brand-heading-1{
+            font-size: 50px;
+            font-size: 3.57143rem;
+        }
+        .gcss-typography-brand-heading-2{
+            font-size: 40px;
+            font-size: 2.85714rem;
+        }
+        .gcss-typography-brand-heading-3{
+            font-size: 33px;
+            font-size: 2.35714rem;
+        }
+        .gcss-typography-brand-heading-4{
+            font-size: 30px;
+            font-size: 2.14286rem;
+        }
+        .gcss-typography-brand-heading-5{
+            font-size: 24px;
+            font-size: 1.78571rem;
+        }
+        .gcss-typography-brand-heading-6{
+            font-size: 23px;
+            font-size: 1.64286rem;
+        }
+
+        /* UTILITY HEADINGS */
+        .gcss-typography-utility-heading-1{
+            font-size: 31px;
+            font-size: 2.28571rem;
+            font-weight: 700;
+        }
+        .gcss-typography-utility-heading-2{
+            font-size: 31px;
+            font-size: 2.28571rem;
+            font-weight: 500;
+        }
+        .gcss-typography-utility-heading-3{
+            font-size: 24px;
+            font-size: 1.78571rem;
+            font-weight: 700;
+        }
+        .gcss-typography-utility-heading-4{
+            font-size: 24px;
+            font-size: 1.78571rem;
+            font-weight: 500;
+        }
+        .gcss-typography-utility-heading-5{
+            font-size: 20px;
+            font-size: 1.42857rem;
+            font-weight: 700;
+        }
+        .gcss-typography-utility-heading-6{
+            font-size: 20px;
+            font-size: 1.42857rem;
+            font-weight: 500;
+        }
+        .gcss-typography-utility-heading-7{
+            font-size: 40px;
+            font-size: 2.85714rem;
+            font-weight: 700;
+        }
+        /* UTILITY HEADINGS BIG */
+        .gcss-typography-utility-heading-big-1{
+            font-size: 40px;
+            font-size: 2.85714rem;
+            font-weight: 700;
+        }
+        .gcss-typography-utility-heading-big-2{
+            font-size: 40px;
+            font-size: 2.85714rem;
+            font-weight: 900;
+        }
+        .gcss-typography-utility-heading-big-3{
+            font-size: 50px;
+            font-size: 3.57143rem;
+            font-weight: 900;
+        }
+        .gcss-typography-utility-heading-big-4{
+            font-size: 65px;
+            font-size: 4.64286rem;
+            font-weight: 900;
+        }
+
+        /* BODY COPY */
+        .gcss-typography-font-size-default{
+            font-size: 14px;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        /* LABEL COPY */
+        .gcss-typography-label-1{
+            font-size: 17px;
+            font-size: 1.21429rem;
+            font-weight: 700;
+        }
+        .gcss-typography-label-2{
+            font-size: 14px;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        .gcss-typography-label-3{
+            font-size: 14px;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        .gcss-typography-label-4{
+            font-size: 12px;
+            font-size: .85714rem;
+            font-weight: 700;
+        }
+        .gcss-typography-label-5{
+            font-size: 12px;
+            font-size: .85714rem;
+            font-weight: 400;
+        }
+        .gcss-typography-label-6{
+            font-size: 10px;
+            font-size: .71429rem;
+            font-weight: 700;
+        }
+        .gcss-typography-label-7{
+            font-size: 10px;
+            font-size: .71429rem;
+            font-weight: 400;
+        }
+        .gcss-typography-label-8{
+            font-size: 10px;
+            font-size: .78571rem;
+            font-weight: 400;
+        }
+        .gcss-typography-label-9{
+            font-size: 8px;
+            font-size: .57143rem;
+            font-weight: 400;
+        }
+        .gcss-typography-label-10{
+            font-size: 14px;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+    /* ********Typography******** */
+
+    /* ********BUTTON WITH CHEVRON******** */
+        .gcss-button{
+            background-color: $themeClr;
+            border-radius: .14286rem;
+            color: #000;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'robotolight';
+            font-size: 1rem;
+            font-weight: normal;
+            line-height: 1;
+            padding: 1rem 3rem .85714rem 1.78571rem;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            -webkit-transition: background-color 250ms ease-in-out;
+            transition: background-color 250ms ease-in-out;
+            &:hover{
+                background-color: #edad01;
+                text-decoration: none;
+            }
+        }
+        .gcss-button-secondary{
+            background-color: #636363;
+            border-radius: .14286rem;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            /*font-family: "Proxima Nova";*/
+            font-size: 1rem;
+            font-weight: normal;
+            line-height: 1;
+            padding: 1rem 3rem .85714rem 1.78571rem;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            -webkit-transition: background-color 250ms ease-in-out;
+            transition: background-color 250ms ease-in-out;
+            &:hover{
+                background-color: #4f4f4f;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .gcss-button-tertiary{
+            color: #000;
+            cursor: pointer;
+            display: inline-block;
+            font-family: "Roboto";
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1;
+            padding: 0 1.21429rem 0 0;
+            position: relative;
+            text-decoration: none;
+            -webkit-transition: border-color 250ms ease-in-out;
+            transition: border-color 250ms ease-in-out;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    /* ********BUTTON SIZE & WIDTH******** */
+    .gcss-button{
+        &.gcss-button-small{
+            font-size: 12px;
+            font-size: .85714rem;
+            padding: .64286rem 2.07143rem .64286rem 1.21429rem;
+        }
+        &.gcss-button-plain{
+            padding-right: 1.78571rem;
+        }
+        &.gcss-button-block{
+            display: block;
+        }
+        &[class*=gcss-icon-]{
+            padding-left: 3.42857rem;
+        }
+
+    }
+    /* ********BUTTON SIZE & WIDTH******** */
+
+    /* CUSTOM CSS */
+    
+
+    .themeClr,.themeClr2{
+        color: $themeClr!important;
+    }
+    .theme{
+        background: $themeClr;
+        color: #000;
+        border-color: $themeClr;
+    }
+    .sGrey{
+        &:hover{
+            color: $themeClr !important;
+        }
+    }
+    .customCheckBox{
+        input[type=checkbox] {
+            &:checked{
+                &+span:before{
+                    background: $themeClr;
+                }
+                &+span:after{
+                    border-color: $themeClr!important;
+                    background: $themeClr;
+                }
+            }
+        }
+    }
+    .select-wrapper{
+        &::before{      
+            color: $themeClr;
+        }
+    }
+    .select-wrapper.bg{
+        &::before{      
+            background: $themeClr;
+            color: #000;
+        }
+    }
+    .customRadioBtn {
+        input[type=radio] {
+            &:checked{
+                &+span{
+                    &:after,&::before{
+                        border: 2px solid $themeClr;
+                    }  
+                }
+            }
+        }
+    }
+    #landingPage{
+        .brandList{
+            >div{
+                &.active{
+                    box-shadow: 0px 0px 25px $themeClr;
+                }
+            }
+        }
+    }
+    .rSlider{
+        >.progressInfo{
+            background: $themeClr;
+        }
+        >span{
+            background: url(../images/3lines_white.png) #000 !important;
+        }
+    }
+    .leftMenu{
+        form{
+            h4{
+                i{
+                    color: $themeClr;
+                }
+            }
+            .filterAttrs{
+                &.resetFiltersBlock{
+                    .btn{
+                        color: $themeClr;
+                    }
+                }
+            }
+        }
+    }
+    .vehiclesDisplaySection{
+        .footerBtns{
+            .btn{
+                i{
+                    
+                }
+            } 
+        }
+    }
+    .legendStyle.nav-tabs{
+        li{
+            >a{               
+                color: #000;
+                font-size: 13px;
+                i{
+                    color: $themeClr;
+                }
+            }
+            &.active{
+                a{
+                    background: $themeClr;
+                    color:#000;   
+                    &::after{
+                        border-color: rgba(136, 183, 213, 0);
+                        border-left-color: $themeClr; 
+                    }
+                    i{
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+    .wishListBlock{
+        .btn{
+            i{
+                color: $themeClr;
+            }
+            &:hover{
+                background: $themeClr;
+                color: #000;
+                border-color: #000;
+                i{
+                    color: #000;
+                }
+            }
+        }
+    }
+    .onOffSlider{
+        >label{
+            background: $themeClr;
+            color: #000000;
+        }
+    }
+
+    .customCheckBox{
+        input[type=checkbox] {
+            &:checked{
+                &+span:before{
+                    border-color: #000000;
+                }
+            }
+        }
+    }
+   
+    #paymentCalc,#leaseCalc,#cashCalc{
+        .modal-body{
+            ul.popUpScroll{
+                >li{
+                    h4{
+                        i.glyphicon{
+                            color: $themeClr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

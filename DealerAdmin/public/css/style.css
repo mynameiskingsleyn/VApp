@@ -1,0 +1,3554 @@
+@font-face {
+    font-family: 'rift-soft';
+    src: url('../fonts/rift-soft.woff2') format('woff2'),
+        url('../fonts/rift-soft.woff') format('woff'),
+        url('../fonts/rift-soft.otf') format('otf'),
+        url('../fonts/rift-soft.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+.header-scroll {
+    height: 67px;
+    background: #000;
+    float: left;
+    width: 100%;
+    -ms-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    z-index: 20;
+}
+
+body>header .navigation a {
+    padding: 16px 6px 8px 20px !important;
+    float: right;
+}
+.header-scroll {
+    top: 0;
+    position: fixed;
+}
+
+li.logout-link .logout-anchor:before {
+    visibility: hidden !important;
+}
+li.logout-link .logout-anchor{
+    padding: 16px 20px 8px 0px !important;
+}
+
+.center-icon img {
+    transition: all .31s;
+    max-height: 85px;
+    margin-top: -15px;
+}
+
+.center-icon.text-center {
+    padding-top: 6px;
+}
+
+.rift-soft {
+    font-family: rift-soft, sans-serif;
+}
+
+body.dealeradmin-body {
+
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, .87);
+    font-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*background: url(https://d1jougtdqdwy1v.cloudfront.net/dealeradmin/images/video_modal.png) 0 0/cover no-repeat;*/
+    /*background: url(https://d1jougtdqdwy1v.cloudfront.net/dealeradmin/images/video_modal.png) 100% repeat; */
+    /*background: url('../img/video_modal.png') 100% no-repeat;*/
+    background: url('https://d1jougtdqdwy1v.cloudfront.net/dealeradmin/cdjr/acdfjr-banner-landing.jpg') 100% no-repeat;
+    background-position: top center;
+    background-color: #cecece;
+    background-size: 100%;
+}
+
+.container.bodyTextContainerWrapper{
+    min-height: 90vh;
+}
+
+.container.bodyContainerWrapper{
+    min-height: 90vh;
+    margin-bottom: 15px;
+}
+.dealerHead {
+    padding-top: 25px;
+}
+
+.rowOne {
+    padding: 5px 0;
+    border-bottom: 1px solid;
+}
+
+.oreBox {
+    padding: 0 10px 4px 0;
+    border-right: 1px solid;
+    margin-right: 12px;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.dealerTool {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: Segoe UI;
+}
+
+.rowTwo {
+    padding: 15px 0px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.fcaLogo {
+    padding-top: 5px;
+}
+
+.botSection {
+    margin-top: -10px;
+}
+
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+.orLogo {
+    position: absolute;
+    left: 100px;
+    width: 19px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.mat-tab-label.mat-ripple.ng-star-inserted.search-by-vin-toggle {
+    padding-left: 6px !important;
+    padding-top: 5px !important;
+}
+
+.mat-tab-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-tab-group {
+    font-family: rift-soft, sans-serif;
+}
+
+.mat-tab-header {
+    display: flex;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.mat-tab-header {
+    border-bottom: none;
+}
+
+.mat-tab-header-pagination-disabled {
+    box-shadow: none;
+    cursor: default;
+}
+
+.mat-tab-header-pagination-before,
+.mat-tab-header-rtl .mat-tab-header-pagination-after {
+    padding-left: 4px;
+}
+
+.mat-tab-header-pagination {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-width: 32px;
+    cursor: pointer;
+    z-index: 2;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: none;
+}
+
+.mat-elevation-z4 {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+}
+
+.mat-ripple {
+    position: relative;
+}
+
+.mat-tab-label-container {
+    display: flex;
+    flex-grow: 1;
+    z-index: 1;
+    margin-bottom: 5px;
+}
+
+.fieldOne {
+    padding: 5px 20px 5px 17px;
+}
+
+.mat-tab-list {
+    flex-grow: 1;
+    position: relative;
+    transition: transform .5s cubic-bezier(.35, 0, .25, 1);
+}
+
+.mat-tab-labels {
+    display: flex;
+}
+
+.mat-tab-label {
+    height: 48px;
+    padding: 0 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: .6;
+    min-width: 160px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+}
+
+.mat-tab-label {
+    height: 48px;
+    padding: 0 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: .6;
+    min-width: 160px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+}
+
+.mat-tab-label {
+    min-width: none;
+    padding: 0 1px !important;
+    min-width: 100px !important;
+    font-family: rift-soft, sans-serif;
+    text-align: left !important;
+    justify-content: left !important;
+    height: 43px;
+}
+
+.mat-tab-label,
+.mat-tab-link {
+    color: rgba(0, 0, 0, .87);
+}
+
+.mat-ripple {
+    position: relative;
+}
+
+.mat-tab-label,
+.mat-tab-link {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mat-tab-label .mat-tab-label-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.mat-tab-label-active>.mat-tab-label-content {
+    color: #8f0c2c;
+    font-weight: 500;
+}
+
+.mat-tab-label .mat-tab-label-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.mat-tab-label-content {
+    font-size: 30px;
+    color: #8e8e8e;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+.mat-tab-label {
+    height: 48px;
+    padding: 0 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: .6;
+    min-width: 160px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+}
+
+.mat-tab-label {
+    padding: 0 1px !important;
+    min-width: 103px !important;
+    font-family: rift-soft, sans-serif;
+    text-align: left !important;
+    justify-content: left !important;
+    height: 43px;
+    opacity: 1;
+}
+
+.mat-tab-body.mat-tab-body-active {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1;
+    flex-grow: 1;
+}
+
+.mat-tab-body {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: block;
+    flex-basis: 100%;
+}
+
+.mat-tab-body-content {
+    height: 100%;
+    overflow: auto;
+}
+
+.dropDownPanel,
+.dropDownPanelVin {
+    background: linear-gradient(90deg, #414141 0, rgba(65, 65, 65, 0.3215686274509804) 100%) no-repeat padding-box;
+    opacity: .89;
+    max-height: 65vh;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    font-family: Segoe UI;
+    padding-top: 5px;
+}
+
+.dropDownPanel>.field {
+    padding: 5px 20px 15px 15px;
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, 0.30980392156862746);
+}
+
+.labelDrop {
+    color: #fff;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+select {
+    box-shadow: 1px 1px 1px grey;
+    width: 220px;
+    padding: 3px 10px;
+    font-size: 14px;
+    line-height: 1;
+    height: 27px;
+    border: 0;
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/dealeradmin/images/arrow.png) right no-repeat #fff;
+    -webkit-appearance: none;
+    background-position-x: 190px;
+    overflow-y: auto;
+}
+
+.labelMandatory {
+    float: right;
+    color: #8f0c2c;
+    font-size: 10px;
+    padding-right: 10px;
+}
+
+.dropDownPanel>.field {
+    padding: 5px 15px 20px 17px;
+    border-bottom: 1px solid;
+    border-color: #ffffff4f;
+}
+
+.mat-ink-bar {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    transition: .5s cubic-bezier(.35, 0, .25, 1);
+}
+
+.mat-expansion-panel-header {
+    padding: 0 27px 0 15px !important;
+}
+
+.mat-expansion-panel-header-description,
+.mat-expansion-panel-header-title {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 16px;
+}
+
+.mat-expansion-panel-header-description {
+    flex-grow: 2;
+}
+
+.mat-expansion-indicator::after,
+.mat-expansion-panel-header-description {
+    color: rgba(0, 0, 0, .54);
+}
+
+.mat-expansion-indicator::after {
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    vertical-align: middle;
+}
+
+.mat-expansion-indicator::after {
+    padding: 4px !important;
+    color: #ffff;
+    margin-right: 13px;
+    border-style: dashed !important;
+}
+
+.mat-expansion-panel-header-title {
+    color: #ffff;
+}
+
+.mat-expansion-panel-header {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.mat-expansion-panel {
+    box-sizing: content-box;
+    display: block;
+    margin: 0;
+    border-radius: 4px;
+    transition: margin 225ms cubic-bezier(.4, 0, .2, 1), box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+}
+
+.mat-expansion-panel-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 24px;
+    border-radius: inherit;
+    position: relative;
+}
+
+.mat-divider {
+    display: block;
+    margin: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.30980392156862746);
+}
+
+span.mat-expansion-indicator {
+    position: absolute;
+    right: 0;
+}
+
+.goFilterBtn button {
+    width: 100%;
+}
+
+button {
+    height: 34px;
+    background: #8f0c2c;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 1px solid;
+}
+
+.login-card button {
+    background: #8f0c2c !important;
+    color: #fff !important;
+}
+
+.goFilterBtn {
+    padding: 5px 12px;
+}
+
+span.mat-expansion-indicator {
+    position: absolute;
+    right: 17px;
+}
+
+.dropDownPanel::-webkit-scrollbar {
+    width: 10px;
+    float: left;
+}
+
+.dropDownPanel::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px #BBB;
+    border-radius: 15px;
+}
+
+.dropDownPanel::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #8f0c2c;
+}
+
+.dropDownPanel,
+.dropDownPanelVin {
+    scrollbar-width: thin;
+    scrollbar-color: #8F0C2C #BFBFBF;
+}
+
+.dashboardInstuct {
+    padding: 95px 50px 10px 25px;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.arrowLeft {
+    margin-left: 40px;
+    padding-top: 110px;
+    position: relative;
+}
+
+.meBlue {
+    color: #8f0c2c;
+    font-weight: 500;
+}
+
+.mat-tab-label-active>.mat-tab-label-content {
+    color: #b0162d;
+    font-weight: bolder;
+    padding-top: 5px;
+    font-size: 30px;
+}
+
+.mat-tab-label:focus:not(.mat-tab-disabled) {
+    opacity: 1;
+}
+
+.fieldVin {
+    padding: 15px 30px 10px 15px;
+}
+
+.labelMandatoryVin {
+    float: right;
+    color: #8f0c2c;
+    font-size: 10px;
+    padding-right: 5px;
+}
+
+.dropDownPanelVin input:not([type='radio']) {
+    width: 100%;
+    height: 27px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 14px;
+    padding: 0 1px 0 8px;
+}
+
+.filterAttrs {
+    padding-bottom: 0 !important;
+    padding-top: 12px !important;
+}
+
+li.logout-link .logout-anchor:after,
+h4.dOpener.labelDrop:after,
+#payment-calculator-modal .dOpener:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: solid #8f0c2c;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    float: right;
+    transition: all .5s;
+    margin-top: 4px;
+}
+
+.search-result-field thead th:after {
+    border-color: #fff;
+}
+
+h4.dOpener.labelDrop.menu-up:after,
+#payment-calculator-modal .dOpener.menu-up:after {
+    transform: rotate(225deg);
+}
+
+.filterAttrs.driveBlock ul {
+    list-style: none;
+    padding: 0px;
+}
+
+body .customCheckBox input[type=checkbox] {
+    display: none
+}
+
+body .customCheckBox input[type=checkbox]+span:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    height: 0;
+    width: 3px;
+    top: 5px;
+    left: 6px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 1;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+body .customCheckBox input[type=checkbox]+span:after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    display: block;
+    height: 14px;
+    border: 1px solid #c8c8c8;
+    top: 0;
+    left: 0;
+    background: #FFF;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+body .customCheckBox input[type=checkbox]:checked+span:before {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 9px;
+    top: 2px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #FFF;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+body .customCheckBox input[type=checkbox]:checked+span:after {
+    border: 1px #27AAE1 solid;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+body .customCheckBox input[type=checkbox]:disabled+span:after {
+    border: 1px solid #D2D2D2;
+    cursor: not-allowed
+}
+
+body .customCheckBox {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    cursor: pointer;
+    line-height: 16px;
+    margin: 0
+}
+
+body .customCheckBox {
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+body .customCheckBox input[type=checkbox]+span:after {
+    top: 4px !important;
+}
+
+body .customCheckBox input[type=checkbox]:checked+span:before {
+    top: 6px !important;
+}
+
+body .customCheckBox input[type=checkbox]:checked+span:before {
+    border-color: #fff
+}
+
+body .customCheckBox {
+    color: #fff;
+    font-size: 14px;
+}
+
+body .customCheckBox input[type=checkbox]:checked+span:before {
+    background: #8f0c2c
+}
+
+body .customCheckBox input[type=checkbox]:checked+span:after {
+    border-color: #8f0c2c !important;
+    background: #8f0c2c
+}
+
+.rSlider {
+    height: 3px;
+    background: #c4c4c4;
+    margin: 25px 0;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    transition: 1s;
+}
+
+.rSlider::before {
+    content: '';
+    background: transparent;
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    z-index: 1;
+}
+
+.rs-container .rs-scale span::before {
+
+    height: 3px !important;
+}
+
+.filterAttrs.priceSlider {
+    padding: 12px 30px 12px 15px !important;
+}
+
+.rs-tooltip {
+    color: #333;
+    width: auto;
+    min-width: auto;
+    height: 17px;
+    background: #fff;
+    border: 1px solid #8f0c2c;
+    border-radius: 5px;
+    position: absolute;
+    transform: translate(-50%, -26px);
+    left: 13px;
+    text-align: center;
+    font-size: 12px;
+    padding: 0px 4px;
+    top: 5px;
+    line-height: 1.4;
+}
+
+.rs-container .rs-selected {
+    background-color: #8f0c2c;
+    border: 1px solid #69111c;
+    transition: all .2s linear;
+    width: 0;
+}
+
+.search-result-field thead th {
+    background: #6e696a;
+    color: #fff;
+}
+
+.search-result-buttons .btn {
+    color: #fff !important;
+    background: #BFBFBF;
+    font-size: 18px;
+    padding: 1px 10px;
+    margin:0;
+    width: 170px;
+    margin-top: 2px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+div#vehicleDiscountWrapper {
+    padding-top: 7px;
+}
+
+.search-drop-down-field span.year-of-selection {
+    font-size: 24px;
+}
+
+body .gcss-colors-element-primary {
+    background: linear-gradient(180deg, #ad1f35, #7a1726) !important;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.mat-tab-label .mat-tab-label-content {
+    position: relative;
+}
+
+.mat-tab-label .mat-tab-label-content span {
+    font-size: 12px;
+    position: absolute;
+}
+
+.mat-tab-label .mat-tab-label-content span {
+    font-size: 16px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #000;
+    font-weight: bold;
+    /*    filter: drop-shadow(0px 1px 0.5px black);*/
+}
+
+.row.result-buttons-row {
+    margin-top: -25px;
+}
+
+.search-result-buttons {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.filter-section {
+    margin-top: -49px;
+}
+
+.gcss-button {
+    width: 250px;
+    padding: 2px 0 !important;
+    margin: 0;
+}
+
+.add-bulk-discounts-button {
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 9px;
+    height: 30px;
+}
+
+.add-bulk-discounts-button img {
+    width: 20px;
+    display: inline-block;
+    margin: -11px 0 0 10px;
+    filter: brightness(5.5);
+}
+
+span.add-discount-field img {
+    width: 20px;
+    margin: -7px 0 0 5px;
+}
+
+span.add-discount-field {
+    cursor: pointer;
+}
+
+body .modal-header .close {
+    padding: 0 1px 0 0;
+    color: #8F0C2C;
+    border: 1px solid #8F0C2C;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    font-size: 23px !important;
+    padding-left: 2px;
+    line-height: 1;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    padding-bottom: 7px;
+    font-family: initial;
+    z-index: 10;
+}
+
+.no-border {
+    border: none;
+}
+
+body .modal-header .close:active,
+body .modal-header .close:focus {
+    outline: none;
+}
+
+.dealer-admin-dialogue .modal-dialog {
+    max-width: 650px;
+    margin-top: 10%;
+}
+
+.dealer-admin-dialogue .modal-body {
+    max-width: 595px;
+    margin: auto;
+    text-transform: capitalize;
+    width: 100%;
+    border-top: 1px solid #929292;
+    padding: 1rem 0;
+}
+
+.add-more-by-count input {
+    width: 25px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+button.add-more-by-count-btn {
+    width: 90px;
+    height: 20px;
+    font-size: 12px;
+    margin: 0px 0 0 7px;
+    text-transform: capitalize;
+}
+
+.automated_discount_label_field button.add-more-by-count-btn {
+    height: auto;
+    padding: 5px 5px !important;
+}
+
+button.add-more-by-count-btn img {
+    width: 15px;
+    margin: -2px 0 0 4px;
+}
+
+span.add-more-by-count-rule {
+    position: relative;
+    top: -2px;
+    font-size: 10px;
+    left: 5px;
+    font-style: italic;
+}
+
+.dealer-admin-dialogue .modal-content {
+    background-color: rgba(255, 255, 255, 0.93);
+}
+
+.discount-details {
+    background: #666666;
+    color: #000;
+    float: left;
+    width: 95%;
+    border-radius: 10px 0 0 10px !important;
+    font-weight: 600;
+}
+
+.discount-space {
+    padding: 12px 10px 7px 10px;
+}
+
+span.discount-name-field {
+    width: 90px;
+    float: left;
+    margin-right: 25px;
+}
+
+span.discount-name-field span {
+    display: block;
+    text-align: center;
+}
+
+.add-more-by-count {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+span.discount-name-edit-field {
+    font-size: 12px;
+}
+
+span.discount-flat-rate,
+.off-percent,
+.discount-date-field,
+.discount-name-field {
+    width: 73px;
+    float: left;
+    font-size: 14px;
+}
+
+span.discount-flat-rate label,
+.off-percent label,
+.discount-date-field label,
+.discount-name-field label {
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.25;
+    float: left;
+}
+
+span.discount-name-edit-field {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+span.discount-flat-rate input,
+.off-percent input,
+.discount-date-field input,
+.discount-name-field input {
+    width: 100%;
+    height: 25px;
+    font-size: 12px;
+    padding-left: 2px;
+}
+
+span.or-text {
+    margin: 14px 0 0 0;
+    float: left;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+span.off-percent {
+    width: 40px;
+}
+
+span.discount-date-field {
+    padding: 0 0 0 10px;
+    width: 131px;
+}
+
+.discount-delete-field {
+    background: linear-gradient(45deg, #ad1f35, #7a1726);
+    height: 112px;
+    float: right;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+}
+
+#BulkDiscountRowWrapper .discount-delete-field, #add-discount-model .discount-delete-field {
+    height: auto;
+    width: calc(5% - 2px);
+}
+#BulkDiscountRowWrapper .discounts-rows, #add-discount-model .discounts-rows {
+    display: flex;
+    justify-content: space-between;
+}
+.discount-space {
+    padding: 14px 10px 25px 10px;
+    float: left;
+}
+
+.saved-discounts {
+    background: #8f192b;
+    width: 100%;
+    height: 27px;
+    float: left;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 0px;
+}
+
+.saved-discounts label.customCheckBox {
+    font-size: 12px;
+    padding-left: 20px;
+    color: #000;
+}
+
+#add-bulk-discount-model .saved-discounts label.customCheckBox,
+#add-bulk-discount-model .discount-details,
+#add-discount-model .discount-details,
+#add-discount-model .saved-discounts label.customCheckBox {
+    color: #fff;
+}
+
+.discounts-rows {
+    margin: 0 0 15px 0;
+    float: left;
+}
+
+.discount-delete-field span {
+    cursor: pointer;
+    padding: 43px 6px;
+    float: left;
+}
+
+span.discount-name-field:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 44px;
+    background: #b9b9b9;
+    float: right;
+    margin: -13px -13px 0px 0px;
+}
+
+span.discount-flat-rate {
+    width: 100px;
+    position: relative;
+}
+
+span.discount-flat-rate .switch {
+    position: absolute;
+    right: -8px;
+    top: -2px;
+}
+
+/*Custom Switch*/
+.switch label {
+    cursor: pointer
+}
+
+.switch label input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0
+}
+
+.switch label input[type="checkbox"]:checked+.lever {
+    background-color: #dccfe2
+}
+
+.switch label input[type="checkbox"]:checked+.lever:after {
+    left: 15px;
+    background-color: #8f192b;
+    top: -1px;
+}
+
+.switch label input[type="checkbox"]:checked:not(:disabled)~.lever:active:after {
+    -webkit-box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.4), 0 0 0 0.9375rem rgba(170, 102, 204, 0.1);
+    box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.4), 0 0 0 0.9375rem rgba(170, 102, 204, 0.1)
+}
+
+.switch label input[type="checkbox"]:not(:disabled)~.lever:active:after {
+    -webkit-box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.4), 0 0 0 0.9375rem rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.4), 0 0 0 0.9375rem rgba(0, 0, 0, 0.08)
+}
+
+.switch label input[type="checkbox"]:disabled+.lever {
+    cursor: default
+}
+
+.switch label input[type="checkbox"]:disabled+.lever:after,
+.switch label input[type="checkbox"]:disabled:checked+.lever:after {
+    background-color: #bdbdbd
+}
+
+.switch label .lever {
+    position: relative;
+    display: inline-block;
+    margin: 0 1rem;
+    margin-right: .625rem;
+    vertical-align: middle;
+    content: "";
+    background-color: #818181;
+    border-radius: .9375rem;
+    width: 26px;
+    height: 11px;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+}
+
+.switch label .lever:after {
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    display: inline-block;
+    content: "";
+    background-color: #f1f1f1;
+    border-radius: 1.3125rem;
+    -webkit-box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.4);
+    width: 13px;
+    height: 13px;
+    -webkit-transition: left 0.3s ease, background 0.3s ease, -webkit-box-shadow 1s ease;
+    transition: left 0.3s ease, background 0.3s ease, -webkit-box-shadow 1s ease;
+    transition: left 0.3s ease, background 0.3s ease, box-shadow 1s ease;
+    transition: left 0.3s ease, background 0.3s ease, box-shadow 1s ease, -webkit-box-shadow 1s ease;
+}
+
+.discount-space input:disabled {
+    background: #b9b9b9;
+}
+
+.apply-discounts-field .btn {
+    width: 100%;
+    font-size: 18px;
+}
+
+.search-result-field td {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+span.discounted-rate {
+    float: left;
+    width: 100%;
+    margin-bottom: -11px;
+}
+
+span.edit-discount~img {
+    width: 20px;
+    margin: -16px 0 0 9px;
+}
+
+span.delete-discount {
+    color: #d61936;
+    font-weight: bold !important;
+    text-decoration: underline;
+    /*float: left;*/
+    cursor: pointer;
+    margin: 0px;
+}
+
+span.edit-discount {
+    color: #51aa65;
+    margin: 5px 0;
+    cursor: pointer;
+    /*float: left;*/
+    text-decoration: underline;
+    font-weight: bold !important;
+}
+
+span.edit-discount:before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background: #6e696a;
+    /*float: left;*/
+    margin: 0px 5px -5px;
+}
+
+.dropDownPanelVin button {
+    width: 100%;
+}
+
+.apply-to-vehicles-tabled {
+    float: left;
+    width: 100%;
+}
+
+.apply-to-vehicles-tabled h5 {
+    margin: 20px 0 15px 0 !important;
+    font-size: 22px;
+}
+
+.apply-to-vehicles-tabled th {
+    padding: 7px 5px 7px 5px !important;
+}
+
+.apply-to-vehicles-tabled td,
+.apply-to-vehicles-tabled tbody th {
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 1.1rem !important;
+}
+
+span.has-discounts-field {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+span.has-discounts-field img {
+    width: 20px;
+}
+
+.include-discount {
+    text-align: center;
+}
+
+.include-discount .customCheckBox {
+    margin-top: 2px;
+    float: right;
+    margin-left: 12px;
+}
+
+.apply-to-vehicles-tabled h5 span {
+    font-weight: bold;
+    color: #8f192b;
+}
+
+.rs-container .rs-pointer {
+    background-color: #ffffff;
+    border: 1px solid #8f192b;
+    border-radius: 50px;
+    box-shadow: none;
+    height: 16px;
+    left: -10px;
+    top: -1px;
+    width: 15px;
+}
+
+.rs-container .rs-pointer::after,
+.rs-container .rs-pointer::before {
+    display: none;
+}
+
+.rs-container .rs-selected {
+    background-color: #fefefe;
+    border: none;
+    height: 4px;
+}
+
+.rs-container .rs-bg {
+    background: #8f192b;
+    border: none;
+    height: 4px;
+}
+
+.rs-container.rs-noscale span:first-child::before,
+.rs-container.rs-noscale span:last-child::before,
+.rs-container .rs-scale span ins {
+    display: none;
+}
+
+.priceSlider h4.labelDrop {
+    margin-bottom: 5px;
+}
+
+.rs-container {
+    height: 25px;
+}
+
+body.modal-open {
+    padding-right: 0 !important;
+    overflow: hidden;
+}
+
+.dealerHead .col-md-11,
+.dealerHead .col-md-1 {
+    float: left;
+}
+
+.dealerHead {
+    padding-top: 100px;
+    display: block;
+}
+
+.row.result-buttons-row {
+    margin-bottom: -35px;
+    position: relative;
+    top: -25px;
+    display: block;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #96283e !important;
+}
+
+div#searchResult_table_filter {
+    display: none;
+}
+
+.login-forgot-row .btn {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.login-card input:-webkit-autofill,
+.login-card input:-webkit-autofill:hover,
+.login-card input:-webkit-autofill:focus,
+.login-card input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+
+}
+
+body>header .navigation a {
+    padding: 16px 20px 8px 20px !important;
+    color: #fff;
+    display: inline-block;
+}
+
+body>header .dealer-name-anchor {
+    padding: 20px 0px 0px 0px !important;
+    color: #fff;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.app-container {
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+}
+
+.card.login-card{
+    margin-top: 40%;
+}
+
+.card.login-card input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #7b7b7b;
+    border-radius: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.card.login-card .card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background: #f9fafb;
+}
+
+.login-forgot-row a.float-right {
+    color: #000;
+    text-align: right !important;
+    padding: 0 0 10px 0;
+    margin-top: -15px;
+}
+
+li.logout-link .logout-anchor:before,
+li.logout-link .change-password-anchor:before {
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: #f4f6f7;
+    display: inline-block;
+    float: left;
+    margin: -7px 40px 0 0;
+}
+
+li.logout-link .logout-anchor:after {
+    position: relative;
+    left: 5px;
+    transform: rotate(-45deg);
+    top: 5px;
+}
+
+.mat-tab-body-content .dropDownPanel {
+    overflow-x: hidden;
+}
+
+/*.before-load-value {
+    background: red;
+}
+.after-load-value {
+    background: rebeccapurple;
+}*/
+.processing-value {
+    background: url(https://d11p9i1nddg3dz.cloudfront.net/images/loader.gif) #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+}
+
+.field.filterAttrs.priceSlider input {
+    background: transparent;
+    margin: 0px 0 15px 0px;
+    color: #ffffff !important;
+}
+
+div#slider-range {
+    border: none;
+    background: #97223e;
+    height: 5px;
+    border: 1px solid #710202;
+}
+
+div#slider-range span.ui-slider-handle.ui-corner-all.ui-state-default {
+    background-color: #ffffff;
+    border: 1px solid #8f192b;
+    border-radius: 50px;
+    box-shadow: none;
+    height: 15px;
+    top: -6px;
+    width: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.driveBlock {
+    padding-bottom: 10px !important;
+}
+
+span.error-check,
+span.vin-error-check {
+    margin: 0 0 -10px 0;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    visibility: hidden;
+    color: #ff0b0b;
+    text-transform: uppercase;
+}
+
+span.error-check.active,
+span.vin-error-check.active {
+    visibility: visible;
+}
+
+
+.goFilterBtn .disabled {
+    background-color: #BFBFBF !important;
+}
+
+.fieldVin .goFilterBtn {
+    padding: 5px 0px;
+}
+
+.gridRowDisable,
+.gridRowDisable .themeClr {
+    color: #756e6e !important;
+}
+
+.gridRowDisable td:last-child,
+.gridRowDisable a {
+    pointer-events: none;
+}
+
+.gridRowDisable .delete-discount,
+.gridRowDisable .edit-discount,
+.gridRowDisable .add-discount-field,
+.gridRowDisable a {
+    /*display: none;*/
+    color: #756e6e !important;
+}
+
+.gridRowDisable .DeActiveText {
+    color: #8f192b;
+}
+
+.gridRow .ActiveText {
+    color: #49a233;
+}
+
+.gridRow .editButtonWrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gridRow .switch label .lever {
+    background-color: #8da98c;
+}
+
+.gridRow .switch label .lever:after {
+    background-color: #49a233;
+}
+
+.gridRow .switch label input[type="checkbox"]:checked+.lever {
+    background-color: #d298a5;
+}
+
+.gridDiscountTableContainer .customCheckBox {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+.fieldVin .goFilterBtn {
+    padding: 5px 0px;
+}
+
+.bulk-error {
+    visibility: hidden;
+}
+
+.bulk-error.active,
+.bulk-table-error.active {
+    visibility: visible;
+}
+
+.bulk-error {
+    width: 103px;
+    visibility: hidden;
+    display: inline-block !important;
+    height: 0px !important;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    font-size: 10px !important;
+    color: #c10026;
+    float: left;
+    font-weight: 500;
+    text-align: left !important;
+    line-height: 1;
+}
+
+span.discount-name-field,
+.discount-date-field,
+.off-percent {
+    position: relative;
+}
+
+.flat-rate-error,
+span.off_percent_error,
+.discount_start_date_error {
+    bottom: -1px;
+}
+
+.discount_start_date_error {
+    left: 12px;
+    bottom: -15px;
+}
+
+.bulk-table-error {
+    width: 103px;
+    visibility: hidden;
+    height: 4px !important;
+    font-size: 11px !important;
+    color: #f71048;
+    text-align: left !important;
+    font-weight: bold;
+}
+
+span.off_percent_error.bulk-error.active {
+    left: -20px !important;
+}
+
+.financeOption label {
+    margin-bottom: 0 !important;
+}
+
+span.discount_end_date_error.bulk-error.active {
+    bottom: -15px;
+    left: 10px;
+}
+
+/* loader start*/
+.gridTableWrapper.processing {
+    display: block !important;
+}
+
+.gridTableWrapper.processing:after,
+#add-bulk-discount-model .processing:after,
+#add-discount-model .processing:after,
+#BulkDiscountRowWrapper .processing:after,
+#DiscountRowWrapper .processing:after,
+#payment-calculator-modal .processing:after,
+.gridAutomatedDiscountTableWrapper.processing:after,
+#saveddiscountAutomatedContainer.processing:after,
+#add-rule-discount-model .processing:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    background: url(https://d11p9i1nddg3dz.cloudfront.net/images/loader.gif) rgba(0, 0, 0, 0.58) no-repeat;
+    background-position: center 220px;
+    z-index: 10;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.add-bulk-discount-alert {
+    background: linear-gradient(0deg, red, rgba(255, 255, 255, 0.88));
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #fff;
+    bottom: 0;
+    top: 0;
+    float: left;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.add-bulk-discount-alert .d-block h6 {
+    font-size: 26px;
+    font-weight: 500;
+    padding: 26px 0 0 0;
+    margin: 0;
+}
+
+.add-bulk-discount-alert .d-block p {
+    font-size: 22px;
+}
+
+.add-bulk-discount-alert .d-block p span {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.add-bulk-discount-alert .d-block h6:before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../img/i-icon.png) no-repeat;
+    margin: -14px auto 10px auto;
+    background-size: cover;
+}
+
+.add-bulk-discount-alert .d-block button.gcss-button {
+    border: 1px solid #ff9b9b;
+    margin-top: 15px;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.add-bulk-discount-alert .d-block button.gcss-button.cancel-btn {
+    background: #584646;
+    margin-right: 15px;
+}
+
+#add-bulk-discount-model .modal-header {
+    z-index: 3;
+}
+
+.dealeradmin-body table.table th,
+table.table td {
+    width: auto !important;
+}
+
+.delete_popup .modal-dialog .modal-content {
+    color: #fff;
+    background: linear-gradient(0deg, #f44336, #fff);
+}
+
+.delete_popup .modal-dialog .modal-body {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+#add-bulk-discount-model th {
+    vertical-align: middle;
+}
+
+#add-bulk-discount-model tr th:first-child,
+#add-bulk-discount-model tr td:first-child {
+    padding: 0 0 0 3px;
+    text-align: left;
+    width: 120px !important;
+}
+
+#add-bulk-discount-model tr th:before,
+#add-bulk-discount-model tr th:after {
+    right: -2px;
+    top: 14px;
+    z-index: 3;
+}
+
+#add-bulk-discount-model th:last-child div {
+    position: relative;
+    height: 12px;
+    top: 0px;
+    left: 3px;
+}
+
+.financeOption label,
+.discountViewOption label {
+    margin-bottom: 0 !important;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.delete_popup .modal-header {
+    border: none;
+}
+
+.field.financeOption,
+.field.discountViewOption {
+    padding-bottom: 35px;
+}
+
+.field.financeOption .custom-radio,
+.field.discountViewOption .custom-radio {
+    float: left;
+    width: 33%;
+    margin-bottom: 10px;
+}
+
+.field.discountViewOption .custom-radio:last-child {
+    width: 45%;
+}
+
+
+#add-discount-model .processing:after,
+#add-bulk-discount-model .processing:after {
+    top: -15px;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    min-height: auto;
+}
+
+/*multiDropdown Select*/
+div#ms-list-1 {
+    width: 220px;
+    position: relative !important;
+    box-shadow: 1px 1px 1px grey;
+}
+
+.ms-options-wrap>button:focus,
+.ms-options-wrap>button {
+    font-family: Segoe UI;
+    font-size: 14px;
+    height: 27px;
+    text-transform: none;
+    color: #000 !important;
+    font-weight: normal;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 0px;
+    border: 0;
+}
+
+.ms-options-wrap>button:after {
+    border: 0;
+    background: url(https://d1jougtdqdwy1v.cloudfront.net/dealeradmin/images/arrow.png) right no-repeat #fff;
+    -webkit-appearance: none;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    width: 20px;
+    margin-top: -3px;
+}
+
+.ms-options-wrap>.ms-options>ul input[type="checkbox"] {
+    margin: 2px 5px 0 0;
+}
+
+.ms-options-wrap>.ms-options>ul label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 0px 4px 0px 20px;
+    margin: 1px 0;
+    border: 1px dotted transparent;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.ms-options-wrap>.ms-options>.ms-selectall {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*multiDropdown Select*/
+.dropDownPanel>.trimField {
+    padding: 5px 23px 20px 17px;
+}
+
+.automatedcreateDiscountBtn button.disabled {
+    color: #6b6b6b;
+    background: linear-gradient(0deg, #aca8a8, #dad8d8);
+    border: 1px solid #fff;
+}
+
+.automatedcreateDiscountBtn button {
+    margin-top: 15px;
+    font-size: 25px;
+    height: auto;
+    padding: 9px 1px;
+    font-weight: normal;
+
+}
+
+li.logout-link .change-password-anchor:before {
+    visibility: hidden;
+}
+
+a.change-password-anchor {
+    padding: 18px 20px 8px 20px !important;
+}
+
+.search-by-vehicle-tab select,
+.search-by-vehicle-tab input[type="radio"],
+.custom-control-label:after,
+.custom-control-label:before,
+.search-by-vehicle-tab button {
+    cursor: pointer;
+}
+
+.viewDetailsWrapper {
+    margin-top: 3px;
+}
+
+span.view-details a {
+    color: #8f0c2c;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+span.view-details a:hover {
+    text-decoration: underline;
+}
+
+#payment-calculator-modal .modal-content {
+    padding: 20px 0px 0px 0px;
+    background: rgba(255, 255, 255, 0.928705882352941177);
+}
+
+#payment-calculator-modal .modal-body {
+    padding: 0 25px 15px;
+    color: #000;
+}
+
+#payment-calculator-modal .modal-header,
+#payment-calculator-modal .modal-body {
+    padding: 0.5rem 1rem;
+}
+
+#payment-calculator-modal .modal-body ul.popUpScroll>li {
+    border-top: solid #ccc 1px;
+    padding: 10px 5px;
+    margin: 10px auto;
+    font-weight: 400;
+}
+
+#payment-calculator-modal .modal-body ul.popUpScroll>li h4 input {
+    height: 34px;
+}
+
+#payment-calculator-modal .modal-body ul.popUpScroll>li h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#payment-calculator-modal .modal-body ul.popUpScroll>li h4>*:last-child:not(.glyphicon):not(.fa) {
+    float: right;
+}
+
+#payment-calculator-modal ul.popUpScroll>li .form-control:not(select) {
+    width: 100px;
+    text-align: right;
+    color: #121212;
+}
+
+#payment-calculator-modal .modal-body ul.popUpScroll>li:last-child {
+    border-bottom: solid #ccc 1px;
+}
+
+#payment-calculator-modal .greyBg {
+    background-color: #c3c3c3 !important;
+}
+
+#payment-calculator-modal .modal-body .badge {
+    border-radius: 50%;
+    background: #e9e9e9;
+    color: #000 !important;
+    padding: 3px 3px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
+#payment-calculator-modal .modal-body span.badge.disclaimer{
+    font-size: 10px;
+    font-weight: 700;
+    height: 18px !important;
+    line-height: 14px;
+    padding: 2px;
+    text-align: center;
+    width: 18px !important;
+}
+#payment-calculator-modal .modal-body ul.popUpScroll>li.estimatedBlock .row>div>* .badge {
+    font-size: 10px;
+    width: 14px;
+    height: 14px;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+#payment-calculator-modal .size20 {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+#payment-calculator-modal h4,
+#payment-calculator-modal h5 span {
+    font-weight: 500;
+}
+
+#payment-calculator-modal .ore_lease_emi, #payment-calculator-modal .ore_cash_emi {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#payment-calculator-modal span.badge.disclaimer{
+    color: #000;
+    font-size: 10px;
+    font-weight: 700;
+    height: 18px !important;
+    line-height: 14px;
+    padding: 2px;
+    text-align: center;
+    width: 18px !important;
+}
+
+
+#payment-calculator-modal #cash_buy_for p{
+    font-size: 14px;
+    font-weight:400;
+    margin-bottom: 10px !important;
+}
+#payment-calculator-modal .select-wrapper select {
+    padding-right: 30px;
+}
+
+.rBold {
+    font-weight: bold;
+}
+
+
+/*AUtomated Discount css*/
+
+.pleaseSelectAutomated .dashboardInstuct {
+    padding: 95px 5px 10px 25px;
+    font-size: 30px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.pleaseSelectAutomated .rBold {
+    font-family: 'Segoe UI';
+    font-weight: 500;
+}
+
+.automatedcreateDiscountBtn {
+    padding: 0;
+}
+
+.automatedcreateDiscountBtn button .disabled {
+    border: 1px solid transparent;
+}
+
+.discount-inventory-field select {
+    width: 100%;
+    height: 24px;
+    font-size: 12px;
+    padding-left: 2px;
+    background-position-x: 95px;
+}
+
+.discountAutomatedWrapper .discounts-button {
+    width: auto;
+    float: right;
+    font-size: 0px;
+    text-align: center !important;
+    margin: 1px 12px;
+    margin-top: -5px;
+}
+
+.discountAutomatedWrapper .discount-details {
+    background-color: #a5a5a5;
+    padding-left: 15px;
+}
+
+.discountAutomatedWrapper span.discount-inventory-field {
+    width: 190px !important;
+}
+
+#RuleDiscountRowWrapper span.discount-inventory-field {
+    width: 150px !important;
+}
+
+.discountAutomatedWrapper .discount-inventory-field select {
+    background-position-x: 95% !important;
+}
+
+.discountAutomatedWrapper span.discount-name-field {
+    width: 105px;
+    margin-right: 25px;
+}
+
+.discountAutomatedWrapper .discount-delete-field {
+    height: 150px;
+    margin-right: 15px;
+}
+
+.discountAutomatedWrapper .discounts-button button,
+.discountAutomatedContainer .discounts-button button {
+    color: #fff;
+    font-size: 11px;
+    margin: 0 5px;
+    font-weight: normal;
+}
+
+.discountAutomatedContainer .show_and_edit_inventory {
+    /*background-color: #a43a34;
+    border-color:#a43a34;*/
+    background-color: #8f0c2c;
+    border-color: #8f0c2c;
+    font-size: 25px !important;
+    padding: 4px 13px;
+    height: auto;
+    font-family: rift-soft, sans-serif;
+
+}
+
+.discountAutomatedWrapper .duplicate_discount_btn {
+    background-color: #8f0c2c;
+    border-color: #8f0c2c;
+    font-family: rift-soft, sans-serif;
+    font-size: 14px !important;
+}
+
+.discountAutomatedWrapper .discount_name_switch {
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.25;
+    float: left;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.discountAutomatedWrapper .discount-name-error {
+    bottom: 3px;
+    font-weight: 500;
+}
+
+.discountAutomatedWrapper .discount-delete-field span {
+    padding: 0px 6px;
+}
+
+.discountAutomatedWrapper .discount-details {
+    width: calc(100% - 28px);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+a:focus,
+a:active,
+a:hover,
+a:visited {
+    outline: 0;
+}
+
+@media (min-width: 1400px) {
+
+    .dropDownPanel,
+    .dropDownPanelVin {
+        max-height: auto;
+    }
+}
+
+label.discount-start-date-label,
+label.discount-end-date-label {
+    padding: 0px 49px 27px 0px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+label.discount-end-date-label {
+    padding-right: 55px;
+}
+
+span.discount-date-field input {
+    top: 15px;
+    position: relative;
+}
+
+.modal .modal-full-height.modal-right {
+    width: 500px;
+}
+
+.discountAutomatedWrapper .discounts-button button {
+    color: #fff;
+    outline: none;
+    font-size: 11px;
+    margin: 0px 1px;
+    font-weight: normal;
+    width: auto;
+    height: 27px;
+    padding: 0px 6px;
+    border-radius: 4px;
+}
+
+.discountAutomatedWrapper .discounts-button button.save_edits_btn {
+    background: #367606;
+    border: none;
+}
+
+.ms-options-wrap>.ms-options {
+    top: 0;
+    height: 30px !important;
+    min-height: auto !important;
+}
+
+.ms-options-wrap.ms-active>.ms-options {
+    visibility: visible;
+    height: auto !important;
+}
+
+.discountAutomatedWrapper .saved-discounts {
+    background: transparent;
+    width: auto;
+    height: 26px;
+    padding: 0px 10px;
+    margin: -5px 0 0 0px;
+}
+
+.automated_discount_label_field_child span.label_name.rift-soft {
+    font-size: 26px;
+}
+
+span.discount-over-field {
+    color: #8f192b;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 12px;
+    margin: -6px 0 0 35px;
+    float: left;
+}
+
+.discountAutomatedWrapper .discount-delete-field {
+    height: 130px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.automated_discount_label_field {
+    margin-bottom: 25px;
+}
+
+span.automated_discount_label_field_child {
+    background: #414141;
+    color: #fff;
+    padding: 10px 10px 6px 10px;
+    font-size: 22px;
+}
+
+span.label_name,
+span.year-of-selection {
+    font-size: 22px;
+}
+
+span.vehicle_field,
+.discounts_field {
+    font-size: 14px;
+}
+
+span.label_name {
+    margin-right: 7px;
+}
+
+span.rounded_border_bg {
+    background: #8f192b;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid grey;
+    font-family: "Roboto", sans-serif;
+    border-radius: 50%;
+    line-height: 1.5;
+    font-size: 12px;
+    position: relative;
+    top: -4px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.automated_discount_label_field {
+    margin-bottom: 10px;
+    border-bottom: solid 1px #414141;
+    padding-bottom: 3px;
+}
+
+.create-view-saved-btn-field img {
+    width: 20px;
+    position: absolute;
+    right: 8px;
+}
+
+.create-view-saved-btn-field i {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+}
+
+span.saved-discounts-field-remaining {
+    padding: 0 0 0 10px;
+    font-size: 20px;
+    color: #666666;
+}
+
+.grey-bg {
+    background: #bfbfbf !important;
+    color: #fff;
+}
+
+span.remaining_field {
+    padding: 0 0 0 15px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+}
+
+span.model-of-selection .rounded_border_bg {
+    top: -4px;
+    left: 2px;
+}
+
+.search-drop-down-field {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.discountAutomatedContainer .discounts-rows:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 8px;
+    background: url(../img/arrow3.png) no-repeat;
+    float: left;
+    position: absolute;
+    top: 27px;
+    left: 13px;
+    background-size: contain;
+}
+
+.discountAutomatedWrapper .discounts-rows {
+    margin: 0 0 15px 0;
+    float: left;
+    position: relative;
+    padding-left: 60px;
+}
+
+.discountAutomatedWrapper .discounts-rows:after {
+    top: 29px;
+    width: 2px;
+    height: 146px;
+    background: #999a9a;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 11px;
+}
+
+.create-view-saved-btn-field button:last-child {
+    background: #38791a;
+}
+
+div.discountAutomatedWrapper:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 8px;
+    background: url(../img/arrow3.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 3px;
+    transform: rotate(-90deg);
+}
+
+div.discountAutomatedWrapper:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background: #999a9a;
+    position: absolute;
+    left: 11px;
+    top: 20px;
+}
+
+div.discountAutomatedWrapper .discounts-rows:last-child:after {
+    display: none;
+}
+
+div.discountAutomatedWrapper:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 10px;
+    background: url(../img/arrow3.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    transform: rotate(-90deg);
+}
+
+div.discountAutomatedWrapper {
+    position: relative;
+    overflow: hidden;
+    max-height: 700px;
+    transition: all 1s;
+    top: 0;
+}
+
+div#discountAutomatedWrapper.closed {
+    top: -400px;
+    max-height: 0px;
+}
+
+span.drop_down_discount_list {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #8f192b;
+    cursor: pointer;
+    border-bottom: 2px solid #8f192b;
+    transform: rotate(-45deg);
+    position: relative;
+    left: 10px;
+    top: -5px;
+    transition: all .61s;
+}
+
+div#discountAutomatedContainer {
+    overflow: hidden;
+}
+
+span.drop_down_discount_list.closed {
+    transform: rotate(135deg);
+}
+
+label.customCheckBox.checkbox_each_discount_row {
+    position: absolute;
+    left: 38px;
+    top: 19px;
+}
+
+#trimSelectionText,
+#SavedtrimSelectionText {
+    visibility: hidden;
+}
+
+.view_all_discounts {
+    float: right;
+    font-size: 11px;
+    margin-top: -3px;
+}
+
+.apply-automated-discounts-field .btn {
+    width: 45%;
+    font-size: 18px;
+}
+
+#add-bulk-discount-model .apply-discounts-field .btn {
+    width: 49%;
+}
+
+#add-bulk-discount-model .apply-discounts-field button:last-child {
+    background: #38791a;
+}
+
+#add-bulk-discount-model .discount-delete-field.disable-bulk-discount-delete-btn {
+    opacity: 0.7;
+    /* pointer-events: none;*/
+}
+
+#add-bulk-discount-model .discount-delete-field.disable-bulk-discount-delete-btn span {
+    cursor: not-allowed;
+}
+
+body .gcss-button.auto-save-and-apply-btn {
+    background-color: #0e6202;
+}
+
+.gcss-button.vinAutoDiscountuncheckBtn {
+    padding: 0px 5px !important;
+    height: 15px;
+    width: 50px;
+    position: absolute !important;
+    margin-top: 25px;
+    display: none;
+}
+
+.discounts-button.text-center {
+    padding: 15px 0;
+}
+
+#saveddiscountAutomatedContainer.processing:after {
+    left: 15px;
+    top: -4px;
+    right: 15px;
+    width: auto;
+}
+
+.create-view-saved-btn-field .btn {
+    padding: 0px 0px;
+    width: 96%;
+    margin: 0px 11px 9px 0;
+}
+
+.field.discountViewOption {
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+#RuleDiscountRowWrapper .discounts-rows {
+    padding-left: 0;
+}
+
+#RuleDiscountRowWrapper .discounts-rows .discount-space {
+    padding: 14px 5px 25px 5px;
+    float: left;
+}
+
+#RuleDiscountRowWrapper.discounts-rows:before,
+#RuleDiscountRowWrapper:before,
+#RuleDiscountRowWrapper:after,
+#RuleDiscountRowWrapper .discounts-rows:after {
+    display: none;
+}
+
+/*body.dealeradmin-body.modal-open {
+    height: 101vh;
+    overflow: auto;
+}*/
+
+#RuleDiscountRowWrapper .discount-delete-field {
+    height: auto;
+}
+
+#RuleDiscountRowWrapper .discounts-rows {
+    display: flex;
+}
+
+.auto_discount_warning,
+#discount_delete_popup_modal {
+    z-index: 1060;
+}
+
+div#gridTableContainer_info {
+    position: absolute;
+    width: 112%;
+}
+
+.discounts-button.text-center {
+    padding: 15px 0;
+    position: relative;
+}
+
+/*.bulk-table-error {
+    width: auto;
+    position: absolute;
+    right: 175px;
+    top: 17px;
+    margin: auto;
+}*/
+div#maximum_discount_modal .modal-footer,
+#auto_discount_success_modal .modal-footer,
+#no-discount-duplicate-modal .modal-footer,
+#warning-max-discount-model .modal-footer,
+#feedback_success_modal .modal-footer,
+#feedback_error_modal .modal-footer,
+#warning-duplicate-discount-names-model .modal-footer {
+    text-align: center !important;
+    display: block;
+}
+
+#auto_discount_success_modal .modal-content,#feedback_success_modal .modal-content {
+    background: linear-gradient(0deg, #40902f, rgba(255, 255, 255, 0.9490196078431372)) !important;
+}
+
+#auto_discount_success_modal .modal-footer .gcss-button,#feedback_success_modal .modal-footer .gcss-button  {
+    background-color: #21421a;
+}
+
+/*Columns get resized when clicked on sort button on Trim/MSRP start*/
+
+div#gridTableContainer_wrapper table tr td:nth-child(4),
+div#gridTableContainer_wrapper table tr th:nth-child(4) {
+    width: 155px !important;
+}
+
+/*Columns get resized when clicked on sort button on Trim/MSRP end*/
+
+#add-bulk-discount-model .modal-body {
+    max-width: 640px;
+}
+
+#add-bulk-discount-model .modal-dialog {
+    max-width: 700px;
+}
+
+#add-bulk-discount-model table tr td:nth-child(4),
+#add-bulk-discount-model table tr th:nth-child(4) {
+    width: 155px !important;
+}
+
+div.highlighted_tr_info {
+    position: absolute;
+    left: -360px;
+    top: -18px;
+    width: 350px;
+    text-align: right;
+    display: none;
+}
+
+.highlighted_tr div.highlighted_tr_info {
+    display: block;
+}
+
+span.info_text_left {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s;
+    color: #8f192b;
+    word-wrap: break-word;
+}
+
+div.highlighted_tr_info i {
+    font-size: 18px;
+    color: #8f192b;
+    margin-left: 15px;
+    top: 3px;
+    position: relative;
+}
+
+.relative {
+    position: relative;
+}
+
+.info_text_left.showme {
+    visibility: visible;
+    opacity: 1;
+}
+
+input#Include-auto-select-all~span:after {
+    width: 12px;
+    height: 12px;
+    top: 5px !important;
+}
+
+input#Include-auto-select-all~span:before {
+    left: 4px;
+}
+
+label.customCheckBox.grid-table-checkbox {
+    top: -17px;
+    left: 4px;
+}
+
+#add-bulk-discount-model #gridDiscountTableContainer .customCheckBox {
+    padding-top: 15px;
+    padding-left: 15px;
+    position: relative;
+    left: 4px;
+    top: -2px;
+}
+
+/*gridDiscountTableContainer,gridTableContainer*/
+table#gridDiscountTableContainer thead th:after,
+table#gridDiscountTableContainer thead th:before {
+    top: 20px;
+    right: 25px !important;
+}
+
+table#gridDiscountTableContainer thead th:nth-child(1):after,
+table#gridDiscountTableContainer thead th:nth-child(1):before {
+    right: 43px !important;
+}
+
+table#gridDiscountTableContainer thead th:nth-child(2):after,
+table#gridDiscountTableContainer thead th:nth-child(2):before {
+    right: -3px !important;
+}
+
+table#gridDiscountTableContainer thead th:nth-child(3):after,
+table#gridDiscountTableContainer thead th:nth-child(3):before {
+    right: -10px !important;
+    z-index: 3;
+}
+
+table#gridDiscountTableContainer thead th:nth-child(4):after,
+table#gridDiscountTableContainer thead th:nth-child(4):before {
+    right: 20px !important;
+}
+
+table#gridDiscountTableContainer thead th:nth-child(6):after,
+table#gridDiscountTableContainer thead th:nth-child(6):before {
+    display: none;
+}
+
+/*Datatable sort Icons*/
+table#gridAutomatedDiscountTableContainer thead tr th.sorting,
+table#gridAutomatedDiscountTableContainer thead tr th.sorting_asc,
+table#gridAutomatedDiscountTableContainer thead tr th.sorting_desc,
+table#gridAutomatedSavedDiscountTableContainer thead tr th.sorting,
+table#gridAutomatedSavedDiscountTableContainer thead tr th.sorting_asc,
+table#gridAutomatedSavedDiscountTableContainer thead tr th.sorting_desc {
+    padding-right: 14px !important;
+}
+table#gridAutomatedDiscountTableContainer thead tr th:last-child {
+    position: relative;
+}
+
+table#gridAutomatedDiscountTableContainer thead tr th:last-child>div,
+table#gridAutomatedSavedDiscountTableContainer thead tr th:last-child>div {
+    position: absolute;
+    right: 2px;
+    top: 9px;
+}
+
+table#gridAutomatedDiscountTableContainer thead th:after,
+table#gridAutomatedDiscountTableContainer thead th:before,
+table#gridAutomatedSavedDiscountTableContainer thead th:after,
+table#gridAutomatedSavedDiscountTableContainer thead th:before {
+    top: 8px;
+    left: 50%;
+    right: auto;
+}
+
+table#gridAutomatedDiscountTableContainer thead tr th:last-child .customCheckBox,
+table#gridAutomatedSavedDiscountTableContainer thead tr th:last-child .customCheckBox {
+    position: relative;
+    top: -19px;
+    left: 14px;
+}
+
+
+table#gridAutomatedDiscountTableContainer thead th:nth-child(1):after,
+table#gridAutomatedDiscountTableContainer thead th:nth-child(1):before,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(1):after,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(1):before {
+    margin-left: 28px;
+}
+
+table#gridAutomatedDiscountTableContainer thead th:nth-child(2):after,
+table#gridAutomatedDiscountTableContainer thead th:nth-child(2):before,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(2):after,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(2):before {
+    margin-left: 13px;
+}
+
+table#gridAutomatedDiscountTableContainer thead th:nth-child(3):after,
+table#gridAutomatedDiscountTableContainer thead th:nth-child(3):before,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(3):after,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(3):before {
+    margin-left: 15px;
+    z-index: 3;
+}
+
+table#gridAutomatedDiscountTableContainer thead th:nth-child(4):after,
+table#gridAutomatedDiscountTableContainer thead th:nth-child(4):before,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(4):after,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(4):before {
+    margin-left: 28px;
+}
+
+table#gridAutomatedDiscountTableContainer thead th:nth-child(5):after,
+table#gridAutomatedDiscountTableContainer thead th:nth-child(5):before,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(5):after,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(5):before {
+    margin-left: 11px;
+}
+
+table#gridAutomatedDiscountTableContainer thead th:nth-child(6):after,
+table#gridAutomatedDiscountTableContainer thead th:nth-child(6):before,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(6):after,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(6):before {
+    margin-left: 13px;
+}
+
+table#gridAutomatedDiscountTableContainer thead th:nth-child(7):after,
+table#gridAutomatedDiscountTableContainer thead th:nth-child(7):before,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(7):after,
+table#gridAutomatedSavedDiscountTableContainer thead th:nth-child(7):before,
+table#gridAutomatedDiscountTableContainer thead th:last-child:after,
+table#gridAutomatedDiscountTableContainer thead th:last-child:before,
+table#gridAutomatedSavedDiscountTableContainer thead th:last-child:after,
+table#gridAutomatedSavedDiscountTableContainer thead th:last-child:before {
+    display: none;
+}
+
+.highlighted_td i {
+    position: absolute;
+    left: -31px;
+    top: 45px;
+    font-size: 16px;
+    color: #8f0c2c;
+}
+
+.highlighted_td {
+    position: relative;
+}
+
+table#gridDiscountTableContainer .highlighted_td i {
+    left: -21px;
+    top: 23px;
+}
+#gridTableContainer .highlighted_td i {
+    left: -21px;
+}
+
+div#gridAutomatedDiscountTableContainer_info, .col-sm-12.col-md-5 .dataTables_info {
+    position: absolute;
+    width: 112%;
+}
+.pointer-event-none {
+    pointer-events: none;
+}
+#payment-calculator-modal .pointer-event-none:after {
+    display: none !important;
+}
+span.discount-over-field.discount-info{
+    color:#000 !important; 
+    padding-left:20px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+}
+
+table#gridTableContainer tr th:first-child:before, table#gridTableContainer tr th:first-child:after {
+    right: 5px;
+}
+
+/*
+* Footer Css
+*/
+body>footer {
+    background: #000;
+    color: #fff;
+    padding: 25px 30px
+}
+
+body>footer a {
+    color: #fff
+}
+
+body>footer .utilities li a {
+    font-size: 16px;
+    margin: 10px;
+    display: inline-block
+}
+
+body>footer .fooBrandsList li a {
+    font-size: 12px;
+    margin: 20px auto;
+    display: inline-block
+}
+
+body>footer p {
+    font-size: 13px;
+    margin: 10px auto
+}
+footer .col-md-5,footer .col-sm-5,footer .col-md-7,footer .col-sm-7{
+    float: left;
+}
+/*.container:after, .container:before,.row:after, .row:before  {
+    display: table;
+    content: " ";
+}*/
+.container.oreFooter {
+    padding-left: 20px;
+    padding-right: 15px;
+}
+.oreFooter ul {
+    padding-left: 15px;
+}
+.footer_margin_list {
+    margin-top: 5px;
+}
+.footer-logos-field {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.footer-logos-field img {
+    width: auto;
+    height: 25px;
+}
+.footerLinks {
+    text-align: right;
+}
+/*footer section*/
+.text-left-xs{text-align: left;}
+.oreFooter h3 {margin-top: 0px; font-size: 16px; font-weight: bold; }
+.oreFooter ul { padding-left: 15px; }
+.footerLinks { text-align: right }
+.footerLinks ul, .footerLinks ul li { list-style: none; padding: 0px; }
+.footerLinks ul li a { color: #ffffff;  line-height: 25px; }
+.footer-logos-field {
+float: left;
+width: 100%;
+margin-bottom: 20px;
+}
+.footer-logos-field a {
+float: left;
+margin-right: 20px;
+}
+.footer-logos-field img {
+width: auto;
+height: 25px;
+}
+.footerLinks ul{float: right;}
+.footerLinks ul li {float: left}
+.footerLinks ul li a{color: #bfbfbf;}
+.footerLinks {
+    text-align: right;
+    float: left;
+}
+.oreFooter {
+color: #bfbfbf;
+font-size: 11px;
+line-height: 16px;
+padding: 0;
+}
+.footerLinks ul li a {
+    padding: 5px 8px;
+}
+.footerLinks ul li a:hover{
+    text-decoration: underline;    
+}
+.link_contactus:visited, {
+    color: #fff;
+}
+.link_contactus:hover{
+    color: #fff;
+    text-decoration: underline; 
+}
+.link_contactus {
+    color: #fff;
+}
+.footer-logos-field a{
+    cursor: default;
+}
+/*footer section */
+
+@media (max-width: 1200px) {
+    .row.result-buttons-row {
+        top: -10px;
+    }
+
+    .discountAutomatedWrapper .discounts-rows {
+        padding-left: 41px;
+    }
+
+    div#vehicleDiscountWrapper {
+        padding-left: 0px;
+    }
+
+    div.discountAutomatedWrapper:before {
+        left: 2px;
+    }
+
+    div.discountAutomatedWrapper:after {
+        left: -5px;
+    }
+
+    .discountAutomatedContainer .discounts-rows:before {
+        left: 3px;
+    }
+
+    label.customCheckBox.checkbox_each_discount_row {
+        left: 23px;
+    }
+
+    .discountAutomatedWrapper .discount-details {
+        padding-left: 0;
+    }
+
+    .discount-space {
+        padding: 14px 10px 25px 7px;
+    }
+
+    .discountAutomatedWrapper span.discount-name-field {
+        width: 14%;
+        margin-right: 20px;
+    }
+
+    span.discount-name-field:after {
+        margin: -12px -10px 0px 0px;
+    }
+
+    span.discount-flat-rate {
+        width: 13%;
+    }
+
+    span.off-percent {
+        width: 30px;
+    }
+
+    span.discount-date-field {
+        width: 19%;
+    }
+
+    .discountAutomatedWrapper span.discount-inventory-field {
+        width: 20% !important;
+    }
+
+    .discountAutomatedWrapper .discount-details {
+        position: relative;
+    }
+
+    span.discount-over-field {
+        margin: -6px 0 0 35px;
+        position: absolute;
+        bottom: 37px;
+        left: -28px;
+    }
+
+    label.discount-start-date-label {
+        padding: 0px 46px 27px 0px;
+    }
+
+    label.discount-end-date-label {
+        padding-right: 52px;
+    }
+
+    .field.financeOption .custom-radio,
+    .field.discountViewOption .custom-radio {
+        width: 46%;
+    }
+
+    .field.discountViewOption {
+        padding-right: 2px !important;
+    }
+
+    .create-view-saved-btn-field img {
+        width: 14px;
+        position: absolute;
+        right: 4px;
+        top: 11px;
+    }
+
+    .mat-tab-label .mat-tab-label-content span {
+        font-size: 14px;
+        position: absolute;
+        top: -8px;
+        left: 0;
+    }
+
+    .mat-tab-label-active>.mat-tab-label-content {
+        padding-top: 12px;
+        font-size: 26px;
+    }
+
+    .create-view-saved-btn-field i {
+        right: 4px;
+        font-size: 13px;
+        top: 11px;
+    }
+
+    .create-view-saved-btn-field .btn {
+        padding: 0px 0px;
+        width: 100%;
+        margin: 0px 0px 9px 0;
+        font-size: 12px;
+    }
+
+    .dropDownPanel>.field {
+        padding: 5px 15px 20px 7px;
+    }
+
+    .dropDownPanel>.trimField {
+        padding: 5px 24px 20px 7px;
+    }
+
+    .fieldOne {
+        padding: 5px 20px 5px 7px;
+    }
+
+    .field.financeOption {
+        padding-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .discount-space {
+        padding: 14px 0px 25px 4px;
+    }
+
+    label.discount-start-date-label {
+        padding: 0px 38px 27px 0px;
+    }
+
+    label.discount-end-date-label {
+        padding-right: 42px;
+    }
+
+    .discountAutomatedWrapper span.discount-inventory-field {
+        width: 13% !important;
+    }
+
+    span.discount-date-field {
+        width: 20.7%;
+    }
+
+    .discountAutomatedWrapper span.discount-name-field {
+        width: 16%;
+        margin-right: 15px;
+    }
+
+    span.discount-name-field:after {
+        margin: -12px -7px 0px 0px;
+    }
+
+    span.discount-flat-rate {
+        width: 15%;
+    }
+
+    .mat-tab-label-active>.mat-tab-label-content {
+        padding-top: 24px;
+        font-size: 26px;
+    }
+
+    .mat-tab-label .mat-tab-label-content span {
+        top: 5px;
+    }
+
+    .row.result-buttons-row {
+        top: -3px;
+    }
+}
+body.modal-open-noscroll
+{
+    margin-right: 0!important;
+    overflow: hidden;
+}
+.modal-open-noscroll .navbar-fixed-top, .modal-open .navbar-fixed-bottom
+{
+    margin-right: 0!important;
+}
+
+
+
+label.tutorial-label.font-weight-bold {
+    padding-top: 10px;
+}
+.tutorial-field h3 {
+    background: #8f0c2c;
+    color: #fff;
+    padding: 3px 15px;
+    margin-top: -5px;
+    clear: both;
+}
+.video-links {
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.pad0{
+    padding: 0;
+}
+.tutorial-field{padding-right: 30px; float: left;}
+.sub-form-field {
+    float: left;
+    padding: 35px 0 0 15px;
+}
+.sub-form-field form {
+    border: 1px solid #8f192b;
+    padding: 15px;
+    box-shadow: 0px 0px 86px 25px #cccccc;
+    margin-top: 5px;
+}
+.sub-form-field form h4 {
+    text-align: center;
+    border-bottom: 1px solid #8f192b;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+    margin-top: -6px;
+}
+.sub-form-field form input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    margin-bottom: 15px;
+    outline: 0;
+}
+.sub-form-field form textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid grey;
+    height: 100px;
+    margin-bottom: 12px;
+}
+.sub-form-field form .feedback-btn {
+    width: 100%;
+    margin: 0px;
+    box-shadow: none;
+    background: linear-gradient(0deg, #af182f, #c54d67);
+    color: #fff;
+    font-size: 20px;
+    line-height: 0;
+}
+.video-link-item {
+    background: url(../img/tutorial.png) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+    border: 1px solid grey;
+    margin: 2px 0 8px;
+}
+.video-links a {
+    float: left;
+    width: 115px;
+    text-align: center;
+    color: #313131;
+    line-height: 1.18;
+    font-size: 18px;
+    margin-right: 15px;
+}
+.faq-accordions {
+    float: left;
+    width: 100%;
+    clear: both;
+    margin: 5px 0 0 0;
+}
+.faq-accordions .panel {
+    background: #d0d0d0;
+    color: rgba(0, 0, 0, .87);
+    border: 1px solid #8f192b;
+    margin-bottom: 10px;
+    border-left: thin solid #8f192b;
+}
+.faq-accordions .panel h4{
+    margin: 0;
+}
+.faq-accordions .panel h4:hover {
+    background: #8f192b;
+    border: 1px solid #8f192b;
+    color: #fff;
+}
+.faq-accordions .panel-heading a {
+    font-size: 16px;
+    padding: 12px 15px;
+    color: rgba(0, 0, 0, .87) !important;
+    display: block;
+    margin-top: 0;
+}
+.faq-accordions .panel-heading a.open {
+    background: #8f192b;
+    color: #fff !important;
+}
+.faq-accordions .panel h4:hover a{
+    color: #fff !important;
+     
+}
+.faq-accordions .panel-body {
+    padding: 15px 15px;
+    background: #d0d0d0;
+    line-height: 1.8;
+    font-family: sans-serif;
+    font-size: 14px;    
+}
+.faq-accordions .panel-collapse {
+    margin-bottom: 7px;
+}
+.video-links a:hover .video-link-item {
+    background: url(../img/tutorial-hover.png) no-repeat rgba(143, 25, 43, 0.8705882352941177);
+    background-position: center;
+}
+
+#discountStatusCodeError{
+    text-align: center;
+}
+
+/*video popup start*/
+/*
+    Created on : 2016-12-16, 13:40:46
+    Author     : SĹ‚awomir Netteria.NET https://netteria.net
+*/
+
+#closer_videopopup{
+    position: absolute;
+    display: table-cell;
+    right: 15%;
+    top: 5%;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+    padding: auto;
+    cursor: default;
+    background: none;
+    border: none;
+    color: #ffffff;
+
+
+    z-index: 100004;
+}
+#opct{
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.90;
+    opacity: 0.9;
+}
+#videCont{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: auto;
+    max-width: 720px;
+    height: 0;
+    height: auto !important;
+}
+video{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    opacity: 1 !important;
+
+}
+#video1{
+    cursor: pointer; cursor: hand;
+}
+/*video popup end*/
+.faq-accordions .panel-heading a i {
+    float: right;
+}
+
+li.logout-link .logout-anchor:before{
+    visibility: visible !important;
+}
+span.error_text {
+    color: red;
+    position: absolute;
+    left: 0;
+    top: 28px;
+    font-size: 12px;
+}
+.sub-form-field .form-group {
+    position: relative;
+}
+.opct {
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.90;
+    opacity: 0.9;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+video {
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    width: 70% !important;
+    margin: auto;
+    opacity: 1 !important;
+    right: 0px !important;
+}
+@supports (-ms-ime-align: auto) {
+    
+    label.discount-start-date-label, label.discount-end-date-label{
+        padding-bottom: 0px;
+    }
+    span.discount-date-field input{
+        top:17px;
+    } 
+}
+
+@-moz-document url-prefix() {
+    label.discount-start-date-label, label.discount-end-date-label{
+        padding-bottom: 0px;
+    }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .orLogo {
+    left: 104px;
+    }
+}
+
+.faq{
+    padding: 20px 0px 0px 0px !important;
+    color: #fff;
+    display: inline-block;
+    
+}
+.faq:hover { 
+    color:white; 
+}
+li.logout-link .faq-anchor:before{
+    visibility: hidden !important;
+}
+.active_error {
+    visibility: visible;
+}
+.help_faq_head{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+#feedbackphone_error, #feadback_error{
+    width: auto !important;
+}
+
+.error_text, .bulk-error, .sub-form-field form textarea, .sub-form-field form input {
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+    text-transform: none;
+}
+.form-group.form-group__message {
+    margin-bottom: 25px;
+}
+.error_text, .bulk-error {
+    color: red;
+    font-weight: bold;
+    font-size: 12px !important;
+    width: auto;
+}
+.form-group__message .bulk-error {
+    bottom: -3px !important;
+}
+.faq-accordions .panel h4 {
+    margin: 0;
+    height: 43px;
+}
+.faq-accordions .panel h4:hover {
+    border: none;
+}
+a.faq.logout-anchor.faq-anchor {
+    margin-left: 0;
+    padding-right: 30px !important;
+}
+a.faq.logout-anchor.faq-anchor:before {
+    float: right;
+    position: relative;
+    left: 26px;
+    visibility: visible !important;
+}
+    .faq-answer-header {
+        font-weight: bold;
+    }
+
+.placeholder span {
+    color: red;
+    padding: 0 0 0 3px;
+}
+.placeholder {
+    position: absolute;
+    bottom: 17px;
+    z-index: -1;
+}
+.sub-form-field form textarea, .sub-form-field form input{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important; 
+}
+body > header .dealer_rightmenu_address ul li:last-child {
+    width: calc(100% - 120px);
+    display: flex;
+    float: none;
+    height: 67px;
+    align-items: center;
+    justify-content: flex-end;
+}
+body > header .dealer_rightmenu_address a.dealer-name-anchor {
+    padding: 0 5px 0 0 !important;
+    float: none;
+    line-height: 22px;
+}
+.filter-section select {
+    line-height: 1.2;
+}
+.filter-section .financeOption .custom-radio.last-option {
+    float: right;
+    width: 66px;
+}
+.filter-section .search-by-vehicle-tab .dropDownPanel {
+    max-height: 500px;
+    padding-bottom: 0;
+}
+.filter-section .filterAttrs--transmission {
+    margin-bottom: 52px;
+}
+#dealerAutomatedDiscountWrapper .filter-section .dropDownPanel {
+    max-height: 502px;
+    padding-bottom: 2px;
+}
+#dealerAutomatedDiscountWrapper .filter-section .dropDownPanel .discountViewOption {
+    padding-bottom: 5px;
+    border-bottom: 0;
+}
+.filter-section .search-by-vehicle-tab .dropDownPanel .goFilterBtn {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(90deg, #414141 0, #669096 100%) no-repeat padding-box;
+    z-index: 2;
+}
+.filter-section .search-by-vehicle-tab .dropDownPanel .goFilterBtn button {
+    margin: 10px 0; 
+}
+.filter-section .labelMandatory, .filter-section .labelMandatoryVin {
+    float: none;
+    top: -6px;
+    left: -6px;
+    position: relative;
+}
+.filter-section .ui-slider .ui-slider-range {
+    background: #6e8bc3;
+}
+.filter-section .dropDownPanel .financeOption label {
+    color: #fff !important;
+}
+.discount-space span.off_percent_error.bulk-error.active,
+#BulkDiscountRowWrapper span.off_percent_error.bulk-error.active {
+    left: -60px !important;
+    text-align: right !important;
+}
+#add-discount-model .discount-date-field {
+    width: 130px;
+}
+/*Fix for mozilla*/
+@-moz-document url-prefix() {
+  .filter-section select {
+    text-indent: -2px;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .filter-section select {
+    text-indent: -2px;
+  }
+}
+@supports (-ms-accelerator:true) {
+    /* Edge 12-15 CSS */
+  .filter-section select {
+    text-indent: -2px;
+  }
+    
+}
+@supports (-ms-ime-align:auto) {
+    /* Edge 16+ CSS */
+  .filter-section select {
+    text-indent: -2px;
+  }
+    
+}

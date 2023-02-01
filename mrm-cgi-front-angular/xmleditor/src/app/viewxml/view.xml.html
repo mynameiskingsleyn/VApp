@@ -1,0 +1,107 @@
+<div *ngIf="dataLoaded">
+	<div class="row">
+		<div>
+			<h4 class="inline-block">{{messages.pleaseClickOnRefresh}}</h4>
+			<button style="margin-top: 0 !important;" class="btn btn-info btn-sm search-btn inline-block" (click)='refreshRawXml()'>{{messages.reset}}</button>
+			<button style="margin-top: 0 !important;" class="btn btn-info btn-sm search-btn inline-block" (click)='submitXml()'
+					[disabled]="!filesEdited">{{messages.submit}}</button>
+		</div>
+	</div>
+
+	<div class="row" *ngIf="viewFailedFiles === true">
+		<h6 style="color: red;">
+			{{ errorMessage }} <br> <span style="font-size: x-small">{{ miniErrorMessage }}</span>
+			<br />
+			<div *ngFor="let file of allFailEditedFiles">
+				{{file}} <br />
+			</div>
+		</h6>
+	</div>
+
+	<div class="pop-up" *ngIf="submitFlag === true">
+		<br>
+		<h3>{{messages.pleaseConfirmEdit}}:</h3>
+		<div class="col-lg-12">
+			<div class="row" *ngIf="searchCriteria.searchResultLoaded">
+				<table class="table table-bordered">
+					<tr>
+						<th>
+							{{messages.standardFiles}}
+						</th>
+						<th>
+							{{messages.interior}}&nbsp;&nbsp;/&nbsp;&nbsp;{{messages.Exterior}}
+						</th>
+						<th>
+							{{messages.layerFiles}}&nbsp;&nbsp;/&nbsp;&nbsp;{{messages.LayersAngle}}
+						</th>
+					</tr>
+					<tr *ngFor="let standardFile of finalDataForViewEdit.StandardFiles; let i = index;">
+						<td>
+							<div>
+								<input type="checkbox" disabled [(ngModel)]="finalDataForViewEdit.StandardFiles[i].edited"/>
+								&nbsp;{{standardFile.name}}
+							</div>
+						</td>
+						<td *ngIf="standardFile.exterior === 1">{{messages.displayExterior}}</td>
+						<td *ngIf="standardFile.exterior === 0">{{messages.displayInterior}}</td>
+						<td>
+							<div *ngFor="let layerFile of standardFile.layerFiles; let j = index;">
+								<div *ngIf="finalDataForViewEdit.StandardFiles[i].layerFiles[j].edited === true">
+									<input type="checkbox" disabled [(ngModel)]="finalDataForViewEdit.StandardFiles[i].layerFiles[j].edited"/>
+									&nbsp;{{layerFile.name}}&nbsp;&nbsp;/&nbsp;&nbsp;{{layerFile.layer_angle}}
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<button class="btn btn-danger btn-info btn-sm search-btn" (click)='confirmEdit()'
+				[disabled]="!filesEdited">{{messages.confirmEdit}}</button>
+		&nbsp;
+		<button class="btn btn-primary btn-info btn-sm search-btn" (click)='cancelEdit()'>{{messages.cancel}}</button>
+	</div>
+
+	<div class="row" *ngIf="submitFlag === false">
+		<h4 class="status-message" *ngIf="editConfirmationStatus.status === 'success'">
+			{{editConfirmationStatus.message}}
+		</h4>
+		<h4 class="status-message" style="color: red" *ngIf="editConfirmationStatus.status === 'failure'">
+			{{editConfirmationStatus.errorMessage}}.<br />{{editConfirmationStatus.detailMessage}}
+		</h4>
+		<table class="table table-bordered">
+			<tr>
+				<th style="width:50%;">
+					{{messages.standardFiles}}:
+					<select [(ngModel)]="selectedStandard" (change)="showStandardXml()">
+						<option *ngFor="let standardFile of getXmlFileResult.data.StandardFiles"
+								value={{standardFile.name}}:{{standardFile.exterior}}>{{standardFile.name}}</option>
+					</select>
+					&nbsp;
+					<span *ngIf="selectedExterior === 1">{{messages.displayExterior}}</span>
+					<span *ngIf="selectedExterior === 0">{{messages.displayInterior}}</span>
+				</th>
+				<th style="width:50%;">
+					<label style="font-weight: bold;">{{messages.layerFiles}}:</label>
+					<select [(ngModel)]="selectedLayer" (change)="showLayerXml()">
+						<option *ngFor="let layerFile of layerFiles"
+								value={{layerFile.name}}:{{layerFile.exterior}}:{{layerFile.layer_angle}}>{{layerFile.name}}</option>
+					</select>
+					&nbsp;
+					<span>{{selectedLayerAngle}}</span>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<textarea id="standardXmlTextArea" rows="20" [(ngModel)]="standardRawXml" class="textarea-view" (keyup)="setStandardEdited()"></textarea>
+				</td>
+				<td>
+					<textarea id="layerXmlTextArea" rows="20" [(ngModel)]="layerRawXml" class="textarea-view" (keyup)="setLayerEdited()"></textarea>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="loading" *ngIf="isLoading">
+		<img class="img-responsive" src="assets/images/mrmSmallLoader.gif" width="100px" height="100px">
+	</div>
+</div>

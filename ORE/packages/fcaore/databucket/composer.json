@@ -1,0 +1,13 @@
+{
+    "name": "fcaore/databucket",
+    "description": "Data Bucket which contains global functionalities over the application.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SATHISH KUMAR A",
+            "email": "sathisha@v2soft.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

@@ -1,0 +1,64 @@
+@import './shared/styles/common.scss';
+body {
+	background-color: $content_background_color;
+}
+.applicationContainer {
+	display: block;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+	background-color: $content_background_color;
+}
+
+.headerContainer {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: $header_background_color;
+	height: 40px;
+}
+.headerContainer:focus {
+    outline: none;
+}
+
+.menubarContainer {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: $menubar_background_color;
+    height: 40px;
+}
+.menubarContainer:focus {
+    outline: none;
+}
+
+.contentContainer {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: $content_background_color;
+	min-height:450px;
+	border-top: 1px solid #d8e0f1;
+	border-bottom: 1px solid #d8e0f1;
+}
+.contentContainer:focus {
+    outline: none;
+}
+
+.footerContainer {
+    position: relative;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	/*background-color: $footer_background_color; */
+	background-color: transparent;
+	height: 40px;
+}
+.footerContainer:focus {
+    outline: none;
+}

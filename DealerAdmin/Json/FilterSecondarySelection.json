@@ -1,0 +1,26 @@
+{
+    "NameOfAPI": "FilterSecondarySelection",
+    "StatusCode": 200,
+    "Message": "Success",
+    "data": {
+        "DealerCode": "69009",
+        "MakeCode": "Y",
+        "ModelYear": "2019",
+        "Model": "Giulia",
+        "Trim": "Giulia Sport",
+        "Attributes": {
+            "drive_type": [
+                "AWD"
+            ],
+            "interior_colour_desc": [
+                ""
+            ],
+            "transmission_desc": [
+                "8-Speed Automatic Transmission"
+            ],
+            "eng_desc": [
+                "2.0L 280HP Turbocharged I4 Engine"
+            ]
+        }
+    }
+}

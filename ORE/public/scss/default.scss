@@ -1,0 +1,162 @@
+@import 'style';
+body{
+    
+    /* CUSTOM CSS */
+    $themeClr : #27AAE1;
+    $themeClr2 : #4990e2;
+
+    .themeClr2{
+        color: $themeClr!important;
+    }
+    .theme,.submitBlock>button{
+        background: $themeClr;
+        color: #fff;
+        border-color: $themeClr;
+    }
+    .sGrey{
+        &:hover{
+            color: $themeClr !important;
+        }
+    }
+    .customCheckBox{
+        input[type=checkbox] {
+            &:checked{
+                &+span:before{
+                    background: $themeClr;
+                }
+                &+span:after{
+                    border-color: $themeClr!important;
+                    background: $themeClr;
+                }
+            }
+        }
+    }
+    .select-wrapper{
+        &::before{      
+            color: $themeClr;
+        }
+    }
+    .select-wrapper.bg{
+        &::before{      
+            background: $themeClr;
+            color: #fff;
+        }
+    }
+    .customRadioBtn {
+        input[type=radio] {
+            &:checked{
+                &+span{
+                    &:after,&::before{
+                        border: 2px solid $themeClr;
+                    }  
+                }
+            }
+        }
+    }
+
+    .rSlider{
+        >.progressInfo{
+            background: $themeClr;
+        }
+        >span{
+            background: url(../images/3lines_white.png) #000 !important;
+        }
+    }
+    .leftMenu{
+        form{
+            h4{
+                i{
+                    color: $themeClr;
+                }
+            }
+            .filterAttrs{
+                &.resetFiltersBlock{
+                    .btn{
+                        color: $themeClr;
+                    }
+                }
+            }
+        }
+    }
+    .vehiclesDisplaySection{
+        .footerBtns{
+            .btn{
+                background: $themeClr;
+                color: #fff;
+                border-radius: 0;
+                padding: 6px 35px 6px 25px;
+                position: relative;
+                &:hover{
+                    color: #000;
+                }
+            } 
+        }
+    }
+    .legendStyle.nav-tabs{
+        li{
+            >a{               
+                color: #000;
+                font-size: 13px;
+                i{
+                    color: $themeClr;
+                }
+            }
+            &.active{
+                a{
+                    background: $themeClr;
+                    color:#fff;   
+                    &::after{
+                        border-color: rgba(136, 183, 213, 0);
+                        border-left-color: $themeClr; 
+                    }
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .wishListBlock{
+        .btn{
+            i{
+                color: $themeClr;
+            }
+            &:hover{
+                background: $themeClr;
+                color: #000;
+                border-color: #000;
+                i{
+                    color: #000;
+                }
+            }
+        }
+    }
+    .detailBody{
+        .fwd-bck-btns{
+            button{
+                background: $themeClr;
+                color: #fff;
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+    .onOffSlider{
+        >label{
+            background: $themeClr;
+            color: #fff;
+        }
+    }
+
+    .customCheckBox{
+        input[type=checkbox] {
+            &:checked{
+                &+span:before{
+                    border-color: #ffffff;
+                }
+            }
+        }
+    }
+    
+}

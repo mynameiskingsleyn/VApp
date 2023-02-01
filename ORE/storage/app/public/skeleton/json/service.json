@@ -1,0 +1,79 @@
+{
+	"lease":{
+		"1":{
+			"toptext":"Best",
+			"title":"Road Hazard Tire and Wheel Protection",
+			"subtitle":"5000+ Components",
+			"desc":"This one-of-a-kind plan provides full repair or replacement coverage for all four tires and wheels damaged due to road hazard conditions plus cost of mounting, balancing and stems for both original equipment manufacturers and aftermarket tires and wheels."			
+		},
+		"2":{
+			"toptext":"Best",
+			"title":"Lease Wear and Tear",
+			"subtitle":"5000+ Components",
+			"desc":"Provides protection against excessive wear and tear charges - up to $5,000 - on lease vehicles for a wide variety of interior and exterior components and wear items. Coverage includes paint and upholstery damage, exterior surface dents, audio equipment damage, excess tire wear and much more."			
+		},
+		"3":{
+			"toptext":"Best",
+			"title":"Auto Appearance Care",
+			"subtitle":"5000+ Components",
+			"desc":"Uses a Paintless Dent Repair (PDR) process that works from behind your vehicle's metal panels to flex and mold the metal back to its original form. Our highly experienced, nationally certified PDR technicians use specialized tools to repair your vehicle's damages without the use of painting, sanding or body fillers. Available for terms from one to five years."			
+		},
+		"4":{
+			"toptext":"Best",
+			"title":"Lease Protect",
+			"subtitle":"5000+ Components",
+			"desc":"Keep your vehicle looking beautiful during your lease experience. Benefits include unlimited Paintless Dent Repair for unwanted dings and dents, protection against glass chips and windshield cracks and protection against seat, carpeting and floor mat damage. Also included are costs for both tire and rim damage due to road hazard conditions and key fob repair or replacement."			
+		},
+		"5":{
+			"toptext":"Best",
+			"title":"Plantinum Lease",
+			"subtitle":"5000+ Components",
+			"desc":"This comprehensive coverage includes Maximum Care mechanical protection ($100 deductible), car rental allowance, towing, roadside assistance, key fob repair and replacement, Road Hazard Tire and Wheel Protection, Auto Appearance Care plus oil changes and tire rotations every 5,000 miles. Available in a variety of terms to match your lease."			
+		},
+		"6":{
+			"toptext":"Best",
+			"title":"Scheduled Maintenance",
+			"subtitle":"5000+ Components",
+			"desc":"Provides most scheduled and recommended maintenance services as described in the owner's manual. Available with a variety of terms, and with oil changes at either 5,000 mile or 10,000 mile intervals."			
+		}
+	},
+	"finance":{
+		"1":{
+			"toptext":"Best",
+			"title":"Maximum Care",
+			"subtitle":"5000+ Components",
+			"desc":"Factory-Backed mechanical protection beyond the factory warranty on over 5,000 components. If it's mechanical, it's covered. Available with a variety of terms and deductibles. Service provided by certified, expert technicians using authentic Mopar parts. Also includes car rental allowance, towing, roadside assistance and trip interruption coverage."			
+		},
+		"2":{
+			"toptext":"Best",
+			"title":"Added Care Plus",
+			"subtitle":"5000+ Components",
+			"desc":"Offers great protection by extending powertrain and component coverage on over 850 major components. Available with a variety of terms and deductibles. Service provided by certified, expert technicians using authentic Mopar parts. Also includes car rental allowance, towing, roadside assistance and trip interruption coverage."			
+		},
+		"3":{
+			"toptext":"Best",
+			"title":"Road Hazard Tire and Wheel Protection",
+			"subtitle":"5000+ Components",
+			"desc":"This one-of-a-kind plan provides full repair or replacement coverage for all four tires and wheels damaged due to road hazard conditions plus cost of mounting, balancing and stems for both original equipment manufacturers and aftermarket tires and wheels."			
+		},
+		"4":{
+			"toptext":"Best",
+			"title":"Auto Appearance Care",
+			"subtitle":"5000+ Components",
+			"desc":"Uses a Paintless Dent Repair (PDR) process that works from behind your vehicle's metal panels to flex and mold the metal back to its original form. Our highly experienced, nationally certified PDR technicians use specialized tools to repair your vehicle's damages without the use of painting, sanding or body fillers. Plans are available for terms from one to five years."			
+		},
+		"5":{
+			"toptext":"Best",
+			"title":"Car Care",
+			"subtitle":"5000+ Components",
+			"desc":"Do not include this product line at this time as we have not yet launched it. We will provide copy after the product line is launched."			
+		},
+		"6":{
+			"toptext":"Best",
+			"title":"Scheduled Maintenance",
+			"subtitle":"5000+ Components",
+			"desc":"Provides most scheduled and recommended maintenance services as described in the owner's manual. Available with a variety of terms, and with oil changes at either 5,000 mile or 10,000 mile intervals."			
+		}
+	}
+	
+}

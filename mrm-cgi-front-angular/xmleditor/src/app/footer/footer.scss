@@ -1,0 +1,8 @@
+@import '../shared/styles/common.scss';
+.page-footer{
+	/*background: #CCC;*/
+  background-color: $header_background_color;
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+}

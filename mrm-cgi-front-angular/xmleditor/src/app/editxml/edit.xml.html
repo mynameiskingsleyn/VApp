@@ -1,0 +1,224 @@
+<div class="container-fluid" *ngIf="dataLoaded">
+	<div class="row">
+		<label for="year">{{messages.year}}: </label> <span id="year">{{searchCriteria.selectedYear}} </span>
+		<label for="country">{{messages.country}}: </label> <span id="country">{{searchCriteria.selectedCountry}} </span>
+		<label for="brand">{{messages.brand}}: </label> <span id="brand">{{searchCriteria.selectedBrand}} </span>
+        <label for="model">{{messages.model}}: </label> <span id="model">{{removePleaseSelect(standardModel)}} </span>
+		<button class="btn btn-info btn-sm search-btn" (click)='submitXml()'>{{messages.submit}}</button>
+		<button class="btn btn-info btn-sm search-btn" (click)='resetXml()'>{{messages.reset}}</button>
+	</div>
+
+	<div class="pop-up" *ngIf="submitFlag">
+		<br>
+		<h3>{{messages.pleaseConfirmEdit}}:</h3>
+		<div class="col-lg-12">
+			<div class="row" *ngIf="searchCriteria.searchResultLoaded">
+				<table class="table table-bordered">
+					<tr>
+						<th>
+							{{messages.standardFiles}}
+						</th>
+						<th>
+							{{messages.interior}}&nbsp;&nbsp;/&nbsp;&nbsp;{{messages.Exterior}}
+						</th>
+						<th>
+							{{messages.layerFiles}}&nbsp;&nbsp;/&nbsp;&nbsp;{{messages.LayersAngle}}
+						</th>
+					</tr>
+					<tr *ngFor="let standardFile of finalDataForEdit.StandardFiles; let i = index;">
+						<td>
+							<div>
+								<input type="checkbox" disabled [(ngModel)]="finalDataForEdit.StandardFiles[i].edited"/>
+								&nbsp;{{standardFile.name}}
+							</div>
+						</td>
+						<td *ngIf="standardFile.exterior === 1">{{messages.displayExterior}}</td>
+						<td *ngIf="standardFile.exterior === 0">{{messages.displayInterior}}</td>
+						<td>
+							<div *ngFor="let layerFile of standardFile.layerFiles; let j = index;">
+								<div *ngIf="finalDataForEdit.StandardFiles[i].layerFiles[j].edited === true">
+									<input type="checkbox" disabled [(ngModel)]="finalDataForEdit.StandardFiles[i].layerFiles[j].edited"/>
+									&nbsp;{{layerFile.name}}&nbsp;&nbsp;/&nbsp;&nbsp;{{layerFile.layer_angle}}
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<button class="btn btn-danger btn-info btn-sm search-btn" (click)='confirmEdit()'>{{messages.confirmEdit}}</button>
+		&nbsp;
+		<button class="btn btn-primary btn-info btn-sm search-btn" (click)='cancelEdit()'>{{messages.cancel}}</button>
+	</div>
+
+	<div *ngIf="submitFlag === false">
+		<h4 class="status-message" *ngIf="editConfirmationStatus.status === 'success'">
+			{{editConfirmationStatus.message}}
+		</h4>
+		<h4 class="status-message" style="color: red" *ngIf="editConfirmationStatus.status === 'failure'">
+			{{editConfirmationStatus.errorMessage}}.<br />{{editConfirmationStatus.detailMessage}}
+		</h4>
+		<table class="table">
+			<tr>
+				<th style="width:50%;">
+					<div class="row">
+						{{messages.standardFiles}}:
+						&nbsp;
+						<select [(ngModel)]="selectedStandard" (change)="loadFinalStdJsonXml(); changeLayerXml();">
+							<option *ngFor="let standardFile of getXmlEditRequest.data.StandardFiles"
+									value={{standardFile.name}}:{{standardFile.exterior}}>{{standardFile.name}}</option>
+						</select>
+						&nbsp;
+						<span *ngIf="selectedExterior === 1">{{messages.displayExterior}}</span>
+						<span *ngIf="selectedExterior === 0">{{messages.displayInterior}}</span>
+						&nbsp;
+						<button class="btn btn-xsm btn-primary" (click)='shiftStandardTagUp()'>{{messages.up}}</button>
+						&nbsp;
+						<button class="btn btn-xsm btn-primary" (click)='shiftStandardTagDown()'>{{messages.down}}</button>
+						&nbsp;
+						<button class="btn btn-danger btn-xsm" (click)='deleteStandardTag()'>{{messages.delete}}</button>
+						&nbsp;
+						<button class="btn btn-xsm btn-primary" (click)='cloneStandardTag()'>{{messages.clone}}</button>
+					</div>
+				</th>
+				<th style="width:50%;">
+					<div class="row float-none">
+						{{messages.layerFiles}}:
+						&nbsp;
+						<select [(ngModel)]="selectedLayer" (change)="loadFinalLayerJsonXml()">
+							<option *ngFor="let layerFile of layerFiles"
+									value={{layerFile.name}}:{{layerFile.exterior}}:{{layerFile.layer_angle}}>{{layerFile.name}}</option>
+						</select>
+						&nbsp;
+						<span>{{selectedLayerAngle}}</span>
+						&nbsp;
+						<button class="btn btn-xsm btn-primary" (click)='shiftLayerTagUp()'>{{messages.up}}</button>
+						&nbsp;
+						<button class="btn btn-xsm btn-primary" (click)='shiftLayerTagDown()'>{{messages.down}}</button>
+						&nbsp;
+						<button class="btn btn-danger btn-xsm" (click)='deleteLayerTag()'>{{messages.delete}}</button>
+						&nbsp;
+						<button class="btn btn-xsm btn-primary" (click)='cloneLayerTag()'>{{messages.clone}}</button>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<div style="overflow: scroll; height: 400px; width: 100%; white-space:pre;" id="standardXmlEditArea">
+						{{standardOpenTag}}
+						<br />
+						<div *ngFor="let standardTag of standardJsonXml.standards; let i = index">
+							<div [id]="i" [ngClass]="standardTag.selected_background">
+								<span (click)="selectStandardTag(i)" style="margin: 30px; font-size: 1.1em;">{{messages.standardTag}}</span>
+								<br />
+								<span style="margin: 60px;">{{messages.tagId}}&nbsp;:&nbsp;&nbsp;<input size="10" type="text" (change)="setStandardFileEdited()" [(ngModel)]="standardJsonXml.standards[i].standard.id"/></span>
+								<br />
+								<span style="margin: 60px;">{{messages.standardTagLink}}&nbsp;:&nbsp;&nbsp;<input size="27" type="text" (change)="setStandardFileEdited()" [(ngModel)]="standardJsonXml.standards[i].standard.link"/></span>
+								<br />
+							</div>
+
+							<div *ngFor="let addonTag of standardJsonXml.standards[i].standard.children; let j = index">
+								<div [id]="i + '::' + j" [ngClass]="addonTag.selected_background">
+									<span (click)="selectAddonTag(i + '::' + j)" style="margin: 60px;">{{messages.addonTag}}</span>
+									<br />
+									<span style="margin: 90px;">{{messages.tagId}}&nbsp;:&nbsp;&nbsp;<input size="10" type="text" (change)="setStandardFileEdited()" [(ngModel)]="standardJsonXml.standards[i].standard.children[j].addon.id"/></span>
+								</div>
+							</div>
+						</div>
+						<br />
+					</div>
+				</td>
+				<td>
+					<div style="overflow: scroll; height: 400px; width: 100%; white-space:pre;" id="layerXmlEditArea">
+						{{layerOpenTag}}
+						<br />
+						<div *ngFor="let layerTag of layerJsonXml.layers; let i = index">
+							<div [id]="i" [ngClass]="layerTag.selected_background">
+								<span (click)="selectLayerTag(i)" style="margin: 30px;">{{messages.layerTag}}</span>
+								<br />
+								<span style="margin: 60px;">{{messages.tagId}}&nbsp;:&nbsp;&nbsp;<input size="10" type="text" (change)="setLayerFileEdited()" [(ngModel)]="layerJsonXml.layers[i].layer.id"/></span>
+								<br />
+								<span style="margin: 60px;">{{messages.layerTagCarColor}}&nbsp;:&nbsp;&nbsp;<input size="10" type="text" (change)="setLayerFileEdited()" [(ngModel)]="layerJsonXml.layers[i].layer.carcolor"/></span>
+								<br />
+								<span style="margin: 60px;">{{messages.layerTagFamily}}&nbsp;:&nbsp;&nbsp;<input size="10" type="text" (change)="setLayerFileEdited()" [(ngModel)]="layerJsonXml.layers[i].layer.family"/></span>
+								<br />
+								<span style="margin: 60px;">{{messages.layerTagLevel}}&nbsp;:&nbsp;&nbsp;<input size="10" type="text" (change)="setLayerFileEdited()" [(ngModel)]="layerJsonXml.layers[i].layer.level"/></span>
+								<br />
+							</div>
+
+							<div *ngIf="layerTag.layer.shared !== 'true' && layerTag.layer.split !== 'true'; else sharedOrSplit">
+								<div *ngFor="let nameTag of layerJsonXml.layers[i].layer.children; let j = index">
+									<div [id]="i + '::' + j" [ngClass]="layerTag.selected_background">
+										<span style="margin: 60px;">{{messages.nameTag}}</span>
+										<br />
+										<span style="margin: 90px;"><input size="50" type="text" (change)="setLayerFileEdited()" [(ngModel)]="layerJsonXml.layers[i].layer.children[j].name"/></span>
+									</div>
+								</div>
+							</div>
+
+							<ng-template #sharedOrSplit>
+								<div *ngIf="layerTag.layer.shared === 'true'">
+									<div *ngFor="let childTag of layerJsonXml.layers[i].layer.children; let j = index">
+										<div *ngIf=" childTag.name !== undefined; else sharedTag">
+											<div [id]="i + '::' + j" [ngClass]="layerTag.selected_background">
+												<span style="margin: 60px;">{{messages.nameTag}}</span>
+												<br />
+												<span style="margin: 90px;"><input size="50" type="text" (change)="setLayerFileEdited()" [(ngModel)]="layerJsonXml.layers[i].layer.children[j].name"/></span>
+											</div>
+										</div>
+										<ng-template #sharedTag>
+											<div [id]="i + '::' + j" [ngClass]="childTag.selected_background">
+												<span (click)="selectSharedLayerTag(i + '::' + j)" style="margin: 60px;">{{messages.sharedLayerTag}}</span>
+												<br />
+												<span style="margin: 90px;">
+													{{messages.sharedLayerId}}&nbsp;:&nbsp;&nbsp;<input size="7" type="text" (change)="setLayerFileEdited()" [(ngModel)]="layerJsonXml.layers[i].layer.children[j].shared_layer.shared_id"/>
+												</span>
+											</div>
+										</ng-template>
+									</div>
+								</div>
+
+								<div *ngIf="layerTag.layer.split === 'true'">
+									<div *ngFor="let splitLayerTag of layerJsonXml.layers[i].layer.children; let j = index">
+										<div [id]="i + '::' + j" [ngClass]="splitLayerTag.selected_background">
+											<span (click)="selectSplitLayerTag(i + '::' + j)" style="margin: 60px;">{{messages.splitLayerTag}}</span>
+											<br />
+											<span style="margin: 90px;">
+												{{messages.splitLayerTagId}}&nbsp;:&nbsp;&nbsp;<input size="10" type="text" (change)="setLayerFileEdited()" [(ngModel)]="layerJsonXml.layers[i].layer.children[j].split_layer.split_id"/>
+											</span>
+											<br />
+											<span style="margin: 90px;">
+												{{messages.splitLayerTagCarColor}}&nbsp;:&nbsp;&nbsp;<input size="10" type="text" (change)="setLayerFileEdited()" [(ngModel)]="layerJsonXml.layers[i].layer.children[j].split_layer.carcolor"/>
+											</span>
+											<br />
+											<span style="margin: 90px;">
+												{{messages.splitLayerTagFamily}}&nbsp;:&nbsp;&nbsp;<input size="10" type="text" (change)="setLayerFileEdited()" [(ngModel)]="layerJsonXml.layers[i].layer.children[j].split_layer.family"/>
+											</span>
+											<br />
+											<span style="margin: 90px;">
+												{{messages.splitLayerTagLevel}}&nbsp;:&nbsp;&nbsp;<input size="10" type="text" (change)="setLayerFileEdited()" [(ngModel)]="layerJsonXml.layers[i].layer.children[j].split_layer.level"/>
+											</span>
+											<br />
+										</div>
+
+										<div *ngFor="let nameTag of layerJsonXml.layers[i].layer.children[j].split_layer.children; let k = index">
+											<div [id]="i + '::' + j + '::' + k" [ngClass]="splitLayerTag.selected_background">
+												<span style="margin: 90px;">{{messages.nameTag}}</span>
+												<br />
+												<span style="margin: 120px;"><input size="50" type="text" (change)="setLayerFileEdited()" [(ngModel)]="layerJsonXml.layers[i].layer.children[j].split_layer.children[k].name"/></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</ng-template>
+						</div>
+						<br />
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="loading" *ngIf="isLoading">
+		<img class="img-responsive" src="assets/images/mrmSmallLoader.gif" width="100px" height="100px">
+	</div>
+</div>
